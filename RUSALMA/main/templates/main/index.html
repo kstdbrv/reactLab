@@ -1,0 +1,43 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static '/css/style.css' %}">
+</head>
+<body>
+    <div class="bg-gradient"></div>
+    <header>
+        <div class="logo-wrap">
+            <div class="logo">
+                <object type="image/svg+xml" data="{% static '/images/Group 15.svg' %}  " id=’object’ class=’icon’></object>
+            </div>
+        </div>
+        <nav>
+            <ul class="navbar">
+                <li><a class="navbar-item" href="">Блог</a></li>
+                <li><a class="navbar-item" href="">Пртфолио</a></li>
+                <li><a class="navbar-item" href="">Компания</a></li>
+                <li><a class="navbar-item" href="">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="left">
+                <div class="slogan"><strong>Агентство цифровых<br> коммуникаций </strong></div>
+                <div class="button"><a class="item-link" href="#">заказать</a></div>
+                
+        </div>
+
+        <div class="right">
+            <ul class="info">
+                <li class="info-item"><a href="">Интернет-маркетинг</a></li>
+                <li class="info-item"><a href="">Веб-разработка</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
