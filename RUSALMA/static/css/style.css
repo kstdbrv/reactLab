@@ -5,11 +5,11 @@ a {
 
 .logo-wrap {
     width: 50%;
-    margin: 24px 0 24px 44px;
+    margin: 3vh 0 2vh 0;
 }
 
 .logo {
-    dis
+    margin-left: 3vw;
 }
 
 nav {
@@ -43,6 +43,7 @@ header {
     display: flex;
     justify-content: space-between;
     padding-right: 40px;
+    margin: 3vh 4vw 2vh 4vh;
 }
 
 .left {
