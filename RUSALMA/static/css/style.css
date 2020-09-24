@@ -1,23 +1,20 @@
+html {
+    position: fixed;
+}
+
 a {
     color: white;
     text-decoration: none;
 }
 
-.logo-wrap {
-    width: 50%;
-    margin: 3vh 0 2vh 0;
-}
-
-.logo {
-    margin-left: 3vw;
-}
-
-nav {
-    width: 50%;
-}
-
 .non-visable{
-    display: none;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.visable {
+    opacity: 1;
+    transition: opacity 2s ease-in;
 }
 
 body {
@@ -27,23 +24,8 @@ body {
     background-size: cover;
     font-family: 'PT-Sans';
     font-size: 1.6vw;
-    width: 100%;
+    width: 100vw;
     height: 100vh;
-}
-
-
-header {
-    height: 10%;
-    display: flex;
-    justify-content:  space-around;
-}
-
-.navbar {
-    list-style-type: none;
-    display: flex;
-    justify-content: space-between;
-    padding-right: 40px;
-    margin: 3vh 4vw 2vh 4vh;
 }
 
 .left {
@@ -60,43 +42,6 @@ header {
     width: 50%;
     flex-direction: column;
     justify-content: flex-end;
-}
-
-.navbar-item {
-    position: relative;
-}
-
-.navbar-item-link {
-    transition: color 0.5s;
-}
-
-.navbar-item-link:hover {
-    color: #49E4DB;
-}
-
-
-.drop-ul {
-    list-style: none;
-    color: white;
-    position: absolute;
-    padding-top: 15px;
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity 0.5s ease-out;
-    padding-left: 0;
-}
-
-.drop-ul-item:hover .drop-item-link{
-    color: #49E4DB;
-}
-
-.drop-item-link {
-    transition: color 0.5s;
-}
-
-.navbar-item:hover .drop-ul{
-    opacity: 1;
-    visibility: visible;
 }
 
 .info-drop-ul {
@@ -157,8 +102,13 @@ header {
 }
 
 .info-item-top {
-    position: relative;
-    bottom: 50vh;
+    transition: transform 2s ease-in-out;
+    transform: translate(0, -30vh);
+}
+
+.info-item-bot {
+    transition: transform 3s ease-in-out;
+    transform: translate(0, 0);
 }
 
 .info-item>span {
@@ -185,7 +135,7 @@ header {
 
     border: 0.2vw solid #FFFFFF;
     box-sizing: border-box;
-    transition: border-color 0.5s ease-out;
+    transition: border-color 0.5s ease-in-out;
 }
 
 .item-link {
