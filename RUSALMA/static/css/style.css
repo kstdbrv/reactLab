@@ -16,19 +16,24 @@ nav {
     width: 50%;
 }
 
+.non-visable{
+    display: none;
+}
+
 body {
     margin: 0;
     background-image: url("../images/stduio-2035349_1920\ 1\ \(1\).png");
     background-repeat: no-repeat;
     background-size: cover;
     font-family: 'PT-Sans';
-    font-size: 24px;
+    font-size: 1.6vw;
     width: 100%;
-    height: 100%;
+    height: 100vh;
 }
 
 
 header {
+    height: 10%;
     display: flex;
     justify-content:  space-around;
 }
@@ -57,7 +62,58 @@ header {
 }
 
 .navbar-item {
+    position: relative;
+}
 
+.navbar-item-link {
+    transition: color 0.5s;
+}
+
+.navbar-item-link:hover {
+    color: #49E4DB;
+}
+
+
+.drop-ul {
+    list-style: none;
+    color: white;
+    position: absolute;
+    padding-top: 15px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease-out;
+    padding-left: 0;
+}
+
+.drop-ul-item:hover .drop-item-link{
+    color: #49E4DB;
+}
+
+.drop-item-link {
+    transition: color 0.5s;
+}
+
+.navbar-item:hover .drop-ul{
+    opacity: 1;
+    visibility: visible;
+}
+
+.info-drop-ul {
+    list-style: none;
+    font-size: 1.5vw;
+    padding: 0;
+    padding-top: 30px;
+}
+
+.info-drop-li {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 100px;
+}
+
+.info-drop-li:hover {
+    background-color: rgba(73, 228, 219, 0.5);
+    
 }
 
 .bg-gradient {
@@ -72,8 +128,8 @@ header {
     z-index: -1;
 }
 .container {
-    font-size: 2em;
-    height: 70vh;
+    font-size: 2vw;
+    height: 80%;
     color: white;
     display: flex;
     justify-content: space-around;
@@ -83,19 +139,29 @@ header {
 .info {
     padding: 0;
     margin-top: 0;
-    margin-bottom: 90px;
+    margin-bottom: 15vh;
     list-style-type: none;
 }
 
 .info-item {
-    padding-left: 100px;
-    width: 100%;
-    height: 13vh;
-    
+    padding: 20px 0 20px 0;
+    transition: background-color 0.3s ease-out;
+    cursor: pointer;
+    height: 6vh;
 }
 
-.info-item>a {
-    line-height: 12vh;
+.info-item>svg {
+    position: relative;
+    left: 50px;
+}
+
+.info-item-top {
+    position: relative;
+    bottom: 50vh;
+}
+
+.info-item>span {
+    margin-left: 75px;
 }
 
 .info-item:hover {
@@ -104,29 +170,28 @@ header {
 
 .slogan {
     font-family: 'PT-Sans-Bold';
-    margin-bottom: 10vh;
+    margin-bottom: 18vh;
     margin-left: 10%;
 }
 
 .button {
-    width: 319px;
-    height: 70px;
+    width: 20vw;
+    height: 7vh;
     text-align: center;
-    font-size: 0.6em;  
+    font-size: 1.6vw;  
     margin-left: 10%;
  
 
-    border: 4px solid #FFFFFF;
+    border: 0.2vw solid #FFFFFF;
     box-sizing: border-box;
     transition: border-color 0.5s ease-out;
 }
 
 .item-link {
     display: block;
-    width: auto;
-    height: auto;
-    line-height: 55px;
+    line-height: 6vh;
     transition: color 0.5s ease-out;
+    font-size: 1.4vw;
 }
 
 .button:hover {
@@ -136,12 +201,47 @@ header {
 .button:hover .item-link{
     color: #49E4DB;
 }
+
+footer {
+    height: 10%;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.footer-logo>span {
+    font-size: 1vw;
+    opacity: 0.5;
+}
+
+.footer-logo {
+    margin: 0 0 20px 44px;
+}
+
+.socials {
+    margin: 0 44px 20px 0;
+}
+
+.svg-socials {
+    margin-left: 50px;
+}
+.svg-socials>path {
+    fill: white;
+    transition: fill 0.5s;
+}
+
+.svg-socials:hover path{
+    fill: #49E4DB;
+}
+
+
+
 @font-face {
     font-family: "PT-Sans";
     src: url("../fonts/PT-Sans/PTS55F.ttf") format("truetype");
     font-weight: 400;
     font-style: normal;
-  }
+}
 
 @font-face {
     font-family: "PT-Sans-Bold";
