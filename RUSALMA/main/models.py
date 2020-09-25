@@ -28,13 +28,13 @@ class Tag(models.Model):
 
 
 class Post(models.Model):
-    image = models.ImageField(default='preview.png', null=True, blank=True)
+    image = models.ImageField(null=True, blank=True)
     title = models.CharField(max_length=255, null=True, verbose_name='Заголовок')
     subtitle = models.CharField(max_length=255, null=True, verbose_name='Подзаголовок')
     date_created = models.DateTimeField(auto_now_add=True, verbose_name='Дата публикации')
     content = RichTextField(null=True, blank=True, verbose_name='Текст публикации')
     author = models.ForeignKey(Author, null=True, blank=True, on_delete=models.SET_NULL)
-    tags = models.ManyToManyField(Tag)
+    tags = models.ManyToManyField(Tag, blank=True)
 
     def __str__(self):
         return self.title

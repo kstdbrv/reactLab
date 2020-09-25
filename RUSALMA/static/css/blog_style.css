@@ -124,12 +124,23 @@ a {
     padding: 4vh;
 }
 
+.img {
+    background-color: lightgray;
+    width: 100%;
+    height: 35%;
+    background-size: cover;
+}
+.img>img {
+    width: 100%;
+    height: 100%;
+}
 
 .post {
     width: 32%;
-    height: 70vh;
+    height: 90vh;
     background: #FFFFFF;
-    margin-top: 2vh;
+    margin-bottom: 5vh;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.14);
 }
 
 .post-name {
@@ -152,18 +163,23 @@ a {
 }
 
 .info{
-    padding: 1em 1.7em;
+    padding: 1.5vh 3vh 3vh 3vh;
+    height: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 .data{
     display: flex;
     justify-content: space-between;
+    height: 10%;
     
 }
 .time{
     font-family: PT Sans;
     font-style: normal;
     font-weight: normal;
-    font-size: 12px;
+    font-size: 1.3vh;
     line-height: 16px;
     /* identical to box height */
     text-align: center;
@@ -173,7 +189,7 @@ a {
     font-family: Montserrat;
     font-style: normal;
     font-weight: normal;
-    font-size: 12px;
+    font-size: 1.3vh;
     line-height: 16px;
     /* identical to box height */
     text-align: center;
@@ -186,45 +202,46 @@ a {
     font-family: PT Sans;
     font-style: normal;
     font-weight: bold;
-    font-size: 24px;
-    line-height: 31px;
+    font-size: 3vh;
     /* identical to box height */
     color: #121212;
-    padding: 1em 0;
-
+    height: 10%;
 }
 
 .text > span{
     font-family: PT Sans;
     font-style: normal;
     font-weight: normal;
-    font-size: 16px;
+    font-size: 2.5vh;
     line-height: 21px;  
     color: #121212;  
     word-wrap: break-word; 
 }
 
 .text {
-    padding-bottom: 2em;   
+    height: 65%;
 }
 
 .pirson{
     display: flex;
-    flex-direction: row;
+    height: 15%;
+    align-items: center;
 }
 
 .ava{
-    padding: 2em 1em 0 0;
+    height: 7.2vh;
+    width: 7.2vh;
+    background-color: darkgrey;
+    border-radius: 50%;
 }
 .name{
-    padding: 2.4em 1em 0 0;
+    margin-left: 1vh;
 }
 .name > h2{
     font-family: PT Sans;
     font-style: normal;
     font-weight: normal;
-    font-size: 16px;
-    line-height: 21px;
+    font-size: 2vh;
     /* identical to box height */
     color: #121212;
 
@@ -233,8 +250,7 @@ a {
     font-family: PT Sans;
     font-style: normal;
     font-weight: normal;
-    font-size: 12px;
-    line-height: 16px;
+    font-size: 1.5vh;
     /* identical to box height */
     color: #121212;
 }

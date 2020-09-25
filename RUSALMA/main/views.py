@@ -24,6 +24,7 @@ def blog(request):
     posts = Post.objects.order_by('-id')
     page = request.GET.get('page')
     paginator = Paginator(posts, 3)
+    tags = Tag.objects.all()
     crumb = 'Блог'
 
     try:
@@ -35,6 +36,7 @@ def blog(request):
 
     context = {
         'posts': posts,
-        'crumb': crumb
+        'crumb': crumb,
+        'tags': tags,
     }
     return render(request, 'main/blog.html', context)
