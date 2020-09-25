@@ -106,6 +106,11 @@ body {
     transform: translate(0, -30vh);
 }
 
+.info-item-top-web {
+    transition: transform 2s ease-in-out;
+    transform: translate(0, -40vh);
+}
+
 .info-item-bot {
     transition: transform 3s ease-in-out;
     transform: translate(0, 0);
@@ -152,40 +157,6 @@ body {
 .button:hover .item-link{
     color: #49E4DB;
 }
-
-footer {
-    height: 10%;
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-}
-.footer-logo>span {
-    font-size: 1vw;
-    opacity: 0.5;
-}
-
-.footer-logo {
-    margin: 0 0 20px 44px;
-}
-
-.socials {
-    margin: 0 44px 20px 0;
-}
-
-.svg-socials {
-    margin-left: 50px;
-}
-.svg-socials>path {
-    fill: white;
-    transition: fill 0.5s;
-}
-
-.svg-socials:hover path{
-    fill: #49E4DB;
-}
-
-
 
 @font-face {
     font-family: "PT-Sans";

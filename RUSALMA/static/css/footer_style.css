@@ -1,0 +1,39 @@
+footer {
+    height: 10%;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.footer-logo>span {
+    font-size: 1vw;
+    opacity: 0.5;
+}
+
+.footer-logo {
+    margin: 3vh 0 3vh 3vw;
+}
+
+.socials {
+    margin: 3vh 3vw 3vh 0;
+}
+
+.svg-socials {
+    margin-left: 50px;
+}
+.svg-socials>path {
+    fill: white;
+    transition: fill 0.5s;
+}
+
+.black>path {
+    fill: black;
+}
+
+.black>span {
+    color: black;
+}
+
+.svg-socials:hover path{
+    fill: #49E4DB;
+}

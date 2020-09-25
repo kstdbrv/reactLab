@@ -1,0 +1,113 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style-blog.css">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static '/css/header_style.css' %}">
+    <link rel="stylesheet" href="{% static '/css/footer_style.css' %}">
+    <link rel="stylesheet" href="{% static '/css/blog_style.css' %}">
+    <title>Блог</title>
+</head>
+<body>
+    {% include 'main/header.html' %}
+    <div class="wrapper">
+        <div class="preview">
+            <div class="preview-photo">
+                <div class="post-name">
+                    <span>{{ crumb }}</span>
+                </div>
+            </div>
+        </div>          
+        </div>
+      
+        <div class="category">
+            <div class="all">
+                <button class="btn-category"> <p>все</p> </button>
+                <button class="btn-category"><p>perfomance  marketing</p></button>
+                <button class="btn-category"><p>юзабилити</p></button>
+                <button class="btn-category"><p>RTB</p></button>
+                <button class="btn-category"><p>медийная реклама</p></button>
+                <button class="btn-category"><p>разработка чат-бота</p></button>
+                <button class="btn-category"><p>креатив</p></button>
+                <button class="btn-category"><p>контекстная реклама</p></button>
+                <button class="btn-category"><p>SEO</p></button>
+                <button class="btn-category"><p>продуктовый маркетинг</p></button>
+                <button class="btn-category"><p>видеореклама</p></button>
+                <button class="btn-category"><p>SMM</p></button>
+                <button class="btn-category"><p>мобильные приложения</p></button>
+                <button class="btn-category"><p>новости</p></button>
+                <button class="btn-category"><p>контент маркетинг</p></button>
+                <button class="btn-category"><p>мобильная реклама</p></button>
+                <button class="btn-category"><p>статегия</p></button>
+            </div>
+        </div>
+        <div class="blog">
+            <div class="posts infinite-container">
+                {% for post in posts %}
+                <div class="post infinite-item">
+                    <div class="img">
+                        <img src="image/blog-img.png" alt="">
+                    </div>
+                     <div class="info">
+                        <div class="data">
+                            <p class="day">{{ post.date_created }}</p>
+                            <p class="time">6 минут на прочтение</p>
+                        </div>
+                        <a class="title" href="{% url 'post' post.id %}">
+                            {{ post.title }}
+                        </a>
+                        <div class="text">
+                            <span>{{ post.subtitle}}</span>
+                        </div>
+                        <div class="pirson">
+                            <div class="ava">
+                                <img src="image/ava.png" alt="">
+                            </div>
+                            <div class="name">
+                                <h2>{{ post.author.name }}</h2>
+                                <p class="proff">
+                                    {{ post.author.position }}
+                                </p>
+                            </div>                          
+                        </div>   
+                     </div>                       
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    {% if posts.has_next %}
+    <a href="?page={{posts.next_page_number}}" class="infinite-more-link"></a>
+    {% endif %}
+    </div>
+    </div>
+   
+
+    
+    {% include 'main/footer.html' %}
+</body>
+<script src="{% static '/js/jquery-2.2.4.min.js' %}"></script>
+<script src="{% static '/js/jquery.waypoints.min.js' %}"></script>
+<script src="{% static '/js/infinite.min.js' %}"></script>
+<script>
+    var infinite = new Waypoint.Infinite({
+        element: $('.infinite-container')[0],
+        handler: function(direction) {
+
+        },
+        offset: 'bottom-in-view',
+
+        onBeforePageLoad: function () {
+            $('.spinner-border').show();
+        },
+        onAfterPageLoad: function () {
+            $('.spinner-border').hide();
+        }
+    });
+</script>
+<script src="{% static '/js/scripts.js' %}"></script>
+</html>

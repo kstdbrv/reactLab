@@ -1,7 +1,8 @@
 body {
+    width: 100vw;
     font-family: 'PT-Sans';
     margin: 0;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 ul {
@@ -17,6 +18,126 @@ a {
     fill: black;
 }
 
+.container {
+    min-height: 80%;
+}
+
+.preview {
+    width: 100%;
+    height: 80%;
+}
+
+.content {
+    margin-left: 5vh;
+    margin-bottom: 4vh;
+}
+
+.post-name {
+    display: flex;
+    align-items: center;
+}
+
+.post-name>span {
+    font-family: PT Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 7vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 3vh;
+    border-bottom: 1vh solid white;
+    
+    color: #FFFFFF;
+}
+
+
+.preview-photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: darkgrey;
+    height: 80vh;
+}
+
+.post-date {
+    margin-top: 2vh;
+    color: white;
+    font-size: 2.5vh;
+}
+
+.subtitle {
+    display: flex;
+    justify-content: center;
+    background-color: lightgray;
+    padding: 6vh;
+    font-size: 3vh;
+    margin-bottom: 5vh;
+}
+
+.subtitle-text {
+    width: 50%;
+    text-align: center;
+}
+
+.post-text {
+    width: 60%;
+}
+
+.post-text>h1 {
+    font-family: PT Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 7vh;
+    display: flex;
+    align-items: center;
+    padding-bottom: 1vh;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    border-bottom: 1vh solid skyblue; 
+    border-image: linear-gradient(to left, white 80%, black 50%, black 100%);
+    border-image-slice: 1;
+}
+
+.post-text>img {
+    max-width: 100%;
+}
+
+.author {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5vh;
+    background-color: #F4F4F4;
+}
+
+.author-info {
+    display: flex;
+    align-items: center;
+}
+
+.author-legacy {
+    margin-left: 2vh;
+}
+
+.author-photo {
+    height: 10vh;
+    width: 10vh;
+    background-color: darkgrey;
+    border-radius: 50%;
+}
+
+.author-position {
+    margin-top: 0.6vh;
+    font-size: 2vh;
+}
+
+footer {
+    background-color: #F4F4F4;
+;
+}
+
 @font-face {
     font-family: "PT-Sans";
     src: url("../fonts/PT-Sans/PTS55F.ttf") format("truetype");
@@ -28,4 +149,5 @@ a {
     font-family: "PT-Sans-Bold";
     src: url("../fonts/PT-Sans/PTS75F.ttf") format("truetype");
     font-weight: 600;
+    font-style: bold;
 }

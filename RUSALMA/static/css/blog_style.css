@@ -1,0 +1,271 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'PT-Sans';
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.preview {
+    width: 100%;
+    height: 80%;
+}
+
+.preview-photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: darkgrey;
+    height: 80vh;
+}
+
+.wrapper{
+    background: #F4F4F4;
+}
+
+.logo>a>svg>path {
+    fill: black;
+}
+
+/* intro */
+.header_intro .img{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;   
+    justify-items: center;
+    align-items: center;
+    background: url(image/intro1.png) no-repeat ;
+    background-size: cover;
+    height: 100%;
+}
+
+.intro_text{
+    font-family: PT Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 56px;
+    line-height: 72px;
+    text-align: center;
+    color: #FFFFFF;
+    border-bottom: 3px solid #fff;
+    padding-bottom: 1em;
+    margin-top: 6em;
+    margin-bottom: 4em;
+    width: 2.5em;
+}
+
+.border_bottom{
+    background: #FFFFFF;
+    width: 8.5em;
+    height: 0.3em;
+    margin-top: 3.5em;
+}
+
+
+
+/* category */
+.category{
+    background: #FBFBFB;
+    padding: 3em 0em;
+}
+.all{
+    
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+.btn-category{
+    background: #FFFFFF;
+    border: 1px solid #656565;
+    box-sizing: border-box;
+    margin: 1.65em 1em;
+    outline:none;
+    transition: 0.5s;
+
+}
+
+.btn-category:hover{
+    background: #27C4BA;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border: 1px solid rgba(0, 0, 0, 0);
+}
+
+.btn-category > p{
+    font-family: PT Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 21px;
+    padding: 1em 1.5em;
+    text-align: center;
+    color: #656565;
+}
+.btn-category > p:hover{
+    color: #fff;
+    transition: 0.5s;
+}
+
+/* blog */
+
+.blog{
+    background: #F4F4F4;
+}
+.posts{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 4vh;
+}
+
+
+.post {
+    width: 32%;
+    height: 70vh;
+    background: #FFFFFF;
+    margin-top: 2vh;
+}
+
+.post-name {
+    display: flex;
+    align-items: center;
+}
+
+.post-name>span {
+    font-family: PT Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 7vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 3vh;
+    border-bottom: 1vh solid white;
+    
+    color: #FFFFFF;
+}
+
+.info{
+    padding: 1em 1.7em;
+}
+.data{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.time{
+    font-family: PT Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    /* identical to box height */
+    text-align: center;
+    color: #656565;
+}
+.day{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    /* identical to box height */
+    text-align: center;
+    color: #656565;
+}
+
+.title{
+    display: block;
+    text-decoration: none;
+    font-family: PT Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 31px;
+    /* identical to box height */
+    color: #121212;
+    padding: 1em 0;
+
+}
+
+.text > span{
+    font-family: PT Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 21px;  
+    color: #121212;  
+    word-wrap: break-word; 
+}
+
+.text {
+    padding-bottom: 2em;   
+}
+
+.pirson{
+    display: flex;
+    flex-direction: row;
+}
+
+.ava{
+    padding: 2em 1em 0 0;
+}
+.name{
+    padding: 2.4em 1em 0 0;
+}
+.name > h2{
+    font-family: PT Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 21px;
+    /* identical to box height */
+    color: #121212;
+
+}
+.name > p{
+    font-family: PT Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    /* identical to box height */
+    color: #121212;
+}
+
+
+footer {
+    background-color: #F4F4F4;
+}
+
+.active {
+    font-size: 20px;
+}
+
+@font-face {
+    font-family: "PT-Sans";
+    src: url("../fonts/PT-Sans/PTS55F.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "PT-Sans-Bold";
+    src: url("../fonts/PT-Sans/PTS75F.ttf") format("truetype");
+    font-weight: 600;
+    font-style: bold;
+}
+
+@media screen and (max-width: 975px){
+    .posts{
+        display: flex;
+        justify-content: center;
+        
+    }
+}

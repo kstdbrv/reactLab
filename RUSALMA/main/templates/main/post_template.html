@@ -5,10 +5,47 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <link rel="stylesheet" href="{% static '/css/page_template_style.css' %}">
     <link rel="stylesheet" href="{% static '/css/header_style.css' %}">
+    <link rel="stylesheet" href="{% static '/css/footer_style.css' %}">
+    <link rel="stylesheet" href="{% static '/css/page_template_style.css' %}">
 </head>
 <body>
     {% include 'main/header.html' %}
+    <div class="container">
+        <div class="preview">
+            <div class="preview-photo">
+                <div class="post-name">
+                    <span>{{ post.title }}</span>
+                </div>
+                <div class="post-date">
+                    <span>{{ post.date_created }}</span>
+                </div>
+            </div>
+        </div>  
+        <div class="subtitle">
+            <div class="subtitle-text">
+                <span>{{ post.subtitle }}</span>
+            </div>
+    </div>
+        <div class="content"> 
+            <div class="post-text">
+                {{ post.content | safe }}
+            </div>
+        </div>
+
+        <div class="author">
+            <div class="author-info">
+                <div class="author-photo"></div>
+                <div class="author-legacy">
+                    <div class="author-name">{{ post.author.name }}</div>
+                    <div class="author-position">{{ post.author.position }}</div>
+                </div>
+            </div>
+            <div class="pub-date">
+                {{ post.date_created }}
+            </div>
+        </div>
+    </div>
+    {% include 'main/footer.html' %}
 </body>
 </html>

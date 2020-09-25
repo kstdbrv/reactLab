@@ -1,3 +1,5 @@
+
+
 <header>
     <div class="logo-wrap">
         <div class="logo">
@@ -13,10 +15,10 @@
             </svg></a>
         </div>
     </div>
-    {% if request.get_full_path == '/' %}
+    {% if request.path == '/' %}
     <nav>
         <ul class="navbar">
-            <li class="navbar-item"><a class="navbar-item-link" href="{% url 'post' %}"> блог</a></li>
+            <li class="navbar-item"><a class="navbar-item-link" href="{% url 'blog' %}"> блог</a></li>
             <li class="navbar-item"><a class="navbar-item-link" href="">портфолио</a>
                 <ul class="drop-ul">
                     <li class="drop-ul-item"><a href="" class="drop-item-link">интернет-<br>маркетинг</a></li>
@@ -35,10 +37,10 @@
             <li class="navbar-item"><a class="navbar-item-link" href="">контакты</a></li>
         </ul>
     </nav>
-    {% else %}
+    {% elif '/post/' in request.path or '/blog/' in request.path %}
     <div class="breadcrumb">
         <div class="bla">
-            <h1>hi</h1>
+            <h1><a href="">{{ crumb}}</a></h1>
         </div>
         
     </div>
