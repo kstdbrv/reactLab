@@ -2,6 +2,7 @@ from django.shortcuts import render
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 from django.views.generic.list import ListView
 
+from .filters import *
 from .models import *
 
 
@@ -22,9 +23,15 @@ def post(request, pk):
 
 def blog(request):
     posts = Post.objects.order_by('-id')
+    tags = Tag.objects.all()
+
+    myFilter = Filter(request.GET, queryset=posts)
+
+    posts = myFilter.qs
+
     page = request.GET.get('page')
     paginator = Paginator(posts, 3)
-    tags = Tag.objects.all()
+
     crumb = 'Блог'
 
     try:
@@ -38,5 +45,6 @@ def blog(request):
         'posts': posts,
         'crumb': crumb,
         'tags': tags,
+        'filter': myFilter,
     }
     return render(request, 'main/blog.html', context)
