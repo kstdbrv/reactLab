@@ -22,10 +22,9 @@ def post(request, pk):
 
 
 def blog(request):
-    posts = Post.objects.order_by('-id')
     tags = Tag.objects.all()
 
-    myFilter = Filter(request.GET, queryset=posts)
+    myFilter = Filter(request.GET, queryset=Post.objects.order_by('-id'))
 
     posts = myFilter.qs
 
