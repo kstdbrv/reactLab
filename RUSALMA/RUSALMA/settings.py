@@ -13,10 +13,19 @@ https://docs.djangoproject.com/en/3.1/ref/settings/
 from pathlib import Path
 import os
 
+
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
-from .config import *
 
 BASE_DIR = Path(__file__).resolve().parent.parent
+
+try:
+    from .config import APP_KEY
+except ImportError:
+    from django.utils.crypto import get_random_string
+    APP_KEY = get_random_string(50, 'abcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*(-_=+)')
+    with open(os.path.join(BASE_DIR, 'RUSALMA', 'config.py'), 'w') as key_file:
+        key_file.write("APP_KEY = '{key}'".format(key=APP_KEY))
 
 
 # Quick-start development settings - unsuitable for production

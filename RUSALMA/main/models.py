@@ -33,7 +33,7 @@ class Post(models.Model):
     subtitle = models.CharField(max_length=255, null=True, verbose_name='Подзаголовок')
     date_created = models.DateTimeField(auto_now_add=True, verbose_name='Дата публикации')
     content = RichTextField(null=True, blank=True, verbose_name='Текст публикации')
-    author = models.ForeignKey(Author, null=True, blank=True, on_delete=models.SET_NULL)
+    author = models.ForeignKey(Author, null=True, blank=True, on_delete=models.SET_NULL,)
     tags = models.ManyToManyField(Tag, blank=True)
 
     def __str__(self):

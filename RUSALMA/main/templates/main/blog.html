@@ -5,24 +5,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style-blog.css">
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{% static '/css/header_style.css' %}">
     <link rel="stylesheet" href="{% static '/css/footer_style.css' %}">
     <link rel="stylesheet" href="{% static '/css/blog_style.css' %}">
-    <title>Блог</title>
+    <link rel="stylesheet" href="{% static '/css/preview_style.css' %}">
+    <title>Блог</title> 
 </head>
 <body>
     {% include 'main/header.html' %}
     <div class="wrapper">
-        <div class="preview">
-            <div class="preview-photo">
-                <div class="post-name">
-                    <span>{{ crumb }}</span>
-                </div>
-            </div>
-        </div>          
+        {% include 'main/preview.html' %}         
         </div>
         <div class="search">
             <form method="GET">
@@ -59,13 +53,15 @@
                             <span>{{ post.subtitle}}</span>
                         </div>
                         <div class="pirson">
-                            <div class="ava" ></div>
+                            {% if post.author != None %}
+                            <div class="ava" style="background-image: url({{ post.author.photo.url }})"></div>
                             <div class="name">
                                 <h2>{{ post.author.name }}</h2>
                                 <p class="proff">
                                     {{ post.author.position }}
                                 </p>
-                            </div>                          
+                            </div>    
+                            {% endif %}                      
                         </div>   
                      </div>                       
                 </div>

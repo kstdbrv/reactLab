@@ -37,12 +37,37 @@
             <li class="navbar-item"><a class="navbar-item-link" href="">контакты</a></li>
         </ul>
     </nav>
-    {% elif '/post/' in request.path or '/blog/' in request.path %}
+    {% elif '/blog/' in request.path %}
     <div class="breadcrumb">
         <div class="bla">
-            <h1><a href="">{{ crumb}}</a></h1>
+            <span>ᐳ</span>
+            <h1><a href="{% url 'blog' %}">блог</a></h1>
         </div>
-        
+    {% elif '/post/' in request.path %}
+    <div class="breadcrumb">
+        <div class="bla">
+            <span>ᐳ</span>
+            <h1><a href="{% url 'blog' %}">блог</a></h1>
+            <span>ᐳ</span>
+            <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
+        </div>
+    </div>
+    {% elif '/about/' in request.path %}
+    <div class="breadcrumb">
+        <div class="bla">
+            <span>ᐳ</span>
+            <h1><a href="{% url 'about' %}">о нас</a></h1>
+            <span>ᐳ</span>
+        </div>
+    </div>
+    {% elif '/usability/' in request.path %}
+    <div class="breadcrumb">
+        <div class="bla">
+            <span>ᐳ</span>
+            <h1><a href="">интеренет-маркетинг</a></h1>
+            <span>ᐳ</span>
+            <h1><a href="{% url 'usability' %}">юзабилити</a></h1>
+        </div>
     </div>
     {% endif %}
 </header>

@@ -1,3 +1,4 @@
+
 header {
     height: 10%;
     display: flex;
@@ -75,3 +76,13 @@ h1 {
     margin: 0;
     font-size: 3vh;
 }
+
+.bla {
+    display: flex;
+}
+
+.bla>h1, .bla>span {
+    margin-right: 4vh;
+    display: flex;
+    align-items: center;
+} 

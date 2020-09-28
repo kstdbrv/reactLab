@@ -38,3 +38,16 @@ let cords = ['scrollX','scrollY'];
 window.addEventListener('unload', e => cords.forEach(cord => localStorage[cord] = window[cord]));
 // Прокручиваем страницу к scrollX и scrollY из localStorage (либо 0,0 если там еще ничего нет)
 window.scroll(...cords.map(cord => localStorage[cord]));
+
+
+jQuery(document).ready(function($){
+    $('.slider-nav').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        asNavFor: '.slider-for',
+        dots: true,
+        focusOnSelect: true
+      });
+     
+  });
+

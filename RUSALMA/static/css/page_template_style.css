@@ -12,6 +12,7 @@ ul {
 
 a {
     text-decoration: none;
+    color: black;
 }
 
 .logo>a>svg>path {
@@ -35,7 +36,10 @@ a {
 .post-name {
     display: flex;
     align-items: center;
+    z-index: 3;
 }
+
+
 
 .post-name>span {
     font-family: PT Sans;
@@ -60,19 +64,27 @@ a {
     background-color: darkgrey;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 80vh;
+    height: 90vh;
+}
+
+.preview-multiply {
+    position: absolute;
+    height: 90vh;
+    width: 100%;
+    background: rgba(8,18,18,0.4);
 }
 
 .post-date {
     margin-top: 2vh;
     color: white;
     font-size: 2.5vh;
+    z-index: 3;
 }
 
 .subtitle {
     display: flex;
     justify-content: center;
-    background-color: lightgray;
+    background-color: #F4F4F4;
     padding: 6vh;
     font-size: 3vh;
     margin-bottom: 5vh;
@@ -127,6 +139,7 @@ a {
     height: 10vh;
     width: 10vh;
     background-color: darkgrey;
+    background-size: cover;
     border-radius: 50%;
 }
 

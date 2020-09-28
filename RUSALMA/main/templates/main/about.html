@@ -1,0 +1,139 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <link rel="stylesheet" href="{% static '/css/about_style.css' %}">
+    <link rel="stylesheet" href="{% static '/css/header_style.css' %}">
+    <link rel="stylesheet" href="{% static '/css/footer_style.css' %}">
+    <link rel="stylesheet" href="{% static '/css/preview_style.css' %}">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <title>Юзабилити</title>
+</head>
+<body>
+    {% include 'main/header.html' %}
+    {% include 'main/preview.html' %}
+    <div class="numbers">
+       <div class="number">
+           <span class="num">20</span>
+           <p>Лет на рынке рекламы</p>
+       </div>
+       <div class="number">
+        <span class="num">650</span>
+        <p>Рекламных кампаний</p>
+    </div>
+    <div class="number">
+        <span class="num">300</span>
+        <p>Приложений и сайтов</p>
+    </div>
+    <div class="number">
+        <span class="num">320</span>
+        <p>Обучающих мероприятий</p>
+    </div>
+    <div class="number">
+        <span class="num">48</span>
+        <p>Сертифицированных специалистов Яндекс и Google</p>
+    </div>
+    <div class="number">
+        <span class="num">43</span>
+        <p>% клиентов приходят к нам по рекомендации</p>
+    </div>
+    </div>
+    <div class="about_team">
+        <h2>о команде</h2>
+        <div class="underscore"></div>
+        <p>Мы комплексно решаем стоящие перед нами задачи, опираясь на многолетний опыт 
+            и применяя новейшие digital-технологии, а созданный нами центр исследований 
+            и аналитики позволяет опережать рынок на несколько шагов
+            </p>
+    </div>
+   <div class="carousel">
+        <div class="slider center">
+            {% for member in team %}
+            <div class="slide" {% if member.photo.url is not None %} style="background-image: url({{ member.photo.url }});"{% endif %}>
+                <div class="member-info">
+                    <span class="member-name">{{ member.name }}</span>
+                    <span class="member-position">{{ member.position }}</span>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+        
+   </div>
+   <div class="online_community">
+       <div class="com-multiply"></div>
+       <h2>помогаем развивать интернет-содружество</h2>
+       <div class="underscore2"></div>
+       <h3> Мы уверены, что совместная работа ускоряет и улучшает результат.
+            Вместе мы  расширим возможности, поможем развитию отрасли,
+             создадим сильную группу влияния и мощное информационное пространство.
+       </h3>
+       <p>Наша работа в проф сообществах — это возможность! Мы используем ее,
+            чтобы получать новые знания и делиться своими навыками с другими,
+             быть в курсе новинок и событий отрасли, чтобы всегда быть готовыми к лучшим переменам
+        </p>
+   </div>
+   <div class="news_digital">
+       <h1>Свежие статьи из мира Digital</h1>
+       <div class="underscore3"></div>
+   </div>
+   <div class="blog">
+    <div class="posts infinite-container">
+        {% for post in posts %}
+        <div class="post infinite-item">
+            <div class="img" {% if post.image.url is not None %} style="background-image: url({{ post.image.url }})" {% endif %}></div>
+             <div class="info">
+                <div class="data">
+                    <p class="day">{{ post.date_created }}</p>
+                    <p class="time">6 минут на прочтение</p>
+                </div>
+                <a class="title" href="{% url 'post' post.id %}">
+                    {{ post.title }}
+                </a>
+                <div class="text">
+                    <span>{{ post.subtitle}}</span>
+                </div>
+                <div class="pirson">
+                    {% if post.author != None %}
+                    <div class="ava" style="background-image: url({{ post.author.photo.url }})"></div>
+                    <div class="name">
+                        <h2>{{ post.author.name }}</h2>
+                        <p class="proff">
+                            {{ post.author.position }}
+                        </p>
+                    </div>    
+                    {% endif %}                      
+                </div>   
+             </div>                       
+        </div>
+        {% endfor %}
+    </div>
+</div>
+    {% if posts.has_next %}
+    <a href="?page={{posts.next_page_number}}" class="infinite-more-link"></a>
+    {% endif %}
+    {% include 'main/footer.html' %}
+
+<script type="text/javascript" src="{% static '/js/jquery-2.2.4.min.js' %}"></script>
+<script type="text/javascript" src="{% static '/js/jquery.waypoints.min.js' %}"></script>
+<script type="text/javascript" src="{% static '/js/infinite.min.js' %}"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script>
+    var infinite = new Waypoint.Infinite({
+        element: $('.infinite-container')[0],
+        handler: function(direction) {
+
+        },
+        offset: 'bottom-in-view'
+    });
+</script>
+<script src="{% static 'js/slider.js' %}" ></script>
+</body>
+
+</html>

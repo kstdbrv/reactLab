@@ -23,7 +23,7 @@ def post(request, pk):
 
 def blog(request):
     tags = Tag.objects.all()
-
+    image = '../images/backgrounds/blog.png'
     myFilter = Filter(request.GET, queryset=Post.objects.order_by('-id'))
 
     posts = myFilter.qs
@@ -45,5 +45,50 @@ def blog(request):
         'crumb': crumb,
         'tags': tags,
         'filter': myFilter,
+        'image': image,
     }
     return render(request, 'main/blog.html', context)
+
+
+def about(request):
+    crumb = 'о нас'
+    image = '../images/backgrounds/about.png'
+
+    team = Author.objects.all()
+    posts = Post.objects.order_by('-id')
+
+    print()
+
+    page = request.GET.get('page')
+    paginator = Paginator(posts, 3)
+
+    try:
+        posts = paginator.page(page)
+    except PageNotAnInteger:
+        posts = paginator.page(1)
+    except EmptyPage:
+        posts = paginator.page(paginator.num_pages)
+
+    context = {
+        'posts': posts,
+        'team': team,
+        'image': image,
+        'crumb': crumb,
+
+    }
+    return render(request, 'main/about.html', context)
+
+
+def chat_bots(request):
+    return  render(request, 'main/chat-bot.html')
+
+
+def usability(request):
+    image = '../images/backgrounds/usability.png'
+    crumb = 'юзабилити-аудит сайта'
+
+    context = {
+        'crumb': crumb,
+        'image': image,
+    }
+    return render(request, 'main/usability.html', context)

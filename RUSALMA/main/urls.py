@@ -6,4 +6,7 @@ urlpatterns = [
     path('', views.index, name='index'),
     path('post/<int:pk>', views.post, name='post'),
     path('blog/', views.blog, name='blog'),
+    path('about/', views.about, name='about'),
+    path('chat-bots/', views.chat_bots, name='chat-bots'),
+    path('usability/', views.usability, name='usability'),
 ]
