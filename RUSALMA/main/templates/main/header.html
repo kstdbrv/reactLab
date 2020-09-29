@@ -1,5 +1,4 @@
 
-
 <header>
     <div class="logo-wrap">
         <div class="logo">
@@ -27,7 +26,7 @@
             </li>
             <li class="navbar-item"><a class="navbar-item-link" href="">компания</a>
                 <ul class="drop-ul">
-                    <li class="drop-ul-item"><a href="" class="drop-item-link">об агенстве</a></li>
+                    <li class="drop-ul-item"><a href="{% url 'about' %}" class="drop-item-link">об агенстве</a></li>
                     <li class="drop-ul-item"><a href="" class="drop-item-link">мероприятия</a></li>
                     <li class="drop-ul-item"><a href="" class="drop-item-link">карьера</a></li>
                     <li class="drop-ul-item"><a href="" class="drop-item-link">вакансии</a></li>
@@ -37,37 +36,31 @@
             <li class="navbar-item"><a class="navbar-item-link" href="">контакты</a></li>
         </ul>
     </nav>
-    {% elif '/blog/' in request.path %}
-    <div class="breadcrumb">
-        <div class="bla">
-            <span>ᐳ</span>
-            <h1><a href="{% url 'blog' %}">блог</a></h1>
-        </div>
     {% elif '/post/' in request.path %}
     <div class="breadcrumb">
         <div class="bla">
             <span>ᐳ</span>
             <h1><a href="{% url 'blog' %}">блог</a></h1>
             <span>ᐳ</span>
-            <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
+            <h1><a href="{{ request.get_absilute_path }}">{{ post.title }}</a></h1>
         </div>
-    </div>
-    {% elif '/about/' in request.path %}
-    <div class="breadcrumb">
-        <div class="bla">
-            <span>ᐳ</span>
-            <h1><a href="{% url 'about' %}">о нас</a></h1>
-            <span>ᐳ</span>
-        </div>
-    </div>
     {% elif '/usability/' in request.path %}
     <div class="breadcrumb">
         <div class="bla">
             <span>ᐳ</span>
             <h1><a href="">интеренет-маркетинг</a></h1>
             <span>ᐳ</span>
-            <h1><a href="{% url 'usability' %}">юзабилити</a></h1>
+            <h1><a href="{{ request.get_absilute_path }}">юзабилити</a></h1>
         </div>
     </div>
+    </div>
+    {% else %}
+    <div class="breadcrumb">
+        <div class="bla">
+            <span>ᐳ</span>
+            <h1><a href="{{ request.get_absilute_path }}">{{ crumb }}</a></h1>
+        </div>
+    </div>
+
     {% endif %}
 </header>

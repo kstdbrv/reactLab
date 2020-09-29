@@ -1,20 +1,16 @@
+{% extends 'main/main.html' %}
+
 {% load static %}
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-    <link rel="stylesheet" href="{% static '/css/header_style.css' %}">
-    <link rel="stylesheet" href="{% static '/css/footer_style.css' %}">
+    {% block style %}
     <link rel="stylesheet" href="{% static '/css/page_template_style.css' %}">
-</head>
-<body>
-    {% include 'main/header.html' %}
+    {% endblock %}
+
+{% block content %}
     <div class="container">
         <div class="preview">
             <div class="preview-photo" {% if post.image.url is not None %} style="background-image: url({{ post.image.url }})" {% endif %}">
-                <div class="preview-multiply"></div>
+                <div class="preview-opacity"></div>
                 <div class="post-name">
                     <span>{{ post.title }}</span>
                 </div>
@@ -47,6 +43,4 @@
             </div>
         </div>
     </div>
-    {% include 'main/footer.html' %}
-</body>
-</html>
+{% endblock %}

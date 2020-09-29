@@ -67,7 +67,7 @@ a {
     height: 90vh;
 }
 
-.preview-multiply {
+.preview-opacity {
     position: absolute;
     height: 90vh;
     width: 100%;
@@ -139,7 +139,7 @@ a {
     height: 10vh;
     width: 10vh;
     background-color: darkgrey;
-    background-size: cover;
+    background-size: contain;
     border-radius: 50%;
 }
 

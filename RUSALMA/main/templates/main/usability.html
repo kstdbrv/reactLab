@@ -1,56 +1,54 @@
+{% extends 'main/main.html' %}
 {% load static %}
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{% static '/css/header_style.css' %}">
-    <link rel="stylesheet" href="{% static '/css/footer_style.css' %}">
-    <link rel="stylesheet" href="{% static '/css/preview_style.css' %}">
+    {% block style %}
     <link rel="stylesheet" href="{% static '/css/usability_style.css' %}">
-    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
-    <title>Юзабилити</title>
-</head>
-<body>
-    {% include 'main/header.html' %}
+    {% endblock %}
+{% block content %}
     {% include 'main/preview.html' %}
+    <div class="short-description">
+        <span>Поднимем эффективность любого сайта, устраним ошибки и слабые места, предоставим 
+            четкие рекомендации для роста конверсии</span>
+    </div>
     <div class="discription">
         <h2>«генеральная уборка» вашего сайта</h2>
-        <div class="border-black"></div>
+        <div class="border-white"></div>
         <p>Информация, не отвечающая ожиданиям, сложная структура сайта и неудобная навигация вынуждают пользователей его покинуть.
              Мы проанализируем лендинги, проведем тестирования, выявим причины, из-за которых вы теряете клиентов
             </p>
-        <h3>Usability-аудит сайта включает несколько этапов, которые можно комбинировать:</h3>
+
     </div>
     <div class="images">
-        <div class="stat">
-            <img src="image/stat.png" alt="">
-            <p>анализ статистики</p>
+        <h3>Usability-аудит сайта включает несколько этапов, которые можно комбинировать:</h3>
+        <div class="card-block">
+            <div class="card">
+                <object data="{% static 'images/stat.svg' %}" type="image/svg+xml"></object>
+                <p>анализ статистики</p>
+            </div>
+            <div class="card">
+                <object data="{% static 'images/prov.svg' %}" type="image/svg+xml"></object>
+                <p>проверка актуальности контента</p>
+            </div>  
+           <div class="card">
+                <object data="{% static 'images/struct.svg' %}" type="image/svg+xml"></object>
+                <p>структуры сайта и всех его элементов</p>
+           </div>
+            <div class="card">
+                <object data="{% static 'images/lend.svg' %}" type="image/svg+xml"></object>
+                <p>отслеживание взглядов 
+                    и разработка лендингов
+                </p>
+            </div>  
         </div>
-        <div class="prov">
-            <img src="image/prov.png" alt="">
-            <p>проверка актуальности контента</p>
-        </div>  
-       <div class="struct">
-        <img src="image/struct.png" alt="">
-        <p>структуры сайта и всех его элементов</p>
-       </div>
-        <div class="lend">
-            <img src="image/lend.png" alt="">
-            <p>отслеживание взглядов 
-                и разработка лендингов
-            </p>
-        </div>       
+        <div class="section_seo">
+            <div class="seo">
+                <p>Параллельно с оптимизацией конверсий затрагивается и тема SEO: наиболее подходящий ответ на запрос пользователя поднимает сайт 
+                    в поисковых системах, а значит, приводит 
+                    к увеличению объема трафика
+                </p>
+                <object data="{% static 'images/seo.svg' %}" type="image/svg+xml"></object>
+            </div>
+
     </div>
-    <div class="section_seo">
-        <div class="seo">
-            <p>Параллельно с оптимизацией конверсий затрагивается и тема SEO: наиболее подходящий ответ на запрос пользователя поднимает сайт 
-                в поисковых системах, а значит, приводит 
-                к увеличению объема трафика
-            </p>
-            <img src="image/seo.png" alt="">
-        </div>
         <div class="who_work">
             <h2>как мы это делаем</h2>
             <div class="border-black"></div>
@@ -65,6 +63,4 @@
             <h2>На всех этапах работы конечные цели для нас актуальны, мы движемся к ним и подстраиваться под изменения</h2>
         </div>
     </div>
-   {% include 'main/footer.html' %}
-</body>
-</html>
+{% endblock %}

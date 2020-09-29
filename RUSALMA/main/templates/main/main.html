@@ -1,0 +1,26 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    {% block style %}
+    {% endblock %}
+    <link rel="stylesheet" href="{% static '/css/header_style.css' %}">
+    <link rel="stylesheet" href="{% static '/css/footer_style.css' %}">
+    <link rel="stylesheet" href="{% static '/css/preview_style.css' %}">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <title>{{ crumb }}</title>
+</head>
+<body>
+    {% include 'main/header.html' %}
+    {% block content %}
+    {% endblock %}
+    {% include 'main/footer.html' %}
+</body>
+</html>

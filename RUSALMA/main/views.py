@@ -31,7 +31,7 @@ def blog(request):
     page = request.GET.get('page')
     paginator = Paginator(posts, 3)
 
-    crumb = 'Блог'
+    crumb = 'блог'
 
     try:
         posts = paginator.page(page)
