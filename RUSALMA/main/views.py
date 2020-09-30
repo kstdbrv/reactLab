@@ -1,6 +1,5 @@
 from django.shortcuts import render
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
-from django.views.generic.list import ListView
 
 from .filters import *
 from .models import *
@@ -24,8 +23,8 @@ def post(request, pk):
 def blog(request):
     tags = Tag.objects.all()
     image = '../images/backgrounds/blog.png'
-    myFilter = Filter(request.GET, queryset=Post.objects.order_by('-id'))
 
+    myFilter = Filter(request.GET, queryset=Post.objects.order_by('-id'))
     posts = myFilter.qs
 
     page = request.GET.get('page')
@@ -56,8 +55,6 @@ def about(request):
 
     team = Author.objects.all()
     posts = Post.objects.order_by('-id')
-
-    print()
 
     page = request.GET.get('page')
     paginator = Paginator(posts, 3)
@@ -92,3 +89,51 @@ def usability(request):
         'image': image,
     }
     return render(request, 'main/usability.html', context)
+
+
+def internet_portfolio(request):
+    tags = Tag.objects.all()
+    portfolio = Portfolio.objects.order_by('-id').filter(direction='интернет-маркетинг')
+
+    myFilter = Filter(request.GET, queryset=portfolio)
+    portfolio = myFilter.qs
+
+    crumb = 'интернет-маркетинг'
+
+    context = {
+        'crumb': crumb,
+        'portfolio': portfolio,
+        'tags': tags,
+    }
+    return render(request, 'main/portfolio.html', context)
+
+
+def web_development_portfolio(request):
+    tags = Tag.objects.all()
+    portfolio = Portfolio.objects.order_by('-id').filter(direction='веб-разработка')
+
+    myFilter = Filter(request.GET, queryset=portfolio)
+    portfolio = myFilter.qs
+
+    crumb = 'веб-разработка'
+
+    context = {
+        'crumb': crumb,
+        'portfolio': portfolio,
+        'tags': tags,
+    }
+    return render(request, 'main/portfolio.html', context)
+
+
+def internet_marketing(request):
+    image = '../images/backgrounds/internet-marketing/bg-image.png'
+    portfolio = Portfolio.objects.order_by('-id').filter(direction='интернет-маркетинг')[:6]
+
+    crumb = 'интернет-маркетинг'
+
+    context = {
+        'crumb': crumb,
+        'image': image,
+        'portfolio': portfolio,
+    }
+    return render(request, 'main/internet-marketing.html', context)

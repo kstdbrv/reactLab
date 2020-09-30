@@ -1,0 +1,313 @@
+{% extends 'main/main.html' %}
+{% load static %}
+
+  {% block style %}
+  <link rel="stylesheet" href="{% static '/css/internet-marketing/normalize.css' %}">
+  <link rel="stylesheet" href="{% static '/css/internet-marketing/style.css' %}">
+  <link rel="stylesheet" href="{% static '/css/internet-marketing/services.css' %}">
+  <link rel="stylesheet" href="{% static '/css/internet-marketing/about.css' %}">
+  <link rel="stylesheet" href="{% static '/css/internet-marketing/payment.css' %}">
+  <link rel="stylesheet" href="{% static '/css/internet-marketing/technologes.css' %}">
+  <link rel="stylesheet" href="{% static '/css/internet-marketing/portfolio.css' %}">
+  <link rel="stylesheet" href="{% static '/css/internet-marketing/skills.css' %}">
+  <link rel="stylesheet" href="{% static '/css/internet-marketing/strategy.css' %}">
+  <link rel="stylesheet" href="{% static '/css/internet-marketing/media.css' %}">
+  {% endblock %}
+  {% block content %}
+  {% include 'main/preview.html' %}
+  <div class="services">
+    <div class="container">
+     <div class="services__inner">
+      <div class="services__question">
+        что мы делаем?
+      </div>
+      <div class="services__question-line"></div>
+      <div class="services__title">
+        комплексная разработка
+      </div>
+      <div class="services__title-line"></div>
+      <div class="services__text">
+        В пространстве нашей экосистемы вам не нужно беспокоиться за продвижение своего бизнеса. 
+        Вы обращаетесь — мы заботимся.
+      </div>
+      <div class="services__items">
+        <div class="services__item">
+          <div class="services__item-title">
+            размещение рекламы в интернете
+          </div>
+          <div class="services__item-line"></div>
+          <ul class="services__item-text text-item">
+            <li class="text-item__list">
+              <p>- контекстная реклама</p>
+            </li>
+            <li class="text-item__list">
+              <p>- таргетированная реклама</p>
+            </li>
+            <li class="text-item__list">
+              <p>- мобильная реклама</p>
+            </li>
+            <li class="text-item__list">
+              <p>- медийная реклама, RTB Programmatic</p>
+            </li>
+            <li class="text-item__list">
+              <p>- продвижение мобильного приложения</p>
+            </li>
+          </ul>
+        </div>
+        <div class="services__item">
+          <div class="services__item-title">
+            оптимизация сайта и трафика
+          </div>
+          <div class="services__item-line"></div>
+          <ul class="services__item-text text-item">
+            <li class="text-item__list">
+              <p>- SEO: поисковая оптимизация и контент-маркетинг</p>
+            </li>
+            <li class="text-item__list">
+              <p>- таргетированная реклама</p>
+            </li>
+            <li class="text-item__list">
+              <p>- мобильная реклама</p>
+            </li>
+            <li class="text-item__list">
+              <p>- юзабилити-аудит</p>
+            </li>
+            <li class="text-item__list">
+              <p>- айтрекинг</p>
+            </li>
+          </ul>
+        </div>
+        <div class="services__item">
+          <div class="services__item-title">
+            креатив и продвижение в социальных медиа
+          </div>
+          <div class="services__item-line"></div>
+          <ul class="services__item-text text-item">
+            <li class="text-item__list">
+              <p>- разработка креативных концепций</p>
+            </li>
+            <li class="text-item__list">
+              <p>- SMM сопровождение</p>
+            </li>
+            <li class="text-item__list">
+              <p>- работа с репутацией: SERM, PR</p>
+            </li>
+            <li class="text-item__list">
+              <p>- видеопроизводство</p>
+            </li>
+          </ul>
+        </div>
+        <div class="services__item">
+          <div class="services__item-title services__item-title_last">
+            стратегия и аналитика
+          </div>
+          <div class="services__item-line"></div>
+          <ul class="services__item-text text-item">
+            <li class="text-item__list">
+              <p>- анализ конкурентов и целевой аудитории</p>
+            </li>
+            <li class="text-item__list">
+              <p>- стратегическое планирование</p>
+            </li>
+            <li class="text-item__list">
+              <p>- настройка аналитики</p>
+            </li>
+            <li class="text-item__list">
+              <p>- продвижение B2B компаний в интернете</p>
+            </li>
+          </ul>
+        </div>
+        </div>
+     </div>
+    </div>
+  </div>
+
+  <div class="about">
+    <div class="container">
+      <div class="about__title">
+        наш подход
+      </div>
+      <div class="about__title-line"></div>
+      <div class="about__text">
+        Мы сторонники личных оффлайн встреч, готовы пригласить на экскурсию в компанию, 
+        провести интервью, чтобы лучше вникнуть в процессы
+      </div>
+    </div>
+  </div>
+
+  <div class="payment">
+   <div class="container">
+    <div class="payment__inner">
+      <div class="payment__statment">
+        CPA
+      </div>
+      <div class="payment__statment-line"></div>
+      <div class="payment__title">
+        оплата за целевое действие
+      </div>
+      <div class="payment__title-line"></div>
+      <div class="payment__text">
+        Вы хотели бы больше потенциальных клиентов, 
+        совершающих целевые действия на сайте? 
+        Предлагаем вам идеальное решение без лишних затрат: 
+        кампания по продвижению с оплатой только за лид или 
+        действие - CPA-модель (англ. cost-per-action) 
+        комплексного продвижения.
+      </div>
+      <a class="payment__more" href="#">
+        Узнать больше об оплате за входящие сообщения
+      </a>
+    </div>
+   </div>
+  </div>
+
+  <div class="strategy">
+   <div class="strategy__title">
+    стратегия
+   </div>
+   <div class="strategy__content content-strategy">
+    <div class="content-strategy__title">
+      нас выбирают лучшие
+    </div>
+    <div class="content-strategy__title-line"></div>
+     <div class="content-strategy__box">
+      <div class="content-strategy__left left-strategy">
+        <ul class="left-strategy__list">
+          <li class="left-strategy__item">
+            <p class="left-strategy__text">
+              Все услуги от разработки стратегии до наполнения
+               текстом выполняем самостоятельно, 
+               не обращаясь к посредникам 
+            </p>
+          </li>
+          <li class="left-strategy__item">
+            <p class="left-strategy__text">
+              Нам понадобиться меньше 5 дней,
+              чтобы разработать стратегию, 
+              которая станет базой для дальнейшей работы
+            </p>
+          </li>
+          <li class="left-strategy__item">
+            <p class="left-strategy__text">
+              Мы не гости на мероприятиях и конференциях, 
+              а участники выступлений. Мы преподаем на курсах, 
+              потому что любим свою работу и готовы делиться навыками.
+            </p>
+          </li>
+          <li class="left-strategy__item">
+            <p class="left-strategy__text">
+              Работаем с бюджетом от 40 000
+              до миллионов рублей в месяц. 
+            </p>
+          </li>
+        </ul>
+      </div>
+      <div class="content-strategy__right right-strategy">
+        <ul class="right-strategy__list">
+          <li class="right-strategy__item">
+            <p class="right-strategy__text">
+              Ценим и экономим ваше время, работаем быстро и успешно
+            </p>
+          </li>
+          <li class="right-strategy__item">
+            <p class="right-strategy__text">
+              Мы понимаем бизнес изнутри, ведь наша команда
+              может похвастаться специалистами с опытом
+              работы на стороне клиента 
+            </p>
+          </li>
+          <li class="right-strategy__item">
+            <p class="right-strategy__text">
+              Готовы продвигать товары и услуги любой сложности 
+              и в различных отраслях: федеральные банки, промышленные, 
+              торговые и сервисные компании, компании в сфере 
+              недвижимости, интернет-магазины, клиники и другие.
+            </p>
+          </li>
+          <li class="right-strategy__item">
+            <p class="right-strategy__text">
+              Запустили сотни рекламных кампаний 
+              в сегментах B2C и B2B. 
+            </p>
+          </li>
+        </ul>
+      </div>
+     </div>
+   </div>
+  </div>
+
+  <div class="technologes">
+    <div class="container">
+    <div class="technologes__inner">
+      <div class="technologs__statment">
+        технологии
+      </div>
+      <div class="technologes__statment-line"></div>
+      <div class="technologes__title">
+        алгоритмы эффективности
+      </div>
+      <div class="technologes__title-line"></div>
+      <div class="technologes__text">
+        <p>Мы не обращаемся к посредникам для выполнения
+           каких-либо услуг: от планирования стратегии до
+            составления текстов.
+        </p>
+        <p>Поэтому время на решение задач не растрачивается
+           длительными согласованиями, что значительно
+            экономит нервы и время наших клиентов.
+        </p>
+        <p>Например, нам понадобиться меньше 5 дней,
+           чтобы разработать стратегию, которая станет
+            базой нашей дальнейшей работы
+        </p>
+      </div>
+    </div>
+    </div>
+  </div>
+
+  <div class="skills">
+    <div class="container">
+      <div class="skills__statment">
+       профессионализм
+      </div>
+      <div class="skills__statment-line"></div>
+      <div class="skills__title">
+       подтверждение экспертности
+      </div>
+      <div class="skills__title-line"></div>
+      <div class="skills__text">
+        Наши специалисты имеют опыт работы на стороне клиента. 
+        В команде есть ребята, которые продавали бетон, 
+        кто-то занимался маркетингом для автомобильных салонов, 
+        а кто-то был руководителем по SEO-продвижению. 
+        Мы понимаем бизнес и принцип его работы изнутри. 
+        Завсегдатаи профильных конференций и спикеры курсов. 
+        Мы искренне любим своё дело и хотим делиться
+        знаниями и навыками.
+      </div>
+    </div>
+  </div>
+
+  <div class="portfolio-main">
+    <div class="portfolio-main__title">
+      наши работы
+    </div>
+    <div class="portfolio-main__title-line"></div>
+    <div class="portfolio">
+      <div class="content"> 
+          {% for holder in portfolio %}                        
+          <div class="holder"  {% if holder.image.url is not None %} style="background-image: url({{ holder.image.url }})" {% endif %}>
+              <div class="block">
+                  <p>{{ holder.title }}</p>
+                  <a href="{{ holder.link }}">Подробнее</a>
+              </div>
+          </div>  
+          {% endfor %}                  
+      </div>      
+    </div>
+    <a class="portfolio__more" href="{% url 'internet_portfolio' %}">
+      Смотреть больше работ
+    </a>
+    <button class="portfolio__btn">заказать проект</button>
+  </div>
+{% endblock %}

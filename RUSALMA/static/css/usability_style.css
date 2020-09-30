@@ -90,7 +90,7 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: ;
+    width: 100%;
 }
  img{
     background-color: lightgrey;
@@ -201,7 +201,7 @@ a {
     min-height: 85vh;
     background-image: 
     linear-gradient(to top, rgba(18, 18, 18, 0.5), rgb(18, 18, 18, 0.5)),
-    url(../images/backgrounds/usability_content2.png);
+    url(../images/backgrounds/usability_content2.png);  
     background-attachment: fixed;
 }
 .text > p{

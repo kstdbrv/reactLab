@@ -44,4 +44,22 @@ class Post(models.Model):
         verbose_name_plural = 'Посты'
 
 
+class Portfolio(models.Model):
+    DIRECTION = (
+        ('веб-разработка', 'веб-разработка'),
+        ('интернет-маркетинг', 'интернет-маркетинг'),
+    )
+    direction = models.CharField(max_length=255, null=True, choices=DIRECTION)
+    title = models.CharField(max_length=255, null=True, verbose_name='Название')
+    image = models.ImageField(null=True, blank=True, verbose_name='Фото')
+    link = models.CharField(max_length=255, null=True, verbose_name='Ссылка')
+    tags = models.ManyToManyField(Tag, blank=True, verbose_name='Тег')
+
+    def __str__(self):
+        return self.title
+
+    class Meta:
+        verbose_name = 'Портфолио'
+        verbose_name_plural = 'Портфолио'
+
 

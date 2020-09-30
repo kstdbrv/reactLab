@@ -20,16 +20,14 @@
             <li class="navbar-item"><a class="navbar-item-link" href="{% url 'blog' %}"> блог</a></li>
             <li class="navbar-item"><a class="navbar-item-link" href="">портфолио</a>
                 <ul class="drop-ul">
-                    <li class="drop-ul-item"><a href="" class="drop-item-link">интернет-<br>маркетинг</a></li>
-                    <li class="drop-ul-item"><a href="" class="drop-item-link">веб-<br>разработка</a></li>
+                    <li class="drop-ul-item"><a href="{% url 'internet_portfolio' %}" class="drop-item-link">интернет-<br>маркетинг</a></li>
+                    <li class="drop-ul-item"><a href="{% url 'web_development' %}" class="drop-item-link">веб-<br>разработка</a></li>
                 </ul>
             </li>
             <li class="navbar-item"><a class="navbar-item-link" href="">компания</a>
                 <ul class="drop-ul">
-                    <li class="drop-ul-item"><a href="{% url 'about' %}" class="drop-item-link">об агенстве</a></li>
-                    <li class="drop-ul-item"><a href="" class="drop-item-link">мероприятия</a></li>
-                    <li class="drop-ul-item"><a href="" class="drop-item-link">карьера</a></li>
-                    <li class="drop-ul-item"><a href="" class="drop-item-link">вакансии</a></li>
+                    <li class="drop-ul-item"><a href="{% url 'about' %}" class="drop-item-link">о нас</a></li>
+                    <li class="drop-ul-item"><a href="" class="drop-item-link">обучение в компании</a></li>
 
                 </ul>
             </li>
@@ -42,7 +40,7 @@
             <span>ᐳ</span>
             <h1><a href="{% url 'blog' %}">блог</a></h1>
             <span>ᐳ</span>
-            <h1><a href="{{ request.get_absilute_path }}">{{ post.title }}</a></h1>
+            <h1><a href="{{ request.get_full_path }}" class="active_header">{{ post.title }}</a></h1>
         </div>
     {% elif '/usability/' in request.path %}
     <div class="breadcrumb">
@@ -50,7 +48,17 @@
             <span>ᐳ</span>
             <h1><a href="">интеренет-маркетинг</a></h1>
             <span>ᐳ</span>
-            <h1><a href="{{ request.get_absilute_path }}">юзабилити</a></h1>
+            <h1><a href="{{ request.get_full_path }}" class="active_header">юзабилити</a></h1>
+        </div>
+    </div>
+    </div>
+    {% elif 'portfolio' in request.get_full_path %}
+    <div class="breadcrumb">
+        <div class="bla">
+            <span>ᐳ</span>
+            <h1><a href="">{{ crumb }}</a></h1>
+            <span>ᐳ</span>
+            <h1><a href="{{ request.get_full_path }}" class="active_header">портфолио</a></h1>
         </div>
     </div>
     </div>
@@ -58,9 +66,62 @@
     <div class="breadcrumb">
         <div class="bla">
             <span>ᐳ</span>
-            <h1><a href="{{ request.get_absilute_path }}">{{ crumb }}</a></h1>
+            <h1><a href="{{ request.get_full_path }}" class="active_header">{{ crumb }}</a></h1>
         </div>
     </div>
-
     {% endif %}
+    {% if request.path != '/' %}
+    <div class="hamburger-menu">
+        <input id="menu__toggle" type="checkbox" />
+        <label class="menu__btn" for="menu__toggle">
+          <span></span>
+        </label>
+    
+        <ul class="menu__box">
+            <li> <input id="li_toggle1" type="checkbox" />
+                 <label for="li_toggle1">
+                    <span class="span_item">об агентстве</span></label>
+                    <ul class="item_ul">
+                        <li class="item_li"><a href="">— обучение в агенстве</a></li>
+                        <li class="item_li"><a href="{% url 'about' %}">— о нас</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <input id="li_toggle2" type="checkbox" />
+                    <label for="li_toggle2">
+                        <span class="span_item">интернет-маркетинг</span></label>
+                        <ul class="item_ul">
+                            <li class="item_li"><a href="">— digital-стратегия</a></li>
+                            <li class="item_li"><a href="">— SEO</a></li>
+                            <li class="item_li"><a href="">— контекстная реклама</a></li>
+                            <li class="item_li"><a href="{% url 'usability' %}">— юзабилити аудит сайта</a></li>
+                            <li class="item_li"><a href="">— SMM</a></li>
+                            <li class="item_li"><a href="">— продвижение мобильного приложения</a></li>
+                        </ul>
+                </li>
+                <li>
+                    <input id="li_toggle3" type="checkbox" />
+                    <label for="li_toggle3">
+                        <span class="span_item">веб-разработка</span></label>
+                        <ul class="item_ul">
+                            <li class="item_li"><a href="">— разработка чат-ботов</a></li>
+                            <li class="item_li"><a href="">— техническая поддержка</a></li>
+                        </ul>
+                </li>
+                <li>
+                    <input id="li_toggle4" type="checkbox" />
+                    <label for="li_toggle4">
+                        <span class="span_item">портфолио</span></label>
+                        <ul class="item_ul">
+                            <li class="item_li"><a href="{% url 'internet_portfolio' %}">— интернет-маркетинг</a></li>
+                            <li class="item_li"><a href="{% url 'web_development_portfolio' %}">— веб-разработка</a></li>
+                        </ul>
+                </li>
+                <li><a class="menu__item" href="{% url 'blog' %}">блог</a></li>
+                <li><a class="menu__item" href="#">заказать проект</a></li>
+                <li><a class="menu__item" href="#">контакты</a></li>
+        </ul>
+      </div>
+    {% endif %}
+
 </header>

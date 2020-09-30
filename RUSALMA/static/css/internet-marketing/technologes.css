@@ -1,0 +1,47 @@
+.technologes {
+  background: #F4F4F4;
+}
+.technologes__inner {
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  text-align: center;
+}
+.technologs__statment {
+  font-size: 4vh;
+  color: #656556;
+  margin-bottom: 1.5vh;
+  margin-top: 15vh;
+}
+.technologes__statment-line {
+  width: 14.5vh;
+  height: 0.2vh;
+  background-color:#656565;
+  margin-bottom: 7vh;
+}
+.technologes__title {
+  font-family: 'PT-Sans-Bold';
+  font-size: 7vh;
+  color: #121212;
+  margin-bottom: 3vh;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 4vh;
+}
+
+.technologes__title-line {
+  width: 18vh;
+  height: 0.5vh;
+  background-color: #121212;
+  margin-bottom: 10vh;
+}
+.technologes__text {
+  font-size: 3.5vh;
+  
+ max-width: 145vh;
+ margin-bottom: 15vh;
+}
+
+.technologes__text p {
+ margin-bottom: 5vh;
+ }

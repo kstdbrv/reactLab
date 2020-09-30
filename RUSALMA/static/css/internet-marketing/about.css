@@ -1,0 +1,37 @@
+
+.about {
+  background-image: linear-gradient(to top, rgba(18, 18, 18, 0.7), rgb(18, 18, 18, 0.5)), url(../../images/backgrounds/internet-marketing/about.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 9vh 0 15vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.about__title {
+  font-size: 5vh;
+  text-align: center;
+  color: #EBEBEB;
+  margin-bottom: 3vh; 
+}
+
+.about__text {
+  font-family: 'PT-Sans-Bold';
+  color: #FFFFFF;
+  font-size: 8.8vh;
+  font-weight: 600;
+  text-align: center;
+  max-width: 157vh;
+  margin-top: 11vh;
+}
+
+.about__title-line {
+  width: 18vh;
+  height: 0.3vh;
+  background-color: #fff;
+  margin: 0 auto;
+}
+

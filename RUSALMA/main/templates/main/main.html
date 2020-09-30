@@ -17,10 +17,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <title>{{ crumb }}</title>
 </head>
+{% include 'main/header.html' %}
 <body>
-    {% include 'main/header.html' %}
     {% block content %}
+
     {% endblock %}
-    {% include 'main/footer.html' %}
 </body>
+{% include 'main/footer.html' %}
 </html>

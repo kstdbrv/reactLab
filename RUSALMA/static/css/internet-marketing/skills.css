@@ -1,0 +1,53 @@
+.skills {
+  background-image: linear-gradient(to top, rgba(18, 18, 18, 0.5), rgb(18, 18, 18, 0.5)),
+  url(../../images/backgrounds/internet-marketing/bg-skills.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 9vh 0 15vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.skills__statment {
+  font-size: 5vh;
+  text-align: center;
+  color: #EBEBEB;
+  margin-bottom: 3vh; 
+}
+
+.skills__statment-line {
+  width: 18vh;
+  height: 0.5vh;
+  background-color: #EBEBEB;
+  margin: 0 auto;
+  margin-bottom: 3vh;
+}
+
+.skills__title {
+  font-family: "PT-Sans-Bold";
+  font-size: 7vh;
+  color: #fff;
+  margin-bottom: 3vh;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 4vh;
+}
+
+.skills__title-line {
+  width: 18vh;
+  height: 0.5vh;
+  background-color: #fff;
+  margin: 0 auto;
+}
+
+.skills__text {
+font-weight: 400;
+font-size: 32px;
+text-align: center;
+color: #FFFFFF;
+margin-top: 11vh;
+max-width: 140vh;
+}
