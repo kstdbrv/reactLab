@@ -38,6 +38,7 @@
             <span>ᐳ</span>
             <h1><a href="{{ request.get_full_path }}" class="active_header">{{ post.title }}</a></h1>
         </div>
+    </div>
     {% elif '/usability/' in request.path %}
     <div class="breadcrumb">
         <div class="bla">
@@ -47,6 +48,14 @@
             <h1><a href="{{ request.get_full_path }}" class="active_header">{{ crumb }}</a></h1>
         </div>
     </div>
+    {% elif '/digital-strategy/' in request.path %}
+    <div class="breadcrumb">
+        <div class="bla">
+            <span>ᐳ</span>
+            <h1><a href="{% url 'internet_marketing' %}">интернет-маркетинг</a></h1>
+            <span>ᐳ</span>
+            <h1><a href="{{ request.get_full_path }}" class="active_header">{{ crumb }}</a></h1>
+        </div>
     </div>
     {% else %}
     <div class="breadcrumb">
@@ -79,7 +88,7 @@
                         <span class="span_item">интернет-маркетинг</span></label>
                         <ul class="item_ul">
                             <li class="item_li"><a href="{% url 'internet_marketing' %}">— интернет-маркетинг</a></li>
-                            <li class="item_li"><a href="">— digital-стратегия</a></li>
+                            <li class="item_li"><a href="{% url 'digital_strategy' %}">— digital-стратегия</a></li>
                             <li class="item_li"><a href="">— SEO</a></li>
                             <li class="item_li"><a href="">— контекстная реклама</a></li>
                             <li class="item_li"><a href="{% url 'usability' %}">— юзабилити аудит сайта</a></li>

@@ -63,26 +63,6 @@
             <h2>На всех этапах работы конечные цели для нас актуальны, мы движемся к ним и подстраиваться под изменения</h2>
         </div>
     </div>
-    <div class="portfolio-main">
-        <div class="portfolio-main__title">
-          наши работы
-        </div>
-        <div class="portfolio-main__title-line"></div>
-        <div class="portfolio">
-          <div class="content"> 
-              {% for holder in portfolio %}                        
-              <div class="holder"  {% if holder.image.url is not None %} style="background-image: url({{ holder.image.url }})" {% endif %}>
-                  <div class="block">
-                      <p>{{ holder.title }}</p>
-                      <a href="{{ holder.link }}">Подробнее</a>
-                  </div>
-              </div>  
-              {% endfor %}                  
-          </div>      
-        </div>
-        <a class="portfolio__more" href="{% url 'portfolio' %}">
-          Смотреть больше работ
-        </a>
-        <button class="portfolio__btn">заказать проект</button>
-      </div>
+    {% include 'main/portfolio_works.html' %}
+
 {% endblock %}

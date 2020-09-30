@@ -19,6 +19,20 @@ a {
 footer {
   background-color: #F4F4F4;
 }
+
+.short-description {
+  height: 35vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 4.5vh;
+}
+
+.short-description>span {
+  display: block;
+  text-align: center;
+  width: 60%;
+}
  
 *, *:before, *:after {
    box-sizing: border-box; 

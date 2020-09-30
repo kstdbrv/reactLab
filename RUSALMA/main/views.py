@@ -124,3 +124,16 @@ def internet_marketing(request):
         'portfolio': portfolio,
     }
     return render(request, 'main/internet-marketing.html', context)
+
+
+def digital_strategy(request):
+    image = '../../images/backgrounds/digital-strat/bg-image.png'
+    crumb = 'digital-стратегия'
+    portfolio = Portfolio.objects.order_by('-id')[:6]
+
+    context = {
+        'crumb': crumb,
+        'image': image,
+        'portfolio': portfolio,
+    }
+    return render(request, 'main/digital-strat.html', context)

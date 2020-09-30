@@ -11,4 +11,5 @@ urlpatterns = [
     path('internet-marketing/usability/', views.usability, name='usability'),
     path('portfolio/', views.portfolio, name='portfolio'),
     path('internet-marketing/', views.internet_marketing, name='internet_marketing'),
+    path('internet-marketing/digital-strategy/', views.digital_strategy, name='digital_strategy'),
 ]
