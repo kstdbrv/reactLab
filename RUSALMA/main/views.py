@@ -137,3 +137,16 @@ def digital_strategy(request):
         'portfolio': portfolio,
     }
     return render(request, 'main/digital-strat.html', context)
+
+
+def seo(request):
+    image = '../../images/backgrounds/seo-prod/bg-image.png'
+    portfolio = Portfolio.objects.order_by('-id')[:6]
+    crumb = 'SEO продвижение'
+
+    context = {
+        'crumb': crumb,
+        'image': image,
+        'portfolio': portfolio,
+    }
+    return render(request, 'main/seo-prod.html', context)
