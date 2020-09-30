@@ -11,6 +11,8 @@
   background-position: center;
   padding: 9vh 5vh 15vh;
   width: 100%;
+  background-attachment: fixed;
+
 }
 
 .strategy__title {

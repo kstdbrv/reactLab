@@ -81,41 +81,28 @@ def chat_bots(request):
 
 
 def usability(request):
-    image = '../images/backgrounds/usability.png'
+    image = '../../images/backgrounds/usability.png'
     crumb = 'юзабилити-аудит сайта'
+
+    portfolio = Portfolio.objects.order_by('-id')[:6]
+
 
     context = {
         'crumb': crumb,
         'image': image,
+        'portfolio': portfolio,
     }
     return render(request, 'main/usability.html', context)
 
 
-def internet_portfolio(request):
+def portfolio(request):
     tags = Tag.objects.all()
-    portfolio = Portfolio.objects.order_by('-id').filter(direction='интернет-маркетинг')
+    portfolio = Portfolio.objects.order_by('-id')
 
     myFilter = Filter(request.GET, queryset=portfolio)
     portfolio = myFilter.qs
 
-    crumb = 'интернет-маркетинг'
-
-    context = {
-        'crumb': crumb,
-        'portfolio': portfolio,
-        'tags': tags,
-    }
-    return render(request, 'main/portfolio.html', context)
-
-
-def web_development_portfolio(request):
-    tags = Tag.objects.all()
-    portfolio = Portfolio.objects.order_by('-id').filter(direction='веб-разработка')
-
-    myFilter = Filter(request.GET, queryset=portfolio)
-    portfolio = myFilter.qs
-
-    crumb = 'веб-разработка'
+    crumb = 'портфолио'
 
     context = {
         'crumb': crumb,
@@ -127,7 +114,7 @@ def web_development_portfolio(request):
 
 def internet_marketing(request):
     image = '../images/backgrounds/internet-marketing/bg-image.png'
-    portfolio = Portfolio.objects.order_by('-id').filter(direction='интернет-маркетинг')[:6]
+    portfolio = Portfolio.objects.order_by('-id')[:6]
 
     crumb = 'интернет-маркетинг'
 
