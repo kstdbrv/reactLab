@@ -22,7 +22,7 @@ def post(request, pk):
 
 def blog(request):
     tags = Tag.objects.all()
-    image = '../images/backgrounds/blog.png'
+    image = '../static/images/backgrounds/blog.png'
 
     myFilter = Filter(request.GET, queryset=Post.objects.order_by('-id'))
     posts = myFilter.qs
@@ -51,7 +51,7 @@ def blog(request):
 
 def about(request):
     crumb = 'о нас'
-    image = '../images/backgrounds/about.png'
+    image = '../static/images/backgrounds/about.png'
 
     team = Author.objects.all()
     posts = Post.objects.order_by('-id')
@@ -81,7 +81,7 @@ def chat_bots(request):
 
 
 def usability(request):
-    image = '../../images/backgrounds/usability.png'
+    image = '../../static/images/backgrounds/usability.png'
     crumb = 'юзабилити-аудит сайта'
 
     portfolio = Portfolio.objects.order_by('-id')[:6]
@@ -113,7 +113,7 @@ def portfolio(request):
 
 
 def internet_marketing(request):
-    image = '../images/backgrounds/internet-marketing/bg-image.png'
+    image = '../static/images/backgrounds/internet-marketing/bg-image.png'
     portfolio = Portfolio.objects.order_by('-id')[:6]
 
     crumb = 'интернет-маркетинг'
@@ -127,7 +127,7 @@ def internet_marketing(request):
 
 
 def digital_strategy(request):
-    image = '../../images/backgrounds/digital-strat/bg-image.png'
+    image = '../../static/images/backgrounds/digital-strat/bg-image.png'
     crumb = 'digital-стратегия'
     portfolio = Portfolio.objects.order_by('-id')[:6]
 
@@ -140,7 +140,7 @@ def digital_strategy(request):
 
 
 def seo(request):
-    image = '../../images/backgrounds/seo-prod/bg-image.png'
+    image = '../../static/images/backgrounds/seo-prod/bg-image.png'
     portfolio = Portfolio.objects.order_by('-id')[:6]
     crumb = 'SEO продвижение'
 
