@@ -57,6 +57,15 @@
             <h1><a href="{{ request.get_full_path }}" class="active_header">{{ crumb }}</a></h1>
         </div>
     </div>
+    {% elif '/chat-bots/' in request.path %}
+    <div class="breadcrumb">
+        <div class="bla">
+            <span>ᐳ</span>
+            <h1><a href="">веб-разработка</a></h1>
+            <span>ᐳ</span>
+            <h1><a href="{{ request.get_full_path }}" class="active_header">{{ crumb }}</a></h1>
+        </div>
+    </div>
     {% else %}
     <div class="breadcrumb">
         <div class="bla">
@@ -102,7 +111,7 @@
                         <span class="span_item">веб-разработка</span></label>
                         <ul class="item_ul">
                             <li class="item_li"><a href="{% url 'usability' %}">— юзабилити аудит сайта</a></li>
-                            <li class="item_li"><a href="">— разработка чат-ботов</a></li>
+                            <li class="item_li"><a href="{% url 'chat_bots' %}">— разработка чат-ботов</a></li>
                             <li class="item_li"><a href="">— техническая поддержка</a></li>
                         </ul>
                 </li>

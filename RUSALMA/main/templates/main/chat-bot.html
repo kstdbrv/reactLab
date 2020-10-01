@@ -1,0 +1,212 @@
+{% extends 'main/main.html' %}
+
+{% load static %}
+
+{% block style %}
+<link rel="stylesheet" href="{% static '/css/chat-bot_style.css' %}">
+{% endblock style %}
+
+{% block content %}
+  {% include 'main/preview.html' %}
+  <div class="short-description">
+    <span>Чат-бот — это виртуальный собеседник, подражающий репликам реального человека в 
+      диалоге, в чате мессенджера или социальной сети</span>
+  </div>
+  <div class="skills">
+    <div class="container">
+      <div class="skills__inner">
+        <img class="skills__img" src="{% static '/images/backgrounds/chat-bots/bg-skills.png' %}" alt="phone image">
+        <div class="skills__box box-skills">
+          <h3 class="skills__title">
+            боты умеют
+          </h3>
+          <div class="skills__title-line"></div>
+          <ul>
+            <li class="box-skills__item">
+              <h4 class="box-skills__title">
+                Отвечать на вопросы
+              </h4>
+              <p class="box-skills__text">
+                боты выбирают подходящие ответы из заранее 
+                разработанной базы знаний, 
+                в случае возникновения  трудного вопроса, автоматически 
+                переводят связь на оператора
+              </p>
+            </li>
+            <li class="box-skills__item">
+              <h4 class="box-skills__title">
+                Продавать товары и услуги
+              </h4>
+              <p class="box-skills__text">
+                боты подбирают продукт или услугу, оформляют заявку, 
+                бронируют места и помогают произвести платеж
+                 прямо в вашем телефоне
+              </p>
+            </li>
+            <li class="box-skills__item">
+              <h4 class="box-skills__title">
+                Рассылать сообщения
+              </h4>
+              <p class="box-skills__text">
+                боты отправляют сообщения, анонсы, уведомления 
+                и акции определенным лицам или группе лиц
+              </p>
+            </li>
+            <li class="box-skills__item">
+              <h4 class="box-skills__title">
+                Cобирать статистику
+              </h4>
+              <p class="box-skills__text">
+                боты запоминают все ответы пользователя, 
+                изучают их и отражают в статистике. Все письма и контакты 
+                находятся под контролем в вашей базе данных
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="platforms">
+    <div class="container">
+     <div class="platforms__inner">
+       <h3 class="platforms__title">
+        платформы для чат-ботов
+       </h3>
+       <div class="platforms__title-line"></div>
+       <p class="platforms__text">
+        Поколения меняются, технологии развиваются, 
+        вместе с тем меняются и утрачивают свою актуальность
+         классические виды коммуникации. 
+        Вследствие, чего компаниям просто 
+        необходимо идти на опережение, использовать все 
+        возможности и выстраивать коммуникации с вероятными 
+        потребителями в социальных сетях и мессенджерах
+       </p>
+     </div>
+    </div>
+   </div>
+
+   <div class="social">
+    <div class="container">
+      <h3 class="social__title">
+        чат-боты во Вконтакте и Facebook
+      </h3>
+      <div class="social__title-line"></div>
+      <div class="social__box">
+        <img class="social__img" src="{% static '/images/backgrounds/chat-bots/social-img.png' %}" alt="facebook">
+        <p class="social__text">
+          Вконтакте и Facebook — известнейшие социальные сети. 
+          По данным SimilarWeb Вконтакте располагается на первом 
+          месте в рейтинге сайтов РФ по посещаемости, намного 
+          опередив google.ru и yandex.ru
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="info">
+    <div class="container">
+      <p class="info__text">
+        Чат-боты взаимодействуют с пользователями в 
+        личных сообщениях социальных сетей: дают ответы 
+        на вопросы, ищут различную информацию и даже развлекают. 
+        Они прикреплены к чатам общественных сообществ, 
+        администратор которых имеет возможность в любой 
+        момент подключиться к диалогу  пользователями и бота
+      </p>
+    </div>
+  </div>
+
+  <div class="social">
+    <div class="container">
+      <h3 class="social__title">
+        чат-боты во Facebook и Telegram
+      </h3>
+      <div class="social__title-line"></div>
+      <div class="social__box">
+        <img class="social__img" src="{% static '/images/backgrounds/chat-bots/social-img.png' %}" alt="facebook">
+        <p class="social__text">
+          Одни из наиболее комфортных для внедрения чат-ботов 
+          платформ - это Facebook и Telegram. Facebook используют 
+          1,3 млрд человек, Telegram — 2 млн. 
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="steps">
+    <div class="container">
+     <div class="steps__inner">
+      <h4 class="steps__title">
+        этапы разработки
+      </h4>
+      <div class="steps__title-line"></div>
+      <p class="steps__text">
+        Процесс разработки ботов может создать видимость 
+        простоты, на самом же деле он состоит из нескольких 
+        этапов, которые следует преодолеть один за другим 
+        для создания комфортного и полезного решения
+      </p>
+      <div class="steps__items">
+        <div class="steps__item">
+          <div class="steps__item-title">
+            исследование и проектирование
+          </div>
+          <div class="steps__item-line"></div>
+          <ul class="steps__item-text text-item">
+            <li class="text-item__list">
+              <p>- устанавливаем условия и требования к боту. </p>
+            </li>
+            <li class="text-item__list">
+              <p>
+                - определяем целевую аудиторию: потребности,     
+                желания и возможные препятствия</p>
+            </li>
+            <li class="text-item__list">
+              <p>- выбираем платформу, берём в расчет её 
+                функциональность и популярность у аудитории
+              </p>
+            </li>
+            <li class="text-item__list">
+              <p>- медийная реклама, RTB Programmatic</p>
+            </li>
+            <li class="text-item__list">
+              <p>- выбираем платформу, берём в расчет её
+                 функциональность и популярность у аудитории
+              </p>
+            </li>
+          </ul>
+        </div>
+        <div class="steps__item">
+          <div class="steps__item-title">
+            программирование и тестирование
+          </div>
+          <div class="steps__item-line"></div>
+          <ul class="steps__item-text text-item">
+            <li class="text-item__list">
+              <p>- здесь мы вводим сценарии</p>
+            </li>
+            <li class="text-item__list">
+              <p>- подключаем к API</p>
+            </li>
+            <li class="text-item__list">
+              <p>- затем еще настраиваем параметры</p>
+            </li>
+            <li class="text-item__list">
+              <p>- панель администратора и статистику</p>
+            </li>
+            <li class="text-item__list">
+              <p>- и наконец проводим тестирование и
+                 отлаживаем процессы
+              </p>
+            </li>
+          </ul>
+        </div>
+       </div>
+      </div>
+    </div>
+  </div>
+
+{% endblock content %}
