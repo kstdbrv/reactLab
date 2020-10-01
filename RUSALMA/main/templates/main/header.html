@@ -66,6 +66,16 @@
             <h1><a href="{{ request.get_full_path }}" class="active_header">{{ crumb }}</a></h1>
         </div>
     </div>
+    
+    {% elif '/context-advert/' in request.path %}
+    <div class="breadcrumb">
+        <div class="bla">
+            <span>ᐳ</span>
+            <h1><a href="{% url 'internet_marketing' %}">интернет-маркетинг</a></h1>
+            <span>ᐳ</span>
+            <h1><a href="{{ request.get_full_path }}" class="active_header">{{ crumb }}</a></h1>
+        </div>
+    </div>
     {% else %}
     <div class="breadcrumb">
         <div class="bla">
@@ -99,7 +109,7 @@
                             <li class="item_li"><a href="{% url 'internet_marketing' %}">— интернет-маркетинг</a></li>
                             <li class="item_li"><a href="{% url 'digital_strategy' %}">— digital-стратегия</a></li>
                             <li class="item_li"><a href="{% url 'seo' %}">— SEO</a></li>
-                            <li class="item_li"><a href="">— контекстная реклама</a></li>
+                            <li class="item_li"><a href="{% url 'context_advert' %}">— контекстная реклама</a></li>
 
                             <li class="item_li"><a href="">— SMM</a></li>
                             <li class="item_li"><a href="">— продвижение мобильного приложения</a></li>

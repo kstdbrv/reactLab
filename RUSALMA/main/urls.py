@@ -14,6 +14,7 @@ urlpatterns = [
     path('internet-marketing/digital-strategy/', views.digital_strategy, name='digital_strategy'),
     path('internet-marketing/usability/', views.usability, name='usability'),
     path('internet-marketing/seo/', views.seo, name='seo'),
+    path('internet-marketing/context-advert/', views.context_advert, name='context_advert'),
 
     path('web-development/chat-bots/', views.chat_bots, name='chat_bots'),
 
