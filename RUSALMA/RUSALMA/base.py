@@ -20,7 +20,7 @@ import os
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 try:
-    from .config import APP_KEY
+    from RUSALMA.RUSALMA.config import APP_KEY
 except ImportError:
     from django.utils.crypto import get_random_string
     APP_KEY = get_random_string(50, 'abcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*(-_=+)')
@@ -133,10 +133,8 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
-STATIC_URL = '/static/'
+STATIC_URL = 'static/'
 
 MEDIA_URL = '/media/'
-
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
