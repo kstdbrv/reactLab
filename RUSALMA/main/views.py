@@ -150,3 +150,14 @@ def seo(request):
         'portfolio': portfolio,
     }
     return render(request, 'main/seo-prod.html', context)
+
+
+def chat_bots(request):
+    crumb = 'разработка чат-ботов'
+    image = '../../static/images/backgrounds/chat-bots/bg-image.png'
+
+    context = {
+        'crumb': crumb,
+        'image': image,
+    }
+    return render(request, 'main/chat-bot.html', context)
