@@ -66,6 +66,15 @@
             <h1><a href="{{ request.get_full_path }}" class="active_header">{{ crumb }}</a></h1>
         </div>
     </div>
+    {% elif '/support/' in request.path %}
+    <div class="breadcrumb">
+        <div class="bla">
+            <span>ᐳ</span>
+            <h1><a href="">веб-разработка</a></h1>
+            <span>ᐳ</span>
+            <h1><a href="{{ request.get_full_path }}" class="active_header">{{ crumb }}</a></h1>
+        </div>
+    </div>
     
     {% elif '/context-advert/' in request.path %}
     <div class="breadcrumb">
@@ -122,7 +131,7 @@
                         <ul class="item_ul">
                             <li class="item_li"><a href="{% url 'usability' %}">— юзабилити аудит сайта</a></li>
                             <li class="item_li"><a href="{% url 'chat_bots' %}">— разработка чат-ботов</a></li>
-                            <li class="item_li"><a href="">— техническая поддержка</a></li>
+                            <li class="item_li"><a href="{% url 'support' %}">— техническая поддержка</a></li>
                         </ul>
                 </li>
                 <li><a class="menu__item" href="{% url 'portfolio' %}">портфолио</a></li>

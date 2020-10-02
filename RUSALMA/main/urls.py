@@ -17,6 +17,7 @@ urlpatterns = [
     path('internet-marketing/context-advert/', views.context_advert, name='context_advert'),
 
     path('web-development/chat-bots/', views.chat_bots, name='chat_bots'),
+    path('web-development/support/', views.support, name='support'),
 
 
 ]

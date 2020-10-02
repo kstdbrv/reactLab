@@ -172,3 +172,14 @@ def context_advert(request):
         'image': image,
     }
     return render(request, 'main/context-advert.html', context)
+
+
+def support(request):
+    crumb = 'техническая поддержка'
+    image = '../../static/images/backgrounds/support-page/bg-image.png'
+
+    context = {
+        'crumb': crumb,
+        'image': image,
+    }
+    return render(request, 'main/support.html', context)

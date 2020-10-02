@@ -1,0 +1,107 @@
+{% extends 'main/main.html' %}
+{% load static %}
+    {% block style %}
+  <link rel="stylesheet" href="{% static '/css/support.css' %}">
+  {% endblock %}
+  {% block content %}
+  {% include 'main/preview.html' %}
+  <div class="short-description">
+    <span>Модель по которой мы работаем, направленна на конверсию трафика в клиентов. Управление рекламой
+      осуществляется по данным аналитики. 
+      Нам нужно, чтобы ваш бизнес рос. </span>
+</div>
+  
+  <div class="support">
+    <div class="container">
+     <div class="support__inner">
+       <h5 class="support__statment">
+        Support
+       </h5>
+       <div class="support__statment-line"></div>
+       <h3 class="support__title">
+        сайт необходимо поддерживать
+       </h3>
+       <div class="support__title-line"></div>
+       <p class="support__text">
+        Если не контролировать работу сайта и 
+        отдельных его функций постоянно, 
+        то однажды вы можете столкнуться с 
+        одной из следующих проблем:
+       </p>
+       <div class="support__items">
+        <div class="support__item">
+          <h5 class="support__item-title">
+            Поломка
+          </h5>
+          <div class="support__item-line"></div>
+          <p class="support__item-text">
+            Не удается загрузить сайт или перейти на 
+            другую страницу, сайт некорректно отображается 
+            на ПК и мобильных устройствах, подвергся 
+            хакерской атаке.
+          </p>
+        </div>
+        <div class="support__item">
+          <h5 class="support__item-title">
+            Недоработка
+          </h5>
+          <div class="support__item-line"></div>
+          <p class="support__item-text">
+            Длительная загрузка выводит из себя, пустые 
+            страницы нарушают эстетику, дизайн сайта 
+            перегружает его, все это мешает работе, 
+            клиенты быстро покидают сайт, потому что 
+            на нём отображается устаревший и 
+            неинтересный контент
+          </p>
+        </div>
+        <div class="support__item">
+          <h5 class="support__item-title item-title__res">
+            Недоступность администрирования
+          </h5>
+          <div class="support__item-line item-line__res"></div>
+          <p class="support__item-text">
+            Вы вынуждены обращаться к программистам 
+            для внесения на сайт не только каких-то 
+            крупных, но и мелких изменений, вы не 
+            владеете правами администратора, а потому 
+            не имеете возможности модерировать 
+            сайт самостоятельно, вы полностью теряете 
+            контроль над сайтом, если его разработчики 
+            не выходят на связь
+          </p>
+        </div>
+        <div class="support-item">
+          <object data="{% static '/images/backgrounds/support-page/support-img.svg' %}" type="image/svg+xml"></object>
+        </div>
+       </div>
+     </div>
+    </div>
+  </div>
+
+  <div class="terms">
+    <div class="container">
+      <h3 class="terms__title">
+        порядок работ и уровень сервиса (SLA)
+      </h3>
+      <div class="terms__title-line"></div>
+    </div>
+    <div class="terms__box">
+        <p>
+          Политика оплаты труда специалистов в нашей компании - 
+          почасовая. Вы оплачиваете лишь время, которое 
+          потребовалось нашему сотруднику для решения вашей 
+          проблемы. 
+        </p>
+        <p>
+          Приобретая любой пакет часов, не сомневайтесь, что 
+          каждая минута оплаченного вами времени будет 
+          использована исключительно для достижения результатов 
+          в поставленных целях, а надежная система приоритезации 
+          заявок поможет быстро уладить сложные вопросы и 
+          оперативно решить критичные для бизнеса задачи
+        </p>
+    </div>
+  </div>
+  {% include 'main/portfolio_works.html' %}
+{% endblock content %}
