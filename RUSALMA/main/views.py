@@ -194,3 +194,14 @@ def web_development(request):
         'image': image,
     }
     return render(request, 'main/web-development.html', context)
+
+
+def smm(request):
+    crumb = 'SMM'
+    image = '../../static/images/backgrounds/smm/bg-image.png'
+
+    context = {
+        'crumb': crumb,
+        'image': image,
+    }
+    return render(request, 'main/smm.html', context)

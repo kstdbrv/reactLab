@@ -57,6 +57,15 @@
             <h1><a href="{{ request.get_full_path }}" class="active_header">{{ crumb }}</a></h1>
         </div>
     </div>
+    {% elif '/smm/' in request.path %}
+    <div class="breadcrumb">
+        <div class="bla">
+            <span>ᐳ</span>
+            <h1><a href="{% url 'internet_marketing' %}">интернет-маркетинг</a></h1>
+            <span>ᐳ</span>
+            <h1><a href="{{ request.get_full_path }}" class="active_header">{{ crumb }}</a></h1>
+        </div>
+    </div>
     {% elif '/chat-bots/' in request.path %}
     <div class="breadcrumb">
         <div class="bla">
@@ -120,7 +129,7 @@
                             <li class="item_li"><a href="{% url 'seo' %}">— SEO</a></li>
                             <li class="item_li"><a href="{% url 'context_advert' %}">— контекстная реклама</a></li>
 
-                            <li class="item_li"><a href="">— SMM</a></li>
+                            <li class="item_li"><a href="{% url 'smm' %}">— SMM</a></li>
                             <li class="item_li"><a href="">— продвижение мобильного приложения</a></li>
                         </ul>
                 </li>
