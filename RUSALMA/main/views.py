@@ -183,3 +183,14 @@ def support(request):
         'image': image,
     }
     return render(request, 'main/support.html', context)
+
+
+def web_development(request):
+    crumb = 'веб-разработка'
+    image = '../../static/images/backgrounds/web/bg-image.png'
+
+    context = {
+        'crumb': crumb,
+        'image': image,
+    }
+    return render(request, 'main/web-development.html', context)

@@ -23,7 +23,7 @@
             <li class="navbar-item"><a class="navbar-item-link" href="">компания</a>
                 <ul class="drop-ul">
                     <li class="drop-ul-item"><a href="{% url 'about' %}" class="drop-item-link">о нас</a></li>
-                    <li class="drop-ul-item"><a href="" class="drop-item-link">обучение в компании</a></li>
+                    <li class="drop-ul-item"><a href="#" class="drop-item-link">обучение в компании</a></li>
 
                 </ul>
             </li>
@@ -43,7 +43,7 @@
     <div class="breadcrumb">
         <div class="bla">
             <span>ᐳ</span>
-            <h1><a href="{% url 'internet_marketing' %}">интернет-маркетинг</a></h1>
+            <h1><a href="{% url 'web_development' %}">веб-разработка</a></h1>
             <span>ᐳ</span>
             <h1><a href="{{ request.get_full_path }}" class="active_header">{{ crumb }}</a></h1>
         </div>
@@ -61,7 +61,7 @@
     <div class="breadcrumb">
         <div class="bla">
             <span>ᐳ</span>
-            <h1><a href="">веб-разработка</a></h1>
+            <h1><a href="{% url 'web_development' %}">веб-разработка</a></h1>
             <span>ᐳ</span>
             <h1><a href="{{ request.get_full_path }}" class="active_header">{{ crumb }}</a></h1>
         </div>
@@ -70,7 +70,7 @@
     <div class="breadcrumb">
         <div class="bla">
             <span>ᐳ</span>
-            <h1><a href="">веб-разработка</a></h1>
+            <h1><a href="{% url 'web_development' %}">веб-разработка</a></h1>
             <span>ᐳ</span>
             <h1><a href="{{ request.get_full_path }}" class="active_header">{{ crumb }}</a></h1>
         </div>
@@ -129,6 +129,7 @@
                     <label for="li_toggle3">
                         <span class="span_item">веб-разработка</span></label>
                         <ul class="item_ul">
+                            <li class="item_li"><a href="{% url 'web_development' %}">— веб-разработка</a></li>
                             <li class="item_li"><a href="{% url 'usability' %}">— юзабилити аудит сайта</a></li>
                             <li class="item_li"><a href="{% url 'chat_bots' %}">— разработка чат-ботов</a></li>
                             <li class="item_li"><a href="{% url 'support' %}">— техническая поддержка</a></li>
