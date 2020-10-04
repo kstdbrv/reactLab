@@ -66,6 +66,15 @@
             <h1><a href="{{ request.get_full_path }}" class="active_header">{{ crumb }}</a></h1>
         </div>
     </div>
+    {% elif '/seo/' in request.path %}
+    <div class="breadcrumb">
+        <div class="bla">
+            <span>ᐳ</span>
+            <h1><a href="{% url 'internet_marketing' %}">интернет-маркетинг</a></h1>
+            <span>ᐳ</span>
+            <h1><a href="{{ request.get_full_path }}" class="active_header">{{ crumb }}</a></h1>
+        </div>
+    </div>
     {% elif '/promo-mobile/' in request.path %}
     <div class="breadcrumb">
         <div class="bla">
