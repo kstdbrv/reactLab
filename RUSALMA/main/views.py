@@ -159,7 +159,7 @@ def chat_bots(request):
     return render(request, 'main/chat-bot.html', context)
 
 
-def context_advert(request, crumb, image):
+def context_advert(request):
     crumb = 'контекстная реклама'
     image = '../../static/images/backgrounds/context-ad/bg-image.png'
 
