@@ -1,0 +1,175 @@
+.logo>a>svg>path {
+  fill: black;
+}
+
+
+footer {
+  background-color: #F4F4F4;
+}
+
+
+body {
+  margin: 0;
+  font-family: 'PT-Sans';
+  font-weight: 400;
+  width: 100%;
+  overflow-x: hidden;
+  font-style: normal;
+  color: #121212;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-size: inherit;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+}
+
+ul, li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.container {
+  padding: 0 2vh;
+}
+
+@font-face {
+  font-family: 'PT-Sans';
+  src: url("../fonts/PT-Sans/PTS55F.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'PT-Sans-Bold';
+  src: url("../fonts/PT-Sans/PTS75F.ttf") format("truetype");
+  font-weight: 600;
+  font-style: bold;
+  font-display: swap;
+}
+
+/* block top */
+.top {
+  padding: 10vh 0 5vh;
+}
+
+.top__container {
+  max-width: 150vh;
+  margin: 0 auto;
+}
+
+.top__title {
+  font-size: 5.5vh;
+  font-family: 'PT-Sans-Bold';
+  margin: 0 auto;
+  margin-bottom: 2vh;
+  text-align: left;
+}
+
+.top__title-line {
+  width: 14vh;
+  height: 0.5vh;
+  background-color: #121212;
+  margin-bottom: 4vh;
+}
+
+.top__box {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: flex-end;
+}
+
+.top__box-text {
+  font-size: 3vh;
+  width: 85vh;
+}
+
+.btn {
+  background: transparent;
+  border: .5vh solid #656565;
+  color: #656565;
+  outline: none;
+  padding: 1vh 4vh;
+  font-size: 3vh;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  color: #000;
+  border: .5vh solid #000;
+}
+
+.btn:active {
+  color: #656565;
+  border: .5vh solid #656565;
+}
+
+/* block contacts */
+.contacts {
+  background: #F4F4F4;
+  padding: 15vh 0 15vh;
+}
+
+.contacts__container {
+  max-width: 150vh;
+  margin: 0 auto;
+}
+
+.contacts__box {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.contacts__column li {
+  margin-bottom: 5vh;
+}
+
+.contacts__column li:first-child {
+  margin-bottom: 2vh;
+}
+
+.contacts__title {
+  font-size: 5.5vh;
+  font-family: 'PT-Sans-Bold';
+  margin: 0 auto;
+  margin-bottom: 2vh;
+  text-align: left;
+}
+
+.contacts__title-line {
+  width: 14vh;
+  height: 0.5vh;
+  background-color: #121212;
+  margin-bottom: 4vh;
+}
+
+.contacts__text {
+  font-size: 3vh;
+}
+
+.map {
+  background: #F4F4F4;
+}
+
+.map__container {
+  max-width: 150vh;
+  margin: 0 auto;
+}

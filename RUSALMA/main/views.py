@@ -76,10 +76,6 @@ def about(request):
     return render(request, 'main/about.html', context)
 
 
-def chat_bots(request):
-    return  render(request, 'main/chat-bot.html')
-
-
 def usability(request):
     image = '../../static/images/backgrounds/usability.png'
     crumb = 'юзабилити-аудит сайта'
@@ -163,7 +159,7 @@ def chat_bots(request):
     return render(request, 'main/chat-bot.html', context)
 
 
-def context_advert(request):
+def context_advert(request, crumb, image):
     crumb = 'контекстная реклама'
     image = '../../static/images/backgrounds/context-ad/bg-image.png'
 
@@ -205,3 +201,23 @@ def smm(request):
         'image': image,
     }
     return render(request, 'main/smm.html', context)
+
+
+def contacts(request):
+    crumb = 'контакты'
+
+    context = {
+        'crumb': crumb,
+    }
+    return render(request, 'main/contacts.html', context)
+
+
+def promo_mobile(request):
+    crumb = 'продвижение приложений'
+    image = '../../static/images/backgrounds/promo-mobile/bg-image.png'
+
+    context = {
+        'crumb': crumb,
+        'image': image,
+    }
+    return render(request, 'main/promo-mobile.html', context)

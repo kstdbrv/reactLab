@@ -27,7 +27,7 @@
 
                 </ul>
             </li>
-            <li class="navbar-item"><a class="navbar-item-link" href="">контакты</a></li>
+            <li class="navbar-item"><a class="navbar-item-link" href="{% url 'contacts' %}">контакты</a></li>
         </ul>
     </nav>
     {% elif '/post/' in request.path %}
@@ -58,6 +58,15 @@
         </div>
     </div>
     {% elif '/smm/' in request.path %}
+    <div class="breadcrumb">
+        <div class="bla">
+            <span>ᐳ</span>
+            <h1><a href="{% url 'internet_marketing' %}">интернет-маркетинг</a></h1>
+            <span>ᐳ</span>
+            <h1><a href="{{ request.get_full_path }}" class="active_header">{{ crumb }}</a></h1>
+        </div>
+    </div>
+    {% elif '/promo-mobile/' in request.path %}
     <div class="breadcrumb">
         <div class="bla">
             <span>ᐳ</span>
@@ -130,7 +139,7 @@
                             <li class="item_li"><a href="{% url 'context_advert' %}">— контекстная реклама</a></li>
 
                             <li class="item_li"><a href="{% url 'smm' %}">— SMM</a></li>
-                            <li class="item_li"><a href="">— продвижение мобильного приложения</a></li>
+                            <li class="item_li"><a href="{% url 'promo_mobile' %}">— продвижение мобильного приложения</a></li>
                         </ul>
                 </li>
                 <li>
@@ -147,7 +156,7 @@
                 <li><a class="menu__item" href="{% url 'portfolio' %}">портфолио</a></li>
                 <li><a class="menu__item" href="{% url 'blog' %}">блог</a></li>
                 <li><a class="menu__item" href="#">заказать проект</a></li>
-                <li><a class="menu__item" href="#">контакты</a></li>
+                <li><a class="menu__item" href="{% url 'contacts' %}">контакты</a></li>
         </ul>
       </div>
     {% endif %}
