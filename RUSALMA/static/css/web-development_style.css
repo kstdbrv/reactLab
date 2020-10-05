@@ -519,4 +519,22 @@ ul, li {
   body {
     font-size: 8px;
   }
+  .stages__icons {
+    overflow: hidden;
+    overflow-x: scroll;
+    width: 90%;
+    justify-content: flex-start;
+  }
+  
+  .icon {
+    margin-right: 50px;
+  }
+
+  .admin__title, .development__title {
+    text-align: center;
+  }
+  .development {
+    display: none;
+  }
+  
 }
