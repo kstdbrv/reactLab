@@ -37,3 +37,17 @@ footer {
 .svg-socials:hover path{
     fill: #49E4DB;
 }
+
+@media (min-width: 300px) and (max-width: 415px) {
+    .footer-logo span{
+        font-size: 16px;
+    }
+
+    .socials svg {
+        width: 15px;
+        margin-left: 15px;
+    }
+    .socials svg:last-child {
+        margin-right: 10px;
+    }
+}

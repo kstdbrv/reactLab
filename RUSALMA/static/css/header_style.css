@@ -273,3 +273,23 @@ h1 {
     display: block;
     z-index: 1;
   }   
+
+
+
+@media (min-width: 375px) and (max-width: 415px) {
+  .breadcrumb {
+    display: none;
+  }
+  .logo svg {
+    width: 30vw;
+  }
+}
+
+@media (min-width: 300px) {
+  .breadcrumb {
+    display: none;
+  }
+  .logo svg {
+    width: 30vw;
+  }
+}
