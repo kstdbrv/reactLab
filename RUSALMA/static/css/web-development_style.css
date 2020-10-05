@@ -456,6 +456,7 @@ ul, li {
 
 @media (max-width: 1200px) {
 
+
   .short-description>span {
     width: 90%;
     font-size: 1em;
@@ -511,5 +512,11 @@ ul, li {
   .admin__right {
     width: 100%;
     text-align: center;
+  }
+}
+
+@media (max-width: 375px) {
+  body {
+    font-size: 8px;
   }
 }
