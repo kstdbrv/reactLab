@@ -285,7 +285,7 @@ h1 {
   }
 }
 
-@media (min-width: 300px) {
+@media (min-width: 300px) and (max-width: 374px){
   .breadcrumb {
     display: none;
   }
