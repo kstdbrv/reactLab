@@ -455,8 +455,6 @@ ul, li {
 
 
 @media (max-width: 1200px) {
-
-
   .short-description>span {
     width: 90%;
     font-size: 1em;
@@ -515,9 +513,9 @@ ul, li {
   }
 }
 
-@media (max-width: 375px) {
+@media (min-width: 375px) and (max-width: 415px) {
   body {
-    font-size: 8px;
+    font-size: 10px;
   }
   .stages__icons {
     overflow: hidden;
@@ -533,8 +531,8 @@ ul, li {
   .admin__title, .development__title {
     text-align: center;
   }
-  .development {
+  .development, .discr, .discr__about {
     display: none;
   }
-  
+
 }
