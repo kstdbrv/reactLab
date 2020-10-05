@@ -537,26 +537,26 @@ ul, li {
 
 }
 
-@media (min-width: 300px) {
+@media (min-width: 300px) and (max-width: 374px){
   body {
     font-size: 8px;
   }
-}
-.stages__icons {
-  overflow: hidden;
-  overflow-x: scroll;
-  width: 90%;
-  justify-content: flex-start;
+  .stages__icons {
+    overflow: hidden;
+    overflow-x: scroll;
+    width: 90%;
+    justify-content: flex-start;
+  }
+  
+  .icon {
+    margin-right: 50px;
+  }
+  
+  .admin__title, .development__title {
+    text-align: center;
+  }
+  .development, .discr, .discr__about {
+    display: none;
+  }
 }
 
-.icon {
-  margin-right: 50px;
-}
-
-.admin__title, .development__title {
-  text-align: center;
-}
-.development, .discr, .discr__about {
-  display: none;
-}
-}

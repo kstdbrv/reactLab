@@ -4,7 +4,8 @@
     box-sizing: border-box;
 }
 body{
-     font-family: 'PT-Sans';
+    font-size: 16px;
+    font-family: 'PT-Sans';
     font-style: normal;
     font-weight: bold;
 }
@@ -29,7 +30,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 4vh;
+    font-size: 2em;
 }
 
 .short-description>span {
@@ -41,6 +42,7 @@ footer {
 
 /* seo */
 .SEO{
+    font-size: 2em;
     background: #F4F4F4;
     display: flex;
     flex-direction: column;
@@ -49,12 +51,6 @@ footer {
     padding-top: 4vh;
     padding-bottom: 9vh;
 }
-.SEO > span{
-    font-weight: bold;
-    font-size: 4vh;
-    color: #656556;
-    margin-bottom: 1vh;
-}
 .border_span{
     border-bottom: .3vh solid #656565;
     width: 15vh;
@@ -62,9 +58,9 @@ footer {
 }
 .SEO > h2{
     font-family: 'PT-Sans-Bold';
-    font-size: 7vh;
     color: #121212;
     width: 50%;
+    font-size: 2em;
     margin-bottom: 2vh;
 }
 .border_h2{
@@ -75,7 +71,6 @@ footer {
 }
 .SEO > p{
     font-weight: normal;
-    font-size: 4vh;
     text-align: center;
     margin: 0 auto;
     color: #121212;
@@ -84,7 +79,6 @@ footer {
 }
 .SEO > span{
     font-weight: normal;
-    font-size: 3vh;
     text-align: center;
     color: #121212;
     width: 45vw;
@@ -93,14 +87,31 @@ footer {
 /* stages work */
 .stages_work{
     padding: 4vh 2vw;
+    font-size: 2em;
 }
 .stages_work > h2{
-    font-size: 8vh;
+    font-family: 'PT-Sans-Bold';
+    font-size: 2em;
     text-align: center;
     color: #121212;
     margin: 0 auto;
     margin-bottom: 2vh;
 }
+
+.stages__row {
+    display: flex;
+}
+.card object {
+    width: 65%;
+}
+.card:nth-child(even) {
+    width: 50%;
+}
+
+.stages__row:nth-child(even) .card:nth-child(even) {
+    order: -1;
+}
+
 .stages{
     display: flex;
     flex-direction: row;
@@ -109,20 +120,19 @@ footer {
 }
 .card > span {
     font-family: Montserrat;
-    font-size: 7vh;
+    font-size: 2em;
     color: #121212;
 }
 
 .card > p{
     font-weight: normal;
-    font-size: 3vh;
     color: #121212;
     margin-top: 8vh;
     word-wrap: break-word;
     
 }
 .card {
-    width: 45%;
+    width: 50%;
     margin-bottom: 10vh;
 }
 .img{
@@ -144,26 +154,19 @@ footer {
     align-items: center;
     text-align: center;
     padding-top: 10vh;
+    font-size: 2em;
     padding-bottom: 2vh;
 }
-.usability{
-    background: #F4F4F4;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    padding-top: 10vh;
-    
-}
+
 .usability > span{
     font-weight: normal;
-    font-size: 4vh;
     color: #656556;
     margin-bottom: 1vh;
 }
 
 .usability > h2{
     font-family: 'PT-Sans-Bold';
-    font-size: 8vh;
+    font-size: 2em;
     color: #121212;
     width: 50vw;
     margin: 0 auto;
@@ -172,7 +175,6 @@ footer {
 
 .usability > p{
     font-weight: normal;
-    font-size: 4vh;
     text-align: center;
     margin: 0 auto;
     color: #121212;
@@ -189,14 +191,15 @@ footer {
     url(../images/backgrounds/seo-prod/img.png);
     background-size: cover;
     background-attachment: fixed;
+    font-size: 2em;
 }
 .image > p{
     margin: 0 auto;
     font-weight: normal;
-    font-size: 3vh;
     text-align: center;
     color: #FFFFFF;
-    width: 50vw;
+    width: 60%;
+    font-size: 0.75em;
     padding: 7vh 0;
 }
 
@@ -215,4 +218,69 @@ footer {
     src: url("../fonts/PT-Sans/PTS75F.ttf") format("truetype");
     font-weight: 600;
     font-style: bold;
+}
+
+@media (min-width: 375px) and (max-width: 415px) {
+    body {
+        font-size: 10px;
+    }
+    .short-description span {
+        width: 90%;
+    }
+
+    .SEO h2, .SEO p, .SEO span {
+        width: 75%;
+    }
+
+    .card {
+        width: 90%;
+    }
+    
+    .stages__row:nth-child(even) .card:nth-child(even) {
+        order: 0;
+    }
+    .card object {
+        width: 100%;
+    }
+    .stages__row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image p {
+        width: 90%;
+    }
+}
+
+@media (min-width: 300px) and (max-width: 374px) {
+    body {
+        font-size: 8px;
+    }
+
+    .short-description span {
+        width: 90%;
+    }
+
+    .SEO h2, .SEO p, .SEO span {
+        width: 75%;
+    }
+
+    .card {
+        width: 90%;
+    }
+    
+    .stages__row:nth-child(even) .card:nth-child(even) {
+        order: 0;
+    }
+    .card object {
+        width: 100%;
+    }
+    .stages__row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image p {
+        width: 90%;
+    }
 }

@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="f05fbe87-d6d0-45fc-ad59-c360eaf0e36f" name="Default Changelist" comment="add mobile header and footer">
+      <change beforePath="$PROJECT_DIR$/RUSALMA/main/templates/main/seo-prod.html" beforeDir="false" afterPath="$PROJECT_DIR$/RUSALMA/main/templates/main/seo-prod.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RUSALMA/static/css/seo-prod_style.css" beforeDir="false" afterPath="$PROJECT_DIR$/RUSALMA/static/css/seo-prod_style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RUSALMA/static/css/web-development_style.css" beforeDir="false" afterPath="$PROJECT_DIR$/RUSALMA/static/css/web-development_style.css" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1htykoHTKyEIUk1Oig8aYGoLKeV" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/RUSALMA/RUSALMA" />
+      <recent name="$PROJECT_DIR$/RUSALMA" />
+      <recent name="$PROJECT_DIR$/RUSALMA/assets" />
+      <recent name="$PROJECT_DIR$/RUSALMA/main/templates/main" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f05fbe87-d6d0-45fc-ad59-c360eaf0e36f" name="Default Changelist" comment="" />
+      <created>1600844829023</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1600844829023</updated>
+    </task>
+    <task id="LOCAL-00001" summary="create homepage and add js">
+      <created>1600951602149</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1600951602149</updated>
+    </task>
+    <task id="LOCAL-00002" summary="create homepage and add js">
+      <created>1600951608791</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1600951608791</updated>
+    </task>
+    <task id="LOCAL-00003" summary="finish css for homepage">
+      <created>1600952765136</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1600952765136</updated>
+    </task>
+    <task id="LOCAL-00004" summary="finish homepage">
+      <created>1600969807596</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1600969807596</updated>
+    </task>
+    <task id="LOCAL-00005" summary="create blog">
+      <created>1601041909089</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1601041909089</updated>
+    </task>
+    <task id="LOCAL-00006" summary="add filter models.py">
+      <created>1601059425953</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1601059425953</updated>
+    </task>
+    <task id="LOCAL-00007" summary="create filte and search">
+      <created>1601072436139</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1601072436139</updated>
+    </task>
+    <task id="LOCAL-00008" summary="finish blog page(buttons and post cards)">
+      <created>1601234677610</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1601234677610</updated>
+    </task>
+    <task id="LOCAL-00009" summary="create about page, and start usability">
+      <created>1601306259799</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1601306259799</updated>
+    </task>
+    <task id="LOCAL-00010" summary="create usability">
+      <created>1601369893082</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1601369893082</updated>
+    </task>
+    <task id="LOCAL-00011" summary="create humburg-menu and add internet-marketing.html">
+      <created>1601453942364</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1601453942364</updated>
+    </task>
+    <task id="LOCAL-00012" summary="refactor portfolio, finish header, finish internet-marketing.html">
+      <created>1601455750914</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1601455750914</updated>
+    </task>
+    <task id="LOCAL-00013" summary="create digital-strat.html, create our works template, and some corrects">
+      <created>1601463032818</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1601463032818</updated>
+    </task>
+    <task id="LOCAL-00014" summary="create seo page">
+      <created>1601464975368</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1601464975368</updated>
+    </task>
+    <task id="LOCAL-00015" summary="seo page">
+      <created>1601541092692</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1601541092692</updated>
+    </task>
+    <task id="LOCAL-00016" summary="change DJANGO_SETTINGS_MODULE">
+      <created>1601548732387</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1601548732387</updated>
+    </task>
+    <task id="LOCAL-00017" summary="add chat-bots page">
+      <created>1601553689617</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1601553689617</updated>
+    </task>
+    <task id="LOCAL-00018" summary="add chat-bots links">
+      <created>1601553902607</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1601553902607</updated>
+    </task>
+    <task id="LOCAL-00019" summary="add DEBUG = False">
+      <created>1601554528973</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1601554528973</updated>
+    </task>
+    <task id="LOCAL-00020" summary="add photos">
+      <created>1601555085561</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1601555085561</updated>
+    </task>
+    <task id="LOCAL-00021" summary="add context-advert.html">
+      <created>1601560495300</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1601560495300</updated>
+    </task>
+    <task id="LOCAL-00022" summary="add support page">
+      <created>1601620306195</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1601620306195</updated>
+    </task>
+    <task id="LOCAL-00023" summary="add web_development page">
+      <created>1601645779050</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1601645779050</updated>
+    </task>
+    <task id="LOCAL-00024" summary="add SMM page">
+      <created>1601647198630</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1601647198630</updated>
+    </task>
+    <task id="LOCAL-00025" summary="add promo_mobile and contacts pages">
+      <created>1601824471597</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1601824471597</updated>
+    </task>
+    <task id="LOCAL-00026" summary="delete svg">
+      <created>1601824491673</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1601824491673</updated>
+    </task>
+    <task id="LOCAL-00027" summary="fix 500 server error">
+      <created>1601824687243</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1601824687243</updated>
+    </task>
+    <task id="LOCAL-00028" summary="fix seo breadcrumb">
+      <created>1601824818348</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1601824818348</updated>
+    </task>
+    <task id="LOCAL-00029" summary="add web_dev mobile version">
+      <created>1601883146201</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1601883146201</updated>
+    </task>
+    <task id="LOCAL-00030" summary="some fix">
+      <created>1601883751948</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1601883751948</updated>
+    </task>
+    <task id="LOCAL-00031" summary="some fix">
+      <created>1601884222137</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1601884222137</updated>
+    </task>
+    <task id="LOCAL-00032" summary="fix fonts">
+      <created>1601885592055</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1601885592055</updated>
+    </task>
+    <task id="LOCAL-00033" summary="fix fonts2">
+      <created>1601886314322</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1601886314322</updated>
+    </task>
+    <task id="LOCAL-00034" summary="some fixes 2">
+      <created>1601888455993</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1601888455993</updated>
+    </task>
+    <task id="LOCAL-00035" summary="finish web dev mobile ver">
+      <created>1601892452292</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1601892452292</updated>
+    </task>
+    <task id="LOCAL-00036" summary="add mobile header and footer">
+      <created>1601898639780</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1601898639780</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="create humburg-menu and add internet-marketing.html" />
+    <MESSAGE value="refactor portfolio, finish header, finish internet-marketing.html" />
+    <MESSAGE value="create digital-strat.html, create our works template, and some corrects" />
+    <MESSAGE value="create seo page" />
+    <MESSAGE value="seo page" />
+    <MESSAGE value="change DJANGO_SETTINGS_MODULE" />
+    <MESSAGE value="add chat-bots page" />
+    <MESSAGE value="add chat-bots links" />
+    <MESSAGE value="add DEBUG = False" />
+    <MESSAGE value="add photos" />
+    <MESSAGE value="add context-advert.html" />
+    <MESSAGE value="add support page" />
+    <MESSAGE value="add web_development page" />
+    <MESSAGE value="add SMM page" />
+    <MESSAGE value="add promo_mobile and contacts pages" />
+    <MESSAGE value="delete svg" />
+    <MESSAGE value="fix 500 server error" />
+    <MESSAGE value="fix seo breadcrumb" />
+    <MESSAGE value="add web_dev mobile version" />
+    <MESSAGE value="some fix" />
+    <MESSAGE value="fix fonts" />
+    <MESSAGE value="fix fonts2" />
+    <MESSAGE value="some fixes 2" />
+    <MESSAGE value="finish web dev mobile ver" />
+    <MESSAGE value="add mobile header and footer" />
+    <option name="LAST_COMMIT_MESSAGE" value="add mobile header and footer" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="320" y="166" key="Vcs.Push.Dialog.v2" timestamp="1601898646507">
+      <screen x="0" y="23" width="1440" height="807" />
+    </state>
+    <state x="320" y="166" key="Vcs.Push.Dialog.v2/0.23.1440.807@0.23.1440.807" timestamp="1601898646507" />
+    <state x="518" y="347" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1601824666729">
+      <screen x="0" y="23" width="1440" height="807" />
+    </state>
+    <state x="518" y="347" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1440.807@0.23.1440.807" timestamp="1601824666729" />
+    <state x="385" y="154" width="670" height="676" key="search.everywhere.popup" timestamp="1601620846332">
+      <screen x="0" y="23" width="1440" height="807" />
+    </state>
+    <state x="385" y="154" width="670" height="676" key="search.everywhere.popup/0.23.1440.807@0.23.1440.807" timestamp="1601620846332" />
+  </component>
+</project>
