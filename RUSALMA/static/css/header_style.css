@@ -7,10 +7,6 @@ header {
     align-items: center;
 }
 
-.hamburger-menu {
-  display: none;
-}
-
 .logo-wrap {
     display: flex;
     align-items: center;
@@ -293,13 +289,11 @@ h1 {
   .hamburger-menu {
     display: block;
   }
-  .menu__btn > span, .menu__btn > span::before, .menu__btn > span::after {
-    background-color: #fff;
-  }
+
   #menu__toggle:checked ~ .menu__btn > span,
   #menu__toggle:checked ~ .menu__btn > span::before,
   #menu__toggle:checked ~ .menu__btn > span::after {
-    background-color: #616161
+    background-color: #616161 !important; 
   }
   .slogan {
     border-bottom: 3px solid #fff;
