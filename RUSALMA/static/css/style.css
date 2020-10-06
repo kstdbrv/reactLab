@@ -7,6 +7,10 @@ a {
     text-decoration: none;
 }
 
+.hamburger-menu a {
+    color: #333;
+}
+
 
 .hamburger-menu {
     display: none;

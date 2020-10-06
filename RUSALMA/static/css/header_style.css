@@ -231,7 +231,6 @@ h1 {
 .item_li {
     padding: 2vh 0 2vh 6vh;
     margin-bottom: 1vh;
-    width: 100%;
 }
 
 .item_li:hover {
@@ -277,6 +276,9 @@ h1 {
 
 
 @media (max-width: 480px) {
+  .menu__box {
+    width: 100%;
+  }
   header {
     justify-content: flex-start;
   }
@@ -294,6 +296,7 @@ h1 {
   }
   .hamburger-menu {
     display: block;
+    z-index: 4;
   }
 
   #menu__toggle:checked ~ .menu__btn > span,
