@@ -283,6 +283,9 @@ h1 {
   .breadcrumb {
     display: none;
   }
+  .logo {
+    margin-left: 10%;
+  }
   .logo svg {
     width: 30vw;
   }
