@@ -123,7 +123,7 @@ h1 {
     align-items: center;
     position: fixed;
     top: 3.5vh;
-    right: 2vh;
+    right: 4vh;
   
     width: 3vh;
     height: 3.5vh;
@@ -277,6 +277,9 @@ h1 {
 
 
 @media (max-width: 480px) {
+  header {
+    justify-content: flex-start;
+  }
   .breadcrumb {
     display: none;
   }
