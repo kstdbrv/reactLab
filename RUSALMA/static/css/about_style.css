@@ -13,7 +13,7 @@ a {
     color: black;
 }
 .logo>a>svg>path {
-    fill: black;
+    fill: #121212;
 }
 footer {
     background-color: #F4F4F4;
