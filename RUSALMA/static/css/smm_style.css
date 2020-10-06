@@ -444,6 +444,10 @@ ul, li {
     width: 90%;
 }
 
+.short-description span {
+  width: 90%;
+}
+
 .stages__row:nth-child(even) .card:nth-child(even) {
     order: 0;
 }

@@ -1,3 +1,6 @@
+html {
+    position: fixed;
+}
 a {
     color: white;
     text-decoration: none;
@@ -54,7 +57,7 @@ body {
 
 .info-drop-ul {
     list-style: none;
-    font-size: 1em;
+    font-size: 0.7em;
     padding: 0;
     padding-top: 30px;
 }
@@ -132,10 +135,10 @@ body {
 }
 
 .slogan {
-    font-family: 'PT-Sans-Bold';
+    font-family: 'PT-Sans';
     margin-bottom: 18vh;
     margin-left: 6%;
-    font-size: 2em;
+    font-size: 1.6em;
 }
 
 .button {
@@ -201,9 +204,13 @@ body {
     .bg-gradient {
         left: 0;
         mix-blend-mode: normal;
+        width: 100%;
     }
     .button {
         display: none;
+    }
+    .wrap {
+        flex-direction: column;
     }
     .container {
         flex-direction: column;
