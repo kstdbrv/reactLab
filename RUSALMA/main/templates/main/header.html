@@ -120,8 +120,6 @@
         </div>
     </div>
     {% endif %}
-
-    {% if request.path != '/' %}
     <div class="hamburger-menu">
         <input id="menu__toggle" type="checkbox" />
         <label class="menu__btn" for="menu__toggle">
@@ -168,6 +166,4 @@
                 <li><a class="menu__item" href="{% url 'contacts' %}">контакты</a></li>
         </ul>
       </div>
-    {% endif %}
-
 </header>

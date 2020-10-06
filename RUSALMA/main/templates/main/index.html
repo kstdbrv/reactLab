@@ -15,7 +15,8 @@
     {% include 'main/header.html' %}
     <div class="container">
         <div class="left">
-                <div class="slogan"><strong>агентство цифровых<br> коммуникаций </strong></div>
+                <div class="slogan"><strong>digital-агенство<br/>
+                    полного цикла</strong></div>
                 <div class="button"><a class="item-link" href="#">заказать</a></div>
                 
         </div>
@@ -51,6 +52,34 @@
                     </ul>
                 </li>
             </ul>
+            <div class="menu_mobile">
+                <div class="menu_mobile_internet">
+                    <input id="menu__mobile_toggle_internet" type="checkbox" />
+                    <label class="menu_mobile" for="menu__mobile_toggle_internet">
+                    <span>интернет-маркетинг</span>
+                    </label>
+                    <ul class="menu-drop-ul" id="">
+                        <li class="menu-drop-li"><a href="{% url 'internet_marketing' %}">интернет-маркетинг</a></li>
+                        <li class="menu-drop-li"><a href="{% url 'digital_strategy' %}">digital-стратегия</a></li>
+                        <li class="menu-drop-li"><a href="{% url 'seo' %}">SEO-продвижение</a></li>
+                        <li class="menu-drop-li"><a href="{% url 'context_advert' %}">контекстная реклама</a></li>
+                        <li class="menu-drop-li"><a href="{% url 'promo_mobile' %}">продвижение приложений</a></li>
+                        <li class="menu-drop-li"><a href="{% url 'smm' %}">SMM</a></li>
+                    </ul>
+                </div>  
+                <div class="menu_mobile_web">
+                    <input id="menu__mobile_toggle_web" type="checkbox" />
+                    <label class="menu_mobile" for="menu__mobile_toggle_web">
+                    <span>веб-разработка</span>
+                    </label>
+                    <ul class="menu-drop-ul">
+                        <li class="menu-drop-li"><a href="{% url 'web_development' %}">веб-разработка</a></li>
+                        <li class="menu-drop-li"><a href="{% url 'usability' %}">юзабилити аудит сайта</a></li>
+                        <li class="menu-drop-li"><a href="{% url 'chat_bots' %}">разработка чат-ботов</a></li>
+                        <li class="menu-drop-li"><a href="{% url 'support' %}">техническая поддержка</a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </div>
     {% include 'main/footer.html' %}

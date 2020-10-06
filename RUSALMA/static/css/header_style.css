@@ -4,6 +4,11 @@ header {
     display: flex;
     justify-content:  space-around;
     box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.14);
+    align-items: center;
+}
+
+.hamburger-menu {
+  display: none;
 }
 
 .logo-wrap {
@@ -275,21 +280,28 @@ h1 {
   }   
 
 
-
-@media (min-width: 375px) and (max-width: 415px) {
+@media (max-width: 480px) {
   .breadcrumb {
     display: none;
   }
   .logo svg {
     width: 30vw;
   }
-}
-
-@media (min-width: 300px) and (max-width: 374px){
-  .breadcrumb {
+  nav {
     display: none;
   }
-  .logo svg {
-    width: 30vw;
+  .hamburger-menu {
+    display: block;
+  }
+  .menu__btn > span, .menu__btn > span::before, .menu__btn > span::after {
+    background-color: #fff;
+  }
+  #menu__toggle:checked ~ .menu__btn > span,
+  #menu__toggle:checked ~ .menu__btn > span::before,
+  #menu__toggle:checked ~ .menu__btn > span::after {
+    background-color: #616161
+  }
+  .slogan {
+    border-bottom: 3px solid #fff;
   }
 }
