@@ -10,11 +10,11 @@
   align-items: center;
   width: 100%;
   background-attachment: fixed;
-
+  font-size: 2em;
 }
 
 .skills__statment {
-  font-size: 5vh;
+  font-size: 1.5em;
   text-align: center;
   color: #EBEBEB;
   margin-bottom: 3vh; 
@@ -30,7 +30,7 @@
 
 .skills__title {
   font-family: "PT-Sans-Bold";
-  font-size: 7vh;
+  font-size: 2em;
   color: #fff;
   margin-bottom: 3vh;
   text-align: center;
@@ -46,10 +46,17 @@
 }
 
 .skills__text {
-font-weight: 400;
-font-size: 32px;
 text-align: center;
 color: #FFFFFF;
 margin-top: 11vh;
 max-width: 140vh;
+}
+
+@media (max-width: 480px) {
+  .skills__text {
+    margin-top: 6vh; 
+  }
+  .skills {
+    padding: 5vh 0 8vh;
+  }
 }

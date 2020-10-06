@@ -7,7 +7,7 @@
   }
   .portfolio-main__title {
     font-family: 'PT-Sans-Bold';
-    font-size: 7vh;
+    font-size: 2em;
     color: #121212;
     text-align: center;
     margin: 0 auto;
@@ -15,7 +15,6 @@
   }
   
   .portfolio__more {
-    font-size: 3.5vh;
     color: #656565;
     margin-bottom: 10vh;
     transition: all .3s;
@@ -44,7 +43,7 @@
     color: #656565;
     outline: none;
     padding: 2vh 7vw;
-    font-size: 5vh;
+    font-size: 1.5em;
     margin-bottom: 15vh;
     cursor: pointer;
     transition: 0.3s;
@@ -143,4 +142,17 @@ img{
     opacity: 1;
     visibility: visible;
     transition: 1s;
+}
+
+@media (max-width:480px) {
+  .portfolio-main {
+    padding-top: 9vh;
+  }
+  .portfolio {
+    padding: 1vh;
+  }
+
+  .portfolio__more {
+    margin-bottom: 5vh;
+ }
 }

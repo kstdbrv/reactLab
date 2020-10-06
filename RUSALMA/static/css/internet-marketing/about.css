@@ -1,5 +1,6 @@
 
 .about {
+  font-size: 2em;
   background-image: linear-gradient(to top, rgba(18, 18, 18, 0.7), rgb(18, 18, 18, 0.5)), url(../../images/backgrounds/internet-marketing/about.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -13,7 +14,7 @@
 }
 
 .about__title {
-  font-size: 5vh;
+  font-size: 2em;
   text-align: center;
   color: #EBEBEB;
   margin-bottom: 3vh; 
@@ -21,9 +22,8 @@
 
 .about__text {
   font-family: 'PT-Sans-Bold';
+  font-size: 2em;
   color: #FFFFFF;
-  font-size: 8.8vh;
-  font-weight: 600;
   text-align: center;
   max-width: 157vh;
   margin-top: 11vh;
@@ -36,3 +36,11 @@
   margin: 0 auto;
 }
 
+@media (max-width:480px) {
+  .about {
+    padding: 4vh 0 5vh;
+  }
+  .about__text {
+    margin-top: 5vh;
+  }
+}
