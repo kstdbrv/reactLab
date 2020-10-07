@@ -1,6 +1,3 @@
-html {
-    position: fixed;
-}
 a {
     color: white;
     text-decoration: none;
@@ -26,7 +23,9 @@ a {
 }
 
 .visable {
-    opacity: 1;
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
     transition: opacity 1s ease-in;
 }
 
@@ -41,11 +40,6 @@ body {
     height: 100vh;
 }
 
-@media (max-width: 480px) {
-    body {
-      font-size: 8px;
-    }
-}
 
 .left {
     display: flex;
@@ -62,16 +56,22 @@ body {
 }
 
 .info-drop-ul {
+    width: 100%;
+    position: absolute;
+    top: 100px;
     list-style: none;
-    font-size: 0.7em;
+    font-size: 1em;
     padding: 0;
     padding-top: 30px;
+    visibility: hidden;
+    opacity: 0;
+    display: none;
 }
 
 .info-drop-li {
     padding-top: 15px;
     padding-bottom: 15px;
-    padding-left: 100px;
+    padding-left: 105px;
 }
 
 .info-drop-li:hover {
@@ -106,25 +106,31 @@ body {
 }
 
 .info-item {
-    padding: 20px 0 20px 0;
+    position: relative;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     transition: background-color 0.3s ease-out;
     cursor: pointer;
-    height: 6vh;
 }
 
-.info-item>svg {
-    position: relative;
+.info-item svg {
+    position: absolute;
     left: 50px;
+    bottom: 47px;
 }
 
 .info-item-top {
-    transition: transform 1s ease-in-out;
-    transform: translate(0, -30vh);
+    position: relative;
+    top: -25vh;
+    transition: top 1s ease-in-out;
 }
 
 .info-item-top-web {
-    transition: transform 1s ease-in-out;
-    transform: translate(0, -40vh);
+    position: relative;
+    top: -40vh;
+    transition: top 1s ease-in-out;
 }
 
 .info-item-bot {
@@ -133,17 +139,21 @@ body {
 }
 
 .info-item>span {
-    margin-left: 75px;
+    display: flex;
+    align-items: center ;
+    padding-left: 105px;
+    height: 120px;
+    font-size: 1.75em;
 }
 
-.info-item:hover {
+.info-item span:hover{
     background-color: rgba(73, 228, 219, 0.5);
 }
 
 .slogan {
     font-family: 'PT-Sans';
-    margin-bottom: 18vh;
-    margin-left: 6%;
+    margin-top: 27px;
+    margin-left: 3vw;
     font-size: 1.6em;
 }
 
@@ -197,11 +207,14 @@ body {
     display: none;
   }
 
-
 @media (max-width: 480px) {
 
     .menu_mobile {
       display: block;
+    }
+
+    html {
+        position: ;
     }
     
     body {
@@ -234,10 +247,16 @@ body {
     .left {
         justify-content: flex-start;
         margin-top: 30px;
+        margin-bottom: 30px;
     }
     .slogan {
         margin-left: 5%;
+        padding-bottom: 10px;
+        border-bottom: 3px solid skyblue;
+        border-image: linear-gradient(to left, rgba(0,0,0,0) 50%, white 50%, white 100%);
+        border-image-slice: 1;
     }
+
     .info{
         display: none;
     }
