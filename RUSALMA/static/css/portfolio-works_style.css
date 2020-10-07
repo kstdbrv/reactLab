@@ -4,7 +4,7 @@
     flex-direction: column;
     align-items:center;
     padding-top: 17vh;
-    font-size: 2em;
+    font-size: 1.5em;
   }
   .portfolio-main__title {
     font-family: 'PT-Sans-Bold';
@@ -23,12 +23,12 @@
   }
     
   .portfolio__more:hover {
-    color: #000;
-    border-bottom:0.3vh solid #000;
+    color: #121212;
+    border-bottom:0.3vh solid #121212;
   }
     
   .portfolio__more:active {
-    color: #656565;
+    color: #121212;
     border-bottom: 0.3vh solid transparent;
   }
   
