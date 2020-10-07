@@ -18,6 +18,10 @@ footer {
     background-color: #F4F4F4;
 }
 
+body {
+    font-size: 16px;
+}
+
 
 /* intro */
 
@@ -30,10 +34,11 @@ footer {
 }
 .intro_left{
     margin-left: 3vw;
+    font-size: 2em;
 }
 .intro_title{
     font-family: 'PT-Sans-Bold';
-    font-size: 6vh;
+    font-size: 1.75em;
     color: #121212;       
 }
 .intro_text{
@@ -49,29 +54,32 @@ footer {
 
 
 .intro_left > p{
-    font-size: 4.5vh;
     color: #121212;
     width: 100vh;
     word-wrap: break-word; 
     padding-top: 10vh;
-    padding-bottom: 5.5vh;
 }
 
 .intro_btn{
     background: #FFFFFF;
     margin-top: 36vh;
     margin-right: 3vw;
+    display: flex;
+    align-items: flex-end;
 }
 
 .order{
     display: flex;
     align-items: center;
+    justify-content: center;
     background: #FFFFFF;
     border: .5vh solid #656565;
     color: #656565;  
     outline:none;
     transition: 0.2s;
-    padding: 1vh 15vh;
+    width: 320px;
+    height: 70px;
+    border-radius: 35px;
 }
 
 .order:hover{
@@ -107,6 +115,7 @@ footer {
     transition: 0.5s;
     vertical-align: middle;
     margin: 3vh 1vh;
+    border-radius: 10px;
 }
 
 .btn-category:hover{

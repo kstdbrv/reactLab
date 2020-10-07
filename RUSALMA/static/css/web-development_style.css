@@ -192,7 +192,7 @@ ul, li {
   font-size: 0.75em;
   width: 90%;
   justify-content: space-around;
-    display: flex;
+  display: flex;
 }
 
 .icon {
