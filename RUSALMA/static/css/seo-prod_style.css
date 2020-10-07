@@ -30,6 +30,7 @@ footer {
     justify-content: center;
     align-items: center;
     font-size: 2em;
+    color: #121212;
 }
 
 .short-description>span {
@@ -64,7 +65,7 @@ footer {
 }
 .border_h2{
     border-bottom: .7vh solid #121212;
-    width: 10vw;
+    width: 30vw;
     margin: 0 auto;
     margin-bottom: 8vh ;
 }
@@ -79,7 +80,7 @@ footer {
 .SEO > span{
     font-weight: normal;
     text-align: center;
-    color: #121212;
+    color: #656556;
     width: 45vw;
     margin: 0 auto;
 }
@@ -120,7 +121,7 @@ footer {
 }
 .card > span {
     font-family: Montserrat;
-    font-size: 2em;
+    font-size: 1.8em;
     color: #121212;
 }
 
@@ -129,11 +130,23 @@ footer {
     color: #121212;
     margin-top: 8vh;
     word-wrap: break-word;
+    text-align: center;
     
 }
 .card {
     width: 50%;
     margin-bottom: 10vh;
+}
+
+
+@media(max-width:480px) {
+    .card > p{
+        margin-top: 4vh;
+        
+    }
+    .card {
+        margin-bottom: 5vh;
+    }
 }
 .img{
     width: 45vw;
@@ -180,6 +193,14 @@ footer {
     color: #121212;
     width: 60vw;
     margin-bottom: 3vh;
+}
+@media(max-width:480px) {
+    .usability{
+        padding-top: 0;
+    }
+    .usability > p{
+        width: 77vw;
+    }
 }
 
 .image{
@@ -282,5 +303,27 @@ footer {
 
     .image p {
         width: 90%;
+    }
+}
+
+
+.card:nth-child(even) {
+    text-align: center;
+  }
+  
+  .number {
+    font-family: "Montserrat";
+    font-weight: 600;
+    display: inline-block;
+  }
+  
+  .stages__row {
+    align-items: center;
+  }
+
+
+  @media (max-width: 415px) and (min-width: 375px) {
+    .card object {
+  width: 150%;
     }
 }
