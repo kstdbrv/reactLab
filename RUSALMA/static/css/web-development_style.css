@@ -189,7 +189,7 @@ ul, li {
 }
 
 .stages__icons {
-  font-size: 0.5em;
+  font-size: 1em;
   width: 90%;
   justify-content: space-around;
     display: flex;
@@ -226,7 +226,7 @@ ul, li {
 .stages__icons_discr p {
   position: absolute;
   transition: 1s;
-  font-size: 0.7em;
+  font-size: 1em;
   opacity: 0;
   text-align: center;
   width: 60%;
@@ -522,7 +522,7 @@ ul, li {
 
 @media (max-width: 480px) {
   body {
-    font-size: 10px;
+    font-size: 8px;
   }
   .stages__icons {
     overflow: hidden;

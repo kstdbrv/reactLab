@@ -416,6 +416,13 @@ ul, li {
   opacity: 1 !important;
 }
 @media screen and (max-width: 480px){
+  .stages__icons {
+    overflow: hidden;
+    overflow-x: scroll;
+    width: 90%;
+    justify-content: flex-start;
+  }
+
   body{
       font-size: 8px;
   }
