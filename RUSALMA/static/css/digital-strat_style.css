@@ -7,6 +7,7 @@ body{
     font-family: 'PT-Sans';
     font-style: normal;
     font-weight: 400;
+    font-size: 16px;
 }
 
 footer {
@@ -15,7 +16,7 @@ footer {
 
 a {
     text-decoration: none;
-    color: #121212;
+    color: black;
 }
 
 .wrapper{
@@ -287,4 +288,62 @@ img{
     src: url("../fonts/PT-Sans/PTS75F.ttf") format("truetype");
     font-weight: 600;
     font-style: bold;
+}
+@media screen and (max-width: 480px){
+    body{
+        font-size: 8px;
+    }
+    .short-description{
+        font-size: 2em;
+    }
+    .short-description > span{
+        width: 90%;
+        font-size: 1em;
+    }
+    .digital{
+        font-size: 2em;
+    }
+    .digital > span {
+        font-size: 1em;
+    }
+    .digital h2{
+        font-size: 2em;
+    }
+    .digital > p{
+        font-size: 1em;
+    }
+    .img_text {   
+        flex-direction: column;
+    }
+    .img_text > ._text {     
+        font-size: 1em;
+        padding-left: 4vw;
+        width: 100%;
+        margin-top: 4vh;
+    }
+    .strat{
+        font-size: 2em;
+    }
+    .img > h2{
+        font-size: 2em;
+    }
+    .img > p{
+        font-size: 1em;
+    }
+    .include{
+        font-size: 2em;
+        padding: 2vh 2vw;
+        flex-direction: column;
+    }
+    .include_strat > span{
+        font-size: 1em;
+    }
+    .include_strat {
+        width: 100%;
+        text-align: center;
+    }
+    .border_inc{
+        margin: 0 auto;
+    }
+    
 }

@@ -1,5 +1,5 @@
 .logo>a>svg>path {
-  fill: #121212;
+  fill: black;
 }
 
 
@@ -16,6 +16,7 @@ body {
   overflow-x: hidden;
   font-style: normal;
   color: #121212;
+  font-size: 8px;
 }
 
 *, *:before, *:after {
@@ -172,4 +173,24 @@ ul, li {
 .map__container {
   max-width: 150vh;
   margin: 0 auto;
+}
+@media screen and (max-width: 480px){
+  .top{
+    font-size: 2em;
+    padding: 3vh 0 5vh;
+  }
+  .top__box{
+    font-size: 1em;
+  }
+  .btn {
+    margin-top: 4vh;
+  }
+  .contacts{
+    font-size: 2em;
+    padding: 3vh 0 15vh;
+  }
+  .contacts__title{
+    font-size: 2em;
+  }
+  
 }
