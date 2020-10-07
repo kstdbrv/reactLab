@@ -63,3 +63,19 @@ class Portfolio(models.Model):
         verbose_name_plural = 'Портфолио'
 
 
+class Order(models.Model):
+    CATEGORY = (
+        ('интернет-маркетинг', 'интернет-маркетинг'),
+        ('веб-разработка', 'веб-разработка'),
+    )
+
+    INTERNET_CHOISES = (
+        ('реклама готового продукта', 'реклама готового продукта'),
+        ('оптимизация сайта и трафика', 'оптимизация сайта и трафика'),
+        ('продвижение в социальных медиа', 'продвижение в социальных медиа'),
+        ('креатив', 'креатив'),
+        ('стратегия и аналитика', 'стратегия и аналитика'),
+    )
+
+    category = models.CharField(max_length=255, choices=CATEGORY)
+    choises_internet = models.CharField(max_length=255, blank=True, choices=INTERNET_CHOISES)

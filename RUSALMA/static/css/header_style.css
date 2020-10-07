@@ -128,8 +128,8 @@ h1 {
     top: 3.5vh;
     right: 4vh;
   
-    width: 3vh;
-    height: 3.5vh;
+    width: 25px;
+    height: 25px;
   
     cursor: pointer;
     z-index: 3;
@@ -284,6 +284,7 @@ h1 {
   }
   header {
     justify-content: flex-start;
+    height: 10vh;
   }
   .breadcrumb {
     display: none;
