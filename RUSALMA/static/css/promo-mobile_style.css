@@ -347,6 +347,7 @@ ul, li {
 /* stages */
 .stages {
   height: 110vh;
+  font-size: 2em;
 }
 
 .stages__main {
@@ -371,6 +372,9 @@ ul, li {
 }
 
 .stages__icons {
+  font-size: 0.75em;
+  width: 90%;
+  justify-content: space-around;
   display: flex;
 }
 
@@ -406,6 +410,7 @@ ul, li {
 .stages__icons_discr p {
   position: absolute;
   transition: 1s;
+  font-size: 0.75em;
   opacity: 0;
   text-align: center;
   width: 60%;
@@ -497,9 +502,6 @@ ul, li {
     font-size: 2em;
   }
   .stages__discr{
-    font-size: 1em;
-  }
-  .stages__icons{
     font-size: 1em;
   }
   .stages__icons_discr p{

@@ -189,7 +189,7 @@ ul, li {
 }
 
 .stages__icons {
-  font-size: 1em;
+  font-size: 0.75em;
   width: 90%;
   justify-content: space-around;
     display: flex;
@@ -226,7 +226,7 @@ ul, li {
 .stages__icons_discr p {
   position: absolute;
   transition: 1s;
-  font-size: 1em;
+  font-size: 0.75em;
   opacity: 0;
   text-align: center;
   width: 60%;
