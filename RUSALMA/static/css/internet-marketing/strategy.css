@@ -4,6 +4,15 @@
   font-size: 2em;
 }
 
+.strategy__title-line {
+  width: 17.5vh;
+  height: 0.2vh;
+  background-color:#656565;
+  margin-bottom: 4vh;
+  margin: 0 auto;
+  margin-bottom: 10vh;
+}
+
 .strategy__content{
   background-image: linear-gradient(to top, rgba(18, 18, 18, 0.5), rgb(18, 18, 18, 0.5)),
   url(../../images/backgrounds/internet-marketing/bg-strategy.png);
@@ -19,7 +28,7 @@
   font-size: 1.5em;
   text-align: center;
   color: #656556;
-  margin-bottom: 8vh;
+  margin-bottom: 2vh;
   padding-top: 12vh;
 }
 
@@ -56,6 +65,19 @@
   font-size: 1.5em;
 }
 
+.left-strategy__item:before, .right-strategy__item:before {
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: 2em;
+}
+
+/* @media (max-width:1800px) {
+
+  .left-strategy__item, .right-strategy__item {
+    padding-left: 10vh;
+  }
+} */
+
 @media (max-width:1500px) {
 
   .left-strategy, .right-strategy {
@@ -63,12 +85,7 @@
   }
 }
 
-@media (max-width:1800px) {
 
-  .left-strategy__item, .right-strategy__item {
-    padding-left: 10vh;
-  }
-}
 
 .left-strategy__text, .right-strategy__text {
   font-family: 'PT-Sans';
@@ -168,56 +185,56 @@
     position: absolute;
     content:'01';
     top: 5vh;
-    left: 0;
+    left: -90px;
    }
   
    .left-strategy__item:nth-child(3)::before {
     position: absolute;
     content:'03';
     top: 3vh;
-    left: 0;
+    left: -90px;
    }
   
    .right-strategy__item:nth-child(5)::before {
     position: absolute;
     content:'05';
     top: 3vh;
-    left: 0;
+    left: -90px;
    }
   
    .left-strategy__item:nth-child(7)::before {
     position: absolute;
     content:'07';
     top: 1vh;
-    left: 0;
+    left: -90px;
    }
   
    .right-strategy__item:nth-child(2)::before {
     position: absolute;
     content:'02';
     top: 0vh;
-    left: 0;
+    left: -90px;
    }
   
    .right-strategy__item:nth-child(4)::before {
     position: absolute;
     content:'04';
     top: 3vh;
-    left: 0;
+    left: -90px;
    }
   
    .left-strategy__item:nth-child(6)::before {
     position: absolute;
     content:'06';
     top: 3vh;
-    left: 0;
+    left: -90px;
    }
   
    .right-strategy__item:nth-child(8)::before {
     position: absolute;
     content:'08';
     top: 0vh;
-    left: 0;
+    left: -90px;
    }
 
    .strategy__mobile li {
@@ -255,6 +272,10 @@
   .strategy__mobile {
     display: block;
   }
+
+  .left-strategy__item, .right-strategy__item {
+    padding-left: 8vh;
+  }
  }
 
  @media (max-width:480px) {
@@ -272,11 +293,68 @@
   .strategy__content {
     padding: 3vh 0vh 0;
     padding-left: 2vh;
+  }
+
+
+  .left-strategy__item:nth-child(1)::before {
+    position: absolute;
+    content:'01';
+    top: 5vh;
+    left: -9px;
+   }
+  
+   .left-strategy__item:nth-child(3)::before {
+    position: absolute;
+    content:'03';
+    top: 3vh;
+    left: -9px;
+   }
+  
+   .right-strategy__item:nth-child(5)::before {
+    position: absolute;
+    content:'05';
+    top: 3vh;
+    left: -9px;
+   }
+  
+   .left-strategy__item:nth-child(7)::before {
+    position: absolute;
+    content:'07';
+    top: 1vh;
+    left: -9px;
+   }
+  
+   .right-strategy__item:nth-child(2)::before {
+    position: absolute;
+    content:'02';
+    top: 0vh;
+    left: -9px;
+   }
+  
+   .right-strategy__item:nth-child(4)::before {
+    position: absolute;
+    content:'04';
+    top: 3vh;
+    left: -9px;
+   }
+  
+   .left-strategy__item:nth-child(6)::before {
+    position: absolute;
+    content:'06';
+    top: 3vh;
+    left: -9px;
+   }
+  
+   .right-strategy__item:nth-child(8)::before {
+    position: absolute;
+    content:'08';
+    top: 0vh;
+    left: -9px;
+   }
+   .left-strategy__item:before, .right-strategy__item:before {
+    font-size: 1em;
+  }
 }
-}
-
-
-
 
 
 

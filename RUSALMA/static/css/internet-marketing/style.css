@@ -95,3 +95,11 @@ ul, li {
   font-weight: 600;
   font-style: bold;
 }
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../../fonts/Montserrat/Montserrat-Bold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: bold;
+}
+

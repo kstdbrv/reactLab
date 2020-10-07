@@ -96,7 +96,7 @@ ul, li {
     justify-content: space-around;
     align-items: center ;
     font-size: 2em;
-    height: 90vh;
+    height: 60vh;
     background-color: #F4F4F4;
 }
 
@@ -147,7 +147,7 @@ ul, li {
 /*  discr__about */
 
 .discr__about {
-    height: 50vh;
+    height: 45vh;
     background-color: #F4F4F4;
     font-size: 2em;
     display: flex;
@@ -189,7 +189,7 @@ ul, li {
 }
 
 .stages__icons {
-  font-size: 0.5em;
+  font-size: 0.8em;
   width: 90%;
   justify-content: space-around;
     display: flex;
@@ -226,7 +226,7 @@ ul, li {
 .stages__icons_discr p {
   position: absolute;
   transition: 1s;
-  font-size: 0.7em;
+  font-size: 1em;
   opacity: 0;
   text-align: center;
   width: 60%;
@@ -385,6 +385,7 @@ ul, li {
 .admin__info {
   display: flex;
   justify-content: space-between;
+  ALIGN-ITEMS: center;
 }
 
 .admin__left {
@@ -454,7 +455,7 @@ ul, li {
 }
 
 
-@media (max-width: 1200px) {
+@media (max-width: 1900px) {
   .short-description>span {
     width: 90%;
     font-size: 1em;

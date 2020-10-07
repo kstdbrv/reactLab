@@ -99,10 +99,10 @@ ul, li {
 }
 
 .seo__statment {
-  font-size: 1.5em;
+  font-size: 1em;
   color: #656556;
   margin-bottom: 1.5vh;
-  margin-top: 20vh;
+  margin-top: 15vh;
 }
 
 .seo__statment-line {
@@ -130,7 +130,7 @@ ul, li {
 }
 
 .seo__text {
-  padding-bottom: 10vh;
+  padding-bottom: 7vh;
   max-width: 113vh;
 }
 
@@ -348,6 +348,7 @@ ul, li {
 /* stages */
 .stages {
   height: 110vh;
+  font-size: 2em;
 }
 
 @media (min-width: 375px) and (max-width: 415px) {
