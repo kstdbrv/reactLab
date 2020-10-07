@@ -1,37 +1,23 @@
-const infoItem1 = document.getElementById('info-item1');
-const infoItem2 = document.getElementById('info-item2');
-const infoUl1 = document.getElementById('info-ul1')
-const infoUl2 = document.getElementById('info-ul2')
+const menuItems = document.querySelectorAll('.info-item')
 
-infoItem1.onclick = function dropDown() {
-    if (infoItem2.classList.contains('non-visable')) {
-        return (infoItem2.classList.remove('non-visable') + 
-        infoUl1.classList.remove('visable') +
-        infoUl1.classList.toggle('non-visable') + 
-        infoItem1.classList.remove('info-item-top') + 
-        infoItem1.childNodes[1].classList.toggle('non-visable'));
-    };
-    return (infoItem2.classList.toggle('non-visable') + 
-    infoUl1.classList.remove('non-visable') + 
-    infoUl1.classList.toggle('visable') +
-    infoItem1.classList.toggle('info-item-top') + 
-    infoItem1.childNodes[1].classList.remove('non-visable'));
-};
+function menuItemsHandler (item) {
+    const ul = item.querySelector('.info-drop-ul')
+    const svg = item.querySelector('svg')
 
-infoItem2.onclick = function dropDown2() {
-    if (infoItem1.classList.contains('non-visable')) {
-        return (infoItem1.classList.remove('non-visable') + 
-        infoUl2.classList.toggle('non-visable') + 
-        infoUl2.classList.remove('visable') +
-        infoItem2.classList.remove('info-item-top-web') + 
-        infoItem2.childNodes[1].classList.toggle('non-visable'));
-    };
-    return (infoItem1.classList.toggle('non-visable') + 
-    infoUl2.classList.remove('non-visable') + 
-    infoUl2.classList.toggle('visable') +
-    infoItem2.classList.toggle('info-item-top-web') + 
-    infoItem2.childNodes[1].classList.remove('non-visable'));
-};
+    if (item == menuItems[1])  {
+        menuItems[0].classList.toggle('non-visable')
+        item.classList.toggle('info-item-top-web')
+    } else {
+        menuItems[1].classList.toggle('non-visable')
+        item.classList.toggle('info-item-top')
+    }
+    ul.classList.toggle('visable')
+    svg.classList.toggle('non-visable')
+}
+
+menuItems.forEach(item => item.addEventListener('click', () => menuItemsHandler(item)))
+
+
 
 let cords = ['scrollX','scrollY'];
 // Перед закрытием записываем в локалсторадж window.scrollX и window.scrollY как scrollX и scrollY

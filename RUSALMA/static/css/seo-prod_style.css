@@ -241,9 +241,9 @@ footer {
     font-style: bold;
 }
 
-@media (min-width: 375px) and (max-width: 415px) {
+@media (max-width: 480px) {
     body {
-        font-size: 10px;
+        font-size: 8px;
     }
     .short-description span {
         width: 90%;
@@ -273,7 +273,7 @@ footer {
     }
 }
 
-@media (min-width: 300px) and (max-width: 374px) {
+@media (max-width: 374px) {
     body {
         font-size: 8px;
     }

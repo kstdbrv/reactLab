@@ -125,7 +125,7 @@ def internet_marketing(request):
 
 def digital_strategy(request):
     image = '../../static/images/backgrounds/digital-strat/bg-image.png'
-    crumb = 'digital-стратегия'
+    crumb = 'Digital-стратегия'
     portfolio = Portfolio.objects.order_by('-id')[:6]
 
     context = {

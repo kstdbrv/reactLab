@@ -71,9 +71,9 @@
        <div class="underscore3"></div>
    </div>
    <div class="blog">
-    <div class="posts infinite-container">
+    <div class="posts">
         {% for post in posts %}
-        <div class="post infinite-item">
+        <div class="post">
             <div class="img" {% if post.image.url is not None %} style="background-image: url({{ post.image.url }})" {% endif %}></div>
              <div class="info">
                 <div class="data">
@@ -100,24 +100,15 @@
              </div>                       
         </div>
         {% endfor %}
+
     </div>
+    <a href="{% url 'blog' %}" class="blog__more">Смотреть больше работ</a>
+
 </div>
-    {% if posts.has_next %}
-    <a href="?page={{posts.next_page_number}}" class="infinite-more-link"></a>
-    {% endif %}
+{% include 'main/portfolio_works.html' %}
 <script type="text/javascript" src="{% static '/js/jquery-2.2.4.min.js' %}"></script>
 <script type="text/javascript" src="{% static '/js/jquery.waypoints.min.js' %}"></script>
-<script type="text/javascript" src="{% static '/js/infinite.min.js' %}"></script>
 <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-<script>
-    var infinite = new Waypoint.Infinite({
-        element: $('.infinite-container')[0],
-        handler: function(direction) {
-
-        },
-        offset: 'bottom-in-view'
-    });
-</script>
 <script src="{% static 'js/slider.js' %}" ></script>
 
 {% endblock %}

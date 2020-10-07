@@ -1,5 +1,5 @@
 .logo>a>svg>path {
-  fill: #121212;
+  fill: black;
 }
 
 
@@ -16,6 +16,7 @@ body {
   overflow-x: hidden;
   font-style: normal;
   color: #121212;
+  font-size: 16px;
 }
 
 *, *:before, *:after {
@@ -44,7 +45,7 @@ ul, li {
 }
 
 .container {
-  padding: 0 2vh;
+  padding: 0 3vw;
 }
 
 @font-face {
@@ -66,15 +67,15 @@ ul, li {
 /* block top */
 .top {
   padding: 10vh 0 5vh;
+  font-size: 2em;
 }
 
 .top__container {
-  max-width: 150vh;
   margin: 0 auto;
 }
 
 .top__title {
-  font-size: 5.5vh;
+  font-size: 1.75em;
   font-family: 'PT-Sans-Bold';
   margin: 0 auto;
   margin-bottom: 2vh;
@@ -96,29 +97,26 @@ ul, li {
 }
 
 .top__box-text {
-  font-size: 3vh;
-  width: 85vh;
+  font-size: 1em;
+  width: 900px;
 }
 
 .btn {
   background: transparent;
   border: .5vh solid #656565;
+  border-radius: 35px;
+  width: 320px;
+  height: 70px;
   color: #656565;
   outline: none;
-  padding: 1vh 4vh;
-  font-size: 3vh;
   cursor: pointer;
   transition: 0.3s;
+  font-size: 1em;
 }
 
 .btn:hover {
-  color: #000;
-  border: .5vh solid #000;
-}
-
-.btn:active {
-  color: #656565;
-  border: .5vh solid #656565;
+  color: #121212;
+  border: .5vh solid #121212;
 }
 
 /* block contacts */
@@ -128,8 +126,8 @@ ul, li {
 }
 
 .contacts__container {
-  max-width: 150vh;
   margin: 0 auto;
+  font-size: 2em;
 }
 
 .contacts__box {
@@ -147,7 +145,7 @@ ul, li {
 }
 
 .contacts__title {
-  font-size: 5.5vh;
+  font-size: 1.75em;
   font-family: 'PT-Sans-Bold';
   margin: 0 auto;
   margin-bottom: 2vh;
@@ -162,7 +160,17 @@ ul, li {
 }
 
 .contacts__text {
-  font-size: 3vh;
+  font-size: 1em;
+  display: flex;
+  align-items: center;
+}
+
+.contacts__column:last-child .contacts__text {
+  align-items: flex-start;
+}
+
+.contacts__text span {
+  margin-left: 20px;
 }
 
 .map {
@@ -172,4 +180,24 @@ ul, li {
 .map__container {
   max-width: 150vh;
   margin: 0 auto;
+}
+@media screen and (max-width: 480px){
+  .top{
+    font-size: 2em;
+    padding: 3vh 0 5vh;
+  }
+  .top__box{
+    font-size: 1em;
+  }
+  .btn {
+    margin-top: 4vh;
+  }
+  .contacts{
+    font-size: 2em;
+    padding: 3vh 0 15vh;
+  }
+  .contacts__title{
+    font-size: 2em;
+  }
+  
 }

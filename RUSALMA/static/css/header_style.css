@@ -308,7 +308,4 @@ h1 {
   #menu__toggle:checked ~ .menu__btn > span::after {
     background-color: #616161 !important; 
   }
-  .slogan {
-    border-bottom: 3px solid #fff;
-  }
 }

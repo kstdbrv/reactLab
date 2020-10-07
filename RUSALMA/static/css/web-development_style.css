@@ -189,10 +189,10 @@ ul, li {
 }
 
 .stages__icons {
-  font-size: 0.8em;
+  font-size: 0.75em;
   width: 90%;
   justify-content: space-around;
-    display: flex;
+  display: flex;
 }
 
 .icon {
@@ -226,7 +226,7 @@ ul, li {
 .stages__icons_discr p {
   position: absolute;
   transition: 1s;
-  font-size: 1em;
+  font-size: 0.75em;
   opacity: 0;
   text-align: center;
   width: 60%;
@@ -390,11 +390,10 @@ ul, li {
 
 .admin__left {
   width: calc(50% - 2vh);
-  background-image: url(../images/backgrounds/web/laptop.png);
-  background-size: contain;
-  height: 488px;
-  background-repeat: no-repeat;
-}
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  }
 
 .admin__right {
   width: calc(50% - 2vh);
@@ -503,27 +502,38 @@ ul, li {
     align-items: center;
     justify-content: center;
   }
+  .admin__panel {
+    padding: 60px 45px  ;
+  }
     
   .admin__left {
     width: 100%;
-    height: 180px;
   }
   
   .admin__right {
     width: 100%;
     text-align: center;
   }
+
+  .credo__text, .stages__discr, .info__text {
+    width: 90%;
+  }
+  .stages__discr
 }
 
-@media (min-width: 375px) and (max-width: 415px) {
+@media (max-width: 480px) {
   body {
-    font-size: 10px;
+    font-size: 8px;
   }
   .stages__icons {
     overflow: hidden;
     overflow-x: scroll;
     width: 90%;
     justify-content: flex-start;
+  }
+
+  .disign {
+    padding-top: 60px;
   }
 
   .admin__panel__name .underscore {
@@ -542,9 +552,13 @@ ul, li {
     display: none;
   }
 
+  .stages__icons_discr p {
+    width: 90%;
+  }
+
 }
 
-@media (min-width: 300px) and (max-width: 374px){
+@media (max-width: 374px){
   body {
     font-size: 8px;
   }
