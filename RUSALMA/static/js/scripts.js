@@ -39,3 +39,27 @@ window.addEventListener('unload', e => cords.forEach(cord => localStorage[cord] 
 // Прокручиваем страницу к scrollX и scrollY из localStorage (либо 0,0 если там еще ничего нет)
 window.scroll(...cords.map(cord => localStorage[cord]));
 
+
+
+// checkbox
+
+function checkboxHandler(item) {
+    if (item.checked) {
+        document.querySelector('.left').style.display='none';
+        if (item.id == 'menu__mobile_toggle_internet') {
+            input[0].parentNode.style.marginTop='60px';
+            input[1].parentNode.style.display='none';
+        } else {
+            input[1].parentNode.style.marginTop='60px';
+            input[0].parentNode.style.display='none';
+        };
+        
+    } else {
+        input.forEach(item => item.parentNode.style.display='', item.parentNode.style.marginTop='')
+        document.querySelector('.left').style.display=''
+    };
+};
+
+const input = document.querySelectorAll('.menu_mobile input[type=checkbox]')
+
+input.forEach(item => item.addEventListener('change', () => checkboxHandler(item)))

@@ -4,22 +4,27 @@ header {
     display: flex;
     justify-content:  space-around;
     box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.14);
+    align-items: center;
 }
 
 .logo-wrap {
     display: flex;
     align-items: center;
     width: 50%;
-    margin: 3vh 0 3vh 0;
 }
 
 .logo {
     margin-left: 3vw;
 }
 
+.logo svg {
+  height: 40px;
+}
+
 
 nav {
     width: 50%;
+    font-size: 1.5em;
 }
 
 .active_header {
@@ -32,7 +37,6 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding-right: 40px;
-    margin: 3vh 4vw 2vh 4vh;
 }
 
 .navbar-item {
@@ -122,10 +126,10 @@ h1 {
     align-items: center;
     position: fixed;
     top: 3.5vh;
-    right: 2vh;
+    right: 4vh;
   
-    width: 3vh;
-    height: 3.5vh;
+    width: 25px;
+    height: 25px;
   
     cursor: pointer;
     z-index: 3;
@@ -230,7 +234,6 @@ h1 {
 .item_li {
     padding: 2vh 0 2vh 6vh;
     margin-bottom: 1vh;
-    width: 100%;
 }
 
 .item_li:hover {
@@ -275,21 +278,37 @@ h1 {
   }   
 
 
-
-@media (min-width: 375px) and (max-width: 415px) {
+@media (max-width: 480px) {
+  .menu__box {
+    width: 100%;
+  }
+  header {
+    justify-content: flex-start;
+    height: 10vh;
+  }
   .breadcrumb {
     display: none;
   }
-  .logo svg {
-    width: 30vw;
+  .logo {
+    margin-left: 10%;
   }
-}
-
-@media (min-width: 300px) and (max-width: 374px){
-  .breadcrumb {
+  .logo svg {
+    width: 35vw;
+  }
+  nav {
     display: none;
   }
-  .logo svg {
-    width: 30vw;
+  .hamburger-menu {
+    display: block;
+    z-index: 4;
+  }
+
+  #menu__toggle:checked ~ .menu__btn > span,
+  #menu__toggle:checked ~ .menu__btn > span::before,
+  #menu__toggle:checked ~ .menu__btn > span::after {
+    background-color: #616161 !important; 
+  }
+  .slogan {
+    border-bottom: 3px solid #fff;
   }
 }

@@ -34,6 +34,7 @@ body {
   overflow-x: hidden;
   font-style: normal;
   color: #121212;
+  font-size: 16px;
 }
 
 *, *:before, *:after {
@@ -335,6 +336,67 @@ ul, li {
   max-width:100%;
   height:auto;
   
+}/* stages work */
+.stages_work{
+  padding: 4vh 2vw;
+  font-size: 2em;
+}
+.stages_work > h2{
+  font-family: 'PT-Sans-Bold';
+  font-size: 2em;
+  text-align: center;
+  color: #121212;
+  margin: 0 auto;
+  margin-bottom: 2vh;
+}
+
+.stages__row {
+  display: flex;
+}
+.card object {
+  width: 65%;
+}
+.card:nth-child(even) {
+  width: 50%;
+}
+
+.stages__row:nth-child(even) .card:nth-child(even) {
+  order: -1;
+}
+
+.stages{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.card > span {
+  font-family: Montserrat;
+  font-size: 2em;
+  color: #121212;
+}
+
+.card > p{
+  font-weight: normal;
+  color: #121212;
+  margin-top: 8vh;
+  word-wrap: break-word;
+  
+}
+.card {
+  width: 50%;
+  margin-bottom: 10vh;
+}
+.img{
+  width: 45vw;
+  display: flex;
+  justify-content: center;
+}
+
+.card > object{
+  max-width:100%;
+  height:auto;
+  
 }
 
 /* usability */
@@ -401,7 +463,70 @@ ul, li {
 }
 
 
+@media screen and (max-width: 480px){
+  body{
+    font-size: 8px;
+  }
+  .short-description{
+    font-size: 2em;
+  }
+  .short-description>span {
+    width: 90%;
+  }
+  .services{
+    font-size: 2em;
+  }
+  .services__title {
+    font-size: 2em;
+  }
+  .services__item{
+    width: 92%;
+    margin-right: 0;
+    height: 56vh;
+}
+.services__item-text{
+  width: 90%;
+}
+ .services__items{
+  margin-bottom: 0vh;
+ }
+ .tasks{
+   font-size: 2em;
+ }
+ .tasks__title{
+   font-size: 2em;
+ }
+ .tasks__img{
+   display: none;
+ }
+ .stages_work{
+   font-size: 2em;
+ }
+ .stages_work h2{
+   font-size: 2em;
+ }
+ .card{
+  width: 90%;
+ }
+ .card > span{
+   font-size: 2em;
+ }
+ .stages__row:nth-child(even) .card:nth-child(even) {
+  order: 0;
+}
+.card object {
+  width: 100%;
+}
+.stages__row {
+  flex-direction: column;
+  align-items: center;
+}
 
+.image p {
+  width: 90%;
+}
+
+}
 
 
 

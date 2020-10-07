@@ -37,5 +37,12 @@
 .post-name {
     display: flex;
     align-items: center;
+    justify-content: center;
     z-index: 3;
+}
+
+@media (max-width: 480px) {
+    .post-name>span {
+        width: 90%
+    }
 }
