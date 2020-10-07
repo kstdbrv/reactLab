@@ -97,7 +97,7 @@ ul, li {
   font-size: 1em;
   color: #656556;
   margin-bottom: 1.5vh;
-  margin-top: 20vh;
+  margin-top: 10vh;
 }
 
 .media__statment-line {
@@ -157,7 +157,7 @@ ul, li {
   font-family: 'PT-Sans-Bold';
   font-size: 2em;
   margin-bottom: 3vh;
-  max-width: 140vh;
+  max-width: 115vh;
 }
 
 .works__title-line {
@@ -318,11 +318,22 @@ ul, li {
   color: #121212;
   margin-top: 8vh;
   word-wrap: break-word;
+  text-align: center;
 }
 
 .card {
   width: 50%;
   margin-bottom: 10vh;
+}
+
+.card:nth-child(even) {
+  text-align: center;
+}
+
+.number {
+  font-family: "Montserrat";
+  font-weight: 600;
+  display: inline-block;
 }
 
 .card > object {
@@ -363,6 +374,9 @@ ul, li {
     text-align: left;
   }
 }
+.stages__row {
+  align-items: center;
+}
 
 @media (max-width: 900px) {
   .card {
@@ -378,6 +392,7 @@ ul, li {
 .stages__row {
     flex-direction: column;
     align-items: center;
+  
 }
 
 .image p {
@@ -391,7 +406,7 @@ ul, li {
 
   .media__statment {
     font-size: 3vh;
-    margin-top: 15vh;
+    margin-top: 6vh;
   }
 
   .media__statment-line {
@@ -430,13 +445,6 @@ ul, li {
   .stages_work > h2 {
   }
 
-  .img {
-    max-width: 100%;
-    padding-top: 4vh;
-    padding-left: 3vh;
-    padding-right: 3vh;
-    margin: 0 auto;
-  }
 }
  
 @media (max-width: 490px) {
@@ -448,121 +456,272 @@ ul, li {
   width: 90%;
 }
 
-.stages__row:nth-child(even) .card:nth-child(even) {
-    order: 0;
-}
-.card object {
-    width: 100%;
-}
-.stages__row {
-    flex-direction: column;
-    align-items: center;
-}
 
-.image p {
-    width: 90%;
-}
 
-  .block-title__text {
-    font-size: 2.5vh;
-    padding: 1vh 2vh;
+
+
+
+@media (min-width: 375px) and (max-width: 415px) {
+  body {
+      font-size: 10px;
+  }
+  .short-description span {
+      width: 90%;
   }
 
-  .block-title__text {
-    padding: 0;
+  .SEO h2, .SEO p, .SEO span {
+      width: 75%;
   }
 
-  .block-info__text {
-    padding: 0;
-  }
-  .works__title {
-    font-size: 5vh;
-  }
-
-  .media__title {
-    font-size: 5vh;
-    margin-bottom: 2vh;
-  }
-
-  .stages_work > h2 {
-  }
-
-  .border_h2 {
-    border-bottom: .5vh solid #121212;
-    margin-bottom: 6vh;
-  }
-
-  .card > span {
-    font-size: 5vh;
-    text-align: left;
-  }
-
-  .media__statment {
-    margin-top: 8vh;
-  }
-}
-
-@media (max-width: 360px) {
   .card {
-    width: 90%;
+      width: 90%;
+  }
+  
+  .stages__row:nth-child(even) .card:nth-child(even) {
+      order: 0;
+  }
+  .card object {
+      width: 100%;
+  }
+  .stages__row {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .image p {
+      width: 90%;
+  }
+}
+
+@media (min-width: 300px) and (max-width: 374px) {
+  body {
+      font-size: 8px;
+  }
+
+  .short-description span {
+      width: 90%;
+  }
+
+  .SEO h2, .SEO p, .SEO span {
+      width: 75%;
+  }
+
+  .card {
+      width: 90%;
+  }
+  
+  .stages__row:nth-child(even) .card:nth-child(even) {
+      order: 0;
+  }
+  .card object {
+      width: 100%;
+  }
+  .stages__row {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .image p {
+      width: 90%;
+  }
+}
+
+
+
+.stages_work{
+  padding: 4vh 2vw;
+  font-size: 2em;
+}
+.stages_work > h2{
+  font-family: 'PT-Sans-Bold';
+  font-size: 2em;
+  text-align: center;
+  color: #121212;
+  margin: 0 auto;
+  margin-bottom: 2vh;
+}
+
+.stages__row {
+  display: flex;
+}
+.card object {
+  width: 65%;
+}
+.card:nth-child(even) {
+  width: 50%;
 }
 
 .stages__row:nth-child(even) .card:nth-child(even) {
-    order: 0;
+  order: -1;
 }
-.card object {
-    width: 100%;
+
+.stages{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  font-weight: bold;
 }
+.card > span {
+  font-family: Montserrat;
+  font-size: 2em;
+  color: #121212;
+}
+
+.card > p{
+  font-weight: normal;
+  color: #121212;
+  margin-top: 8vh;
+  word-wrap: break-word;
+  
+}
+.card {
+  width: 50%;
+  margin-bottom: 10vh;
+}
+.img{
+  width: 45vw;
+  display: flex;
+  justify-content: center;
+}
+
+.card > object{
+  max-width:100%;
+  height:auto;
+  
+}
+
+
+
+.card:nth-child(even) {
+  text-align: center;
+}
+
+.number {
+  font-family: "Montserrat";
+  font-weight: 600;
+  display: inline-block;
+}
+
 .stages__row {
-    flex-direction: column;
-    align-items: center;
+  align-items: center;
 }
 
-.image p {
-    width: 90%;
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 375px) and (max-width: 415px) {
+  body {
+      font-size: 10px;
+  }
+  .short-description span {
+      width: 90%;
+  }
+
+  .SEO h2, .SEO p, .SEO span {
+      width: 75%;
+  }
+
+  .card {
+      width: 90%;
+  }
+  
+  .stages__row:nth-child(even) .card:nth-child(even) {
+      order: 0;
+  }
+  .card object {
+      width: 100%;
+  }
+  .stages__row {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .image p {
+      width: 90%;
+  }
 }
 
-  .block-title__text {
-    font-size: 3vh;
-    padding: 0;
+@media (min-width: 300px) and (max-width: 374px) {
+  body {
+      font-size: 8px;
   }
 
-  .media__statment {
-    font-size: 2.5vh;
-    margin-bottom: 1.5vh;
-    margin-top: 10vh;
+  .short-description span {
+      width: 90%;
   }
 
-  .media__statment-line {
-    width: 10vh;
-    margin-bottom: 3vh;
+  .SEO h2, .SEO p, .SEO span {
+      width: 75%;
   }
 
-  .media__title {
-    font-size: 4vh;
-    margin-bottom: 2vh;
+  .card {
+      width: 90%;
+  }
+  
+  .stages__row:nth-child(even) .card:nth-child(even) {
+      order: 0;
+  }
+  .card object {
+      width: 100%;
+  }
+  .stages__row {
+      flex-direction: column;
+      align-items: center;
   }
 
-  .media__text {
-    font-size: 3vh;
-    padding-bottom: 7vh;
+  .image p {
+      width: 90%;
   }
+}
 
-  .media__title-line {
-    margin-bottom: 8vh;
+
+.card:nth-child(even) {
+  text-align: center;
+}
+
+.number {
+  font-family: "Montserrat";
+  font-weight: 600;
+  display: inline-block;
+}
+
+.stages__row {
+  align-items: center;
+}
+
+
+@media (max-width: 415px)  {
+  .card object {
+    width: 150%;
   }
-
-  .works {
-    padding: 4vh 0 4vh;
-
-  }
-
-  .works__title {
-    font-size: 4vh;
-    margin-bottom: 2vh;
-  }
-
   .card > span {
-    font-size: 4vh;
+
+    font-size: 1.8em;
+
+ }
+}
+
+
+
+}
+
+@media(max-width:480px) {
+  .card > p{
+      margin-top: 4vh;
+      
+  }
+  .card {
+      margin-bottom: 5vh;
   }
 }

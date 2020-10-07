@@ -96,7 +96,7 @@ ul, li {
     justify-content: space-around;
     align-items: center ;
     font-size: 2em;
-    height: 90vh;
+    height: 60vh;
     background-color: #F4F4F4;
 }
 
@@ -147,7 +147,7 @@ ul, li {
 /*  discr__about */
 
 .discr__about {
-    height: 50vh;
+    height: 45vh;
     background-color: #F4F4F4;
     font-size: 2em;
     display: flex;
@@ -385,6 +385,7 @@ ul, li {
 .admin__info {
   display: flex;
   justify-content: space-between;
+  ALIGN-ITEMS: center;
 }
 
 .admin__left {
@@ -453,7 +454,7 @@ ul, li {
 }
 
 
-@media (max-width: 1200px) {
+@media (max-width: 1900px) {
   .short-description>span {
     width: 90%;
     font-size: 1em;
