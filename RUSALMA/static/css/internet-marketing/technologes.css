@@ -1,5 +1,6 @@
 .technologes {
   background: #F4F4F4;
+  font-size: 2em;
 }
 .technologes__inner {
   display: flex;
@@ -8,7 +9,7 @@
   text-align: center;
 }
 .technologs__statment {
-  font-size: 4vh;
+  font-size: 1.5em;
   color: #656556;
   margin-bottom: 1.5vh;
   margin-top: 15vh;
@@ -21,8 +22,7 @@
 }
 .technologes__title {
   font-family: 'PT-Sans-Bold';
-  font-size: 7vh;
-  color: #121212;
+  font-size: 2em;
   margin-bottom: 3vh;
   text-align: center;
   margin: 0 auto;
@@ -36,8 +36,7 @@
   margin-bottom: 10vh;
 }
 .technologes__text {
-  font-size: 3.5vh;
-  
+ font-size: 1.2em;
  max-width: 145vh;
  margin-bottom: 15vh;
 }
@@ -45,3 +44,20 @@
 .technologes__text p {
  margin-bottom: 5vh;
  }
+
+ @media (max-width:480px) {
+  .technologs__statment {
+    margin-top: 7vh;
+  }
+  .technologes__statment-line {
+    margin-bottom: 3vh;
+  }
+
+  .technologes__title-line {
+    margin-bottom: 6vh;
+  }
+
+  .technologes__text {
+    margin-bottom: 5vh;
+  }
+}

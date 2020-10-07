@@ -6,6 +6,13 @@ body {
   overflow-x: hidden;
   font-style: normal;
   color: #121212;
+  font-size: 16px;
+}
+
+@media (max-width:480px) {
+  body {
+    font-size: 8px;
+  }
 }
 
 a {
@@ -21,17 +28,28 @@ footer {
 }
 
 .short-description {
+  font-size: 2em;
   height: 35vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 4vh;
 }
 
 .short-description>span {
   display: block;
   text-align: center;
   width: 60%;
+}
+
+@media (max-width:480px) {
+
+  body {
+    font-size: 8px;
+  }
+
+ .short-description>span {
+  width: 87%;
+ }
 }
  
 *, *:before, *:after {
@@ -59,7 +77,6 @@ ul, li {
 }
 
 .container{
-  /* max-width: 1470px; */
   padding: 0 15px;
   margin: 0 auto;
 }

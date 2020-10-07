@@ -17,6 +17,7 @@ body {
   overflow-x: hidden;
   font-style: normal;
   color: #121212;
+  font-size: 16px;
 }
 
 *, *:before, *:after {
@@ -67,24 +68,27 @@ ul, li {
 /* .short-description */
 
 
-.short-description {
-  height: 35vh;
+.short-description {  
+  font-size: 2em;
+  padding: 5vh 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 4vh;
 }
+
+
 
 .short-description>span {
   display: block;
   text-align: center;
-  width: 60%;
+  width: 75%;
 }
 
 
 /* block seo */
 .seo {
   background: #F4F4F4;
+  font-size: 2em;
 }
 
 .seo__inner {
@@ -95,7 +99,7 @@ ul, li {
 }
 
 .seo__statment {
-  font-size: 4vh;
+  font-size: 1.5em;
   color: #656556;
   margin-bottom: 1.5vh;
   margin-top: 20vh;
@@ -110,7 +114,7 @@ ul, li {
 
 .seo__title {
   font-family: 'PT-Sans-Bold';
-  font-size: 7vh;
+  font-size: 2em;
   color: #121212;
   margin-bottom: 3vh;
   text-align: center;
@@ -126,21 +130,19 @@ ul, li {
 }
 
 .seo__text {
-  font-size: 4vh;
-  color: #121212;
   padding-bottom: 10vh;
   max-width: 113vh;
 }
 
 /* block tasks */
 .tasks {
+  font-size: 2em;
   background: #F4F4F4;
 }
 
 .tasks__title {
   font-family: 'PT-Sans-Bold';
-  font-size: 7vh;
-  color: #121212;
+  font-size: 2em;
   margin-bottom: 3vh;
   text-align: center;
   margin: 0 auto;
@@ -167,7 +169,7 @@ ul, li {
 
 .tasks__text {
   margin-top: 3vh;
-  font-size: 2.3vh;
+  font-size: 0.8em;
   color: #656565;
   margin-right: 3vh;
 }
@@ -202,7 +204,7 @@ ul, li {
   text-align: center;
   margin: 0 auto;
   margin-bottom: 4vh;
-  width: 115vh;
+  max-width: 115vh;
 }
 
 .services__title-line {
@@ -346,6 +348,53 @@ ul, li {
 /* stages */
 .stages {
   height: 110vh;
+}
+
+@media (min-width: 375px) and (max-width: 415px) {
+  body {
+    font-size: 10px;
+  }
+  .stages__icons {
+    overflow: hidden;
+    overflow-x: scroll;
+    width: 90%;
+    justify-content: flex-start;
+  }
+  
+  .icon {
+    margin-right: 50px;
+  }
+
+  .admin__title, .development__title {
+    text-align: center;
+  }
+  .development, .discr, .discr__about {
+    display: none;
+  }
+
+}
+
+@media (min-width: 300px) and (max-width: 374px){
+  body {
+    font-size: 8px;
+  }
+  .stages__icons {
+    overflow: hidden;
+    overflow-x: scroll;
+    width: 90%;
+    justify-content: flex-start;
+  }
+  
+  .icon {
+    margin-right: 50px;
+  }
+  
+  .admin__title, .development__title {
+    text-align: center;
+  }
+  .development, .discr, .discr__about {
+    display: none;
+  }
 }
 
 .stages__main {
