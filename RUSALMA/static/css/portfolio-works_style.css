@@ -4,6 +4,7 @@
     flex-direction: column;
     align-items:center;
     padding-top: 17vh;
+    font-size: 2em;
   }
   .portfolio-main__title {
     font-family: 'PT-Sans-Bold';
