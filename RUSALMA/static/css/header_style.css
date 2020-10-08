@@ -302,6 +302,9 @@ h1 {
     display: block;
     z-index: 4;
   }
+  .item_ul {
+    padding-left: 0;
+  }
 
   #menu__toggle:checked ~ .menu__btn > span,
   #menu__toggle:checked ~ .menu__btn > span::before,
