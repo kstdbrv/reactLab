@@ -78,7 +78,7 @@
              <div class="info">
                 <div class="data">
                     <p class="day">{{ post.date_created }}</p>
-                    <p class="time">6 минут на прочтение</p>
+                    <p class="time">{{ post.get_time_to_read }}</p>
                 </div>
                 <a class="title" href="{% url 'post' post.id %}">
                     {{ post.title }}

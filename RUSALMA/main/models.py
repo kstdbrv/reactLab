@@ -39,6 +39,22 @@ class Post(models.Model):
     def __str__(self):
         return self.title
 
+    def get_time_to_read(self):
+        time_to_read = len(self.content) / 1500
+
+        if time_to_read < 1:
+            return '1 минута на прочтение'
+        else:
+            time_to_read = round(time_to_read)
+
+            if 1 < time_to_read < 5:
+                return '{} минуты на прочтение'.format(time_to_read)
+            elif 5 <= time_to_read < 20:
+                return '{} минут на прочтение'.format(time_to_read)
+            else:
+                return 'больше 20 минут на прочтение'
+
+
     class Meta:
         verbose_name = 'Пост'
         verbose_name_plural = 'Посты'

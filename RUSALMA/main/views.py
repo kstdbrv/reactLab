@@ -19,6 +19,7 @@ def post(request, pk):
 
     context = {
         'post': post,
+
     }
     return render(request, 'main/post_template.html', context)
 
