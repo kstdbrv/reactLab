@@ -102,11 +102,14 @@ ul, li {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-right: 4vh;
+  padding-left: 4vh;
 }
 
 .skills__img {
-  width: 34vh;
-  margin-right: 17vh;
+   width: 50vh;
+
+  margin-right: 7vh;
 }
 
 .skills__title {
@@ -118,12 +121,12 @@ ul, li {
   width: 21vh;
   height: 0.7vh;
   background-color:#000;
-  margin-bottom: 11vh;
+  margin-bottom: 7vh;
 }
 
 .box-skills__item {
-  width: 98vh;
-  margin-bottom: 11vh;
+  max-width: 89vh;
+  margin-bottom: 7vh;
 }
 
 .box-skills__title {
@@ -283,14 +286,15 @@ max-width: 130vh;
 
 .social__text {
   font-size: 2.5vh;
-  width: 62vh;
+  font-size: 32px;
+  width: 50vh;
   text-align: left;
-  margin-left: 38vh;
+  margin-left: 12vh;
 
 }
 
 .social__img {
-  width: 52vh;
+  width: 67vh;
 }
 
 
@@ -298,7 +302,7 @@ max-width: 130vh;
 
 .info {
   background-image: linear-gradient(to top, rgba(18, 18, 18, 0.5), rgb(18, 18, 18, 0.5)), 
-  url('../images/bg-info.png');
+  url('../images/backgrounds/chat-bots/bg-info.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
