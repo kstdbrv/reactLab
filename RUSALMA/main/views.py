@@ -53,25 +53,17 @@ def blog(request):
 def about(request):
     crumb = 'о нас'
     image = '../static/images/backgrounds/about.png'
+    portfolio = Portfolio.objects.order_by('-id')[:6]
 
     team = Author.objects.all()
-    posts = Post.objects.order_by('-id')
-
-    page = request.GET.get('page')
-    paginator = Paginator(posts, 3)
-
-    try:
-        posts = paginator.page(page)
-    except PageNotAnInteger:
-        posts = paginator.page(1)
-    except EmptyPage:
-        posts = paginator.page(paginator.num_pages)
+    posts = Post.objects.order_by('-id')[:3]
 
     context = {
         'posts': posts,
         'team': team,
         'image': image,
         'crumb': crumb,
+        'portfolio': portfolio,
 
     }
     return render(request, 'main/about.html', context)
@@ -152,10 +144,12 @@ def seo(request):
 def chat_bots(request):
     crumb = 'разработка чат-ботов'
     image = '../../static/images/backgrounds/chat-bots/bg-image.png'
+    portfolio = Portfolio.objects.order_by('-id')[:6]
 
     context = {
         'crumb': crumb,
         'image': image,
+        'portfolio': portfolio,
     }
     return render(request, 'main/chat-bot.html', context)
 
@@ -163,10 +157,12 @@ def chat_bots(request):
 def context_advert(request):
     crumb = 'контекстная реклама'
     image = '../../static/images/backgrounds/context-ad/bg-image.png'
+    portfolio = Portfolio.objects.order_by('-id')[:6]
 
     context = {
         'crumb': crumb,
         'image': image,
+        'portfolio': portfolio,
     }
     return render(request, 'main/context-advert.html', context)
 
@@ -174,10 +170,12 @@ def context_advert(request):
 def support(request):
     crumb = 'техническая поддержка'
     image = '../../static/images/backgrounds/support-page/bg-image.png'
+    portfolio = Portfolio.objects.order_by('-id')[:6]
 
     context = {
         'crumb': crumb,
         'image': image,
+        'portfolio': portfolio,
     }
     return render(request, 'main/support.html', context)
 
@@ -185,10 +183,12 @@ def support(request):
 def web_development(request):
     crumb = 'веб-разработка'
     image = '../../static/images/backgrounds/web/bg-image.png'
+    portfolio = Portfolio.objects.order_by('-id')[:6]
 
     context = {
         'crumb': crumb,
         'image': image,
+        'portfolio': portfolio,
     }
     return render(request, 'main/web-development.html', context)
 
@@ -196,10 +196,12 @@ def web_development(request):
 def smm(request):
     crumb = 'SMM'
     image = '../../static/images/backgrounds/smm/bg-image.png'
+    portfolio = Portfolio.objects.order_by('-id')[:6]
 
     context = {
         'crumb': crumb,
         'image': image,
+        'portfolio': portfolio,
     }
     return render(request, 'main/smm.html', context)
 
@@ -216,9 +218,11 @@ def contacts(request):
 def promo_mobile(request):
     crumb = 'продвижение приложений'
     image = '../../static/images/backgrounds/promo-mobile/bg-image.png'
+    portfolio = Portfolio.objects.order_by('-id')[:6]
 
     context = {
         'crumb': crumb,
         'image': image,
+        'portfolio': portfolio,
     }
     return render(request, 'main/promo-mobile.html', context)
