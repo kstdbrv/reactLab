@@ -139,7 +139,6 @@ a {
     text-align: center;
     color: #FFFFFF;
     margin-bottom: 2vh;
-    padding: 0px 27vh;
     margin-top: 5vh;
    
 }
@@ -346,6 +345,9 @@ img{
     }
     .border_inc{
         margin: 0 auto;
+    }
+    .img > p {
+        width: 90%;
     }
     
 }
