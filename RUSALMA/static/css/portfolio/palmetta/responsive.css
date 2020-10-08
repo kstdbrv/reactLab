@@ -1,0 +1,567 @@
+@media screen and (max-width: 1200px){
+
+    .intro > h1{       
+        font-size: 10vh;      
+    }
+    .intro > p{     
+        font-size: 6vh;    
+    }
+    .text > p{    
+        font-size: 3.5vh;
+        width: 70vw;
+    }
+    .text{
+        background: #FFFFFF;
+        padding: 5vh 0;  
+    }
+    .task > a{
+        width: 25vw;
+    }
+    /* decision */
+    .decision > p{
+        width: 70vw;
+    }
+    /* slider */
+    .img_slider > .img{     
+        height: 60vh;
+    }
+    /* numbers */
+    .numbers{
+        padding: 0vh 0;
+    }
+   
+    .number{
+        width: 70vw;
+    }
+    .info > span{
+        margin-left: 15vw;
+    }
+               
+    .info > .nam{
+        margin-right: 10vh;
+    }
+
+    .info > p{
+        width: 60vw;  
+        margin-left: 15vw; 
+    }
+
+    .img-myfood{     
+        height: 50vh;
+    }
+    .img-myfood > p {     
+        width: 90vw;
+    }
+    /* booking */
+    .booking > p{
+        width: 90vw;
+    }
+    .img-phones{
+        height: 50vh;
+    }
+    /* team */
+    .team{
+        
+        padding: 3vh 0;
+    }
+    .team  span{
+        font-weight: bold;
+        font-size: 4vh;
+        text-align: center;
+        color: #121212;
+        display: block;
+    }
+    .team > .border_span{
+        border-bottom: .6vh solid #121212;
+        width: 7vw;
+        margin: 2vh auto;
+    }
+
+    .slick-slide {
+      
+      }
+
+    .pirson{     
+        width: 15vh; 
+        height: 15vh;
+        margin: 0 auto;
+    }
+    .img_slider-pirson1{
+        display: none;
+    }
+    .img_slider-pirson1 > p{
+        display: none;
+    }
+    .img_slider-pirson1 > span{
+        display: none;
+    }
+    .next {
+        right: 3.5vh;
+        top: 5vh;
+    }
+
+    .prev {
+        z-index: 100;
+        left:3.5vh;
+        top: 5vh;
+    }
+}
+@media screen and (max-width: 1024px){
+
+    .intro > h1{       
+        font-size: 8vh;  
+        margin-top: 10vh;    
+    }
+    .intro > p{     
+        font-size: 6vh;  
+        width: 70vw;  
+    }
+    .border_h1{
+        width: 40vw;
+        margin-bottom: 5vh ;
+        
+    }
+    
+    .tasks{
+        display: flex;
+        flex-direction: column;
+      
+    }
+    .task{
+        display: flex;
+        flex-direction: column;
+        height: 61vh;
+    }
+    .task > a{
+        font-size: 6vh;
+        margin-bottom: 5vh;
+        display: block;
+        width: 50vw;
+    }
+    .task > a:hover{
+        text-decoration: underline;
+        color:#112211 ;
+    }
+    .task > p{
+        font-size: 3vh;
+        width: 95vw;
+        margin-bottom: 2vh;
+    }
+    .task_img{
+        width: 60vh;
+        height: 60vh;
+        margin: 0 auto;
+    }
+    .task_img > .img{
+        width: 60vh;
+        height: 60vh;
+        margin: 0 auto;
+    }
+    .mb-t{
+        width: 99%;
+    }
+    .myfood{
+        width: 99%;
+    }
+  
+    .task > a > span >  object{
+       width: 3vw;
+    }
+    .border_span{
+        width: 18vw;    
+    }
+    .decision > p{
+        width: 90vw;
+    }
+
+    /* numbers */
+    .numbers{
+        background: #FFFFFF;
+        padding: 0 0;
+    }
+    .number{
+        margin-bottom: 6vh;
+        width: 90vw;
+    }
+    .num_text{
+        padding-top: 3vh;
+    }
+
+    .info > span{       
+        font-size: 4vh;
+        margin-left: 20vw;
+        display: block;
+        width: 30;
+    }
+    .info > small{
+        margin-bottom: 4vh;
+        display: block;
+        margin-left: 20vw;
+        margin-top: 5vh;      
+    }
+
+    .info > p{
+        width: 60vw;  
+        margin-left: 20vw; 
+    }
+  
+
+    /* img */
+    .img-myfood{
+         display: none;
+    }
+    .img-myfood > p {
+         display: none;
+     }
+
+}
+@media screen and (max-width: 768px){
+    .task_img{
+        width: 50vh;
+        height: 50vh;
+        margin: 0 auto;
+    }
+    .task_img > .img{
+        width: 50vh;
+        height: 50vh;
+        margin: 0 auto;
+    }
+    .task{
+        height: 78vh;
+    }
+}
+     @media screen and (max-width: 425px){
+        .intro{
+            padding-top:10vh;
+        }
+        .intro > h1{       
+            font-size: 6vh;  
+            margin-top: 40vh;    
+        }
+        .intro > p{     
+            font-size: 4vh;  
+            width: 80vw;  
+        }
+        .border_h1{
+            width: 45vw;
+            margin-bottom: 3vh ;
+            
+        }
+        .text{
+            background: #FFFFFF;
+            padding: 1vh 0;
+        
+        }
+        .text > p{
+            font-size: 16px;
+            width: 90vw;
+        }
+        .task a{
+            font-size: 4vh;
+        }
+        .task{
+            height: 58vh;
+        }
+        .tasks{
+            display: flex;
+            flex-direction: column;  
+            height: 112vh;
+        }
+        .task span{
+            font-size: 4vh;
+        }
+        .task > p{
+            width: 95vw;
+            font-size: 16px;
+        }
+        .task_img{
+            width: 47vh;
+            height: 47vh;
+            
+        }
+        .task_img > .img{
+            width: 47vh;
+            height: 47vh;
+            margin: 4vh auto;
+        }
+        .task > a > span >  object{
+           width: 5vw;
+        }
+        .mb-t{
+            margin-top: 3vh;
+            margin-bottom: 2vh;
+            font-size: 16px;
+            width: 99.9%;
+        }
+        .myfood{
+            font-size: 3vh;
+            margin-bottom: 1vh;
+        }
+        .decision span{
+            font-size: 4vh;
+        }
+        .border_span{
+            margin-bottom: 3vh;
+        }
+        .decision p{
+            font-size: 16px;
+            width: 99%;
+        }
+        .decision{
+            padding-bottom: 0;
+        }
+         /* slider */
+        .img_slider > .img{     
+            height: 30vh;
+        }
+        .sl-dots button {    
+            border: .4vh solid #AFAFAF; 
+            border-radius: 50%; 
+            height: 3vh; 
+            width: 3vh; 
+            outline: none; 
+            margin-left:3vh;
+            margin-right: 3vh;
+            margin-bottom: 2vh;
+        }     
+        .sl-dots li[class="slick-active"] button {
+            border: .4vh solid #49E4DB; 
+        }  
+        /* numbers */
+        .numbers{
+            background: #FFFFFF;
+        }
+        .number{
+            margin-bottom: 1vh;
+            width: 90vw;
+        }
+        ol>li::before {
+            font-size: 7vh;
+        }
+        .info span{
+            font-size: 24px;
+           
+        }
+        .info{
+            margin-bottom: 3vh;
+        }
+        .info p{
+            font-size: 2.5vh;
+        }
+        .num_text{
+            padding-top: 1vh;
+        }
+        ol > li{
+            margin-top: -10vh;
+        }    
+        /* img */
+        .img-myfood{
+             display: none;
+        }
+        .img-myfood > p {
+             display: none;
+         }
+         .booking{
+             display: none;
+         }
+         .img-phones{
+             display: none;
+         }
+         .team .border_span{
+             width: 32vw;
+         }
+}
+@media screen and (max-width: 375px){
+
+    .intro > h1{       
+        font-size: 6vh;  
+        margin-top: 40vh;    
+    }
+    .intro > p{     
+        font-size: 3.5vh;  
+        width: 80vw;  
+    }
+    .border_h1{
+        width: 45vw;
+        margin-bottom: 4vh ;
+        
+    }
+    .text{
+        background: #FFFFFF;
+        padding: 2vh 0;
+    
+    }
+    .text > p{
+        width: 90vw;
+    }
+    .tasks{
+        display: flex;
+        flex-direction: column;         
+    }
+    .task > p{
+        width: 90vw;
+    }
+    .task{
+        height: 65vh;
+    }
+    .task > a{
+        font-size: 3.5vh;
+        width: 50vw;
+    }
+    .task_img{
+        width: 35vh;
+        height: 35vh;
+        margin: 0 auto;
+    }
+    .task_img > .img{
+        width: 35vh;
+        height: 40vh;
+        
+    }
+    .task > a > span >  object{
+       width: 5vw;
+    }
+     /* slider */
+    .img_slider > .img{     
+        height: 25vh;
+    }
+    .slider_1{
+        padding: 2vh;
+    }
+    /* numbers */
+    .numbers{
+        background: #FFFFFF;
+    }
+    .number{
+        margin-bottom: 1vh;
+        width: 95vw;
+    }
+    .info > span{       
+        font-size: 2.5vh;
+        margin-left: 25vw;
+        display: block;
+        width: 40;
+    }
+    .info > small{
+        margin-bottom: 4vh;
+        display: block;
+        margin-left: 25vw;
+        margin-top: 5vh;      
+    }
+
+    .info > p{
+        font-size: 2vh;
+        width: 60vw;  
+        margin-left: 25vw; 
+    }
+    .num_text{
+        padding-top: 1vh;
+    }
+    ol > li{
+        margin-top: -10vh;
+    }    
+    /* img */
+    .img-myfood{
+         display: none;
+    }
+    .img-myfood > p {
+         display: none;
+     }
+     .booking{
+         display: none;
+     }
+     .img-phones{
+         display: none;
+     }
+     .team span{
+         font-size: 4vh;
+     }
+     .pirson{
+        width: 15vh; 
+        height: 15vh;
+        margin: 0 auto;
+        border-radius: 50%;
+    }
+    .slider2{
+        padding: 0;
+    }
+}
+@media screen and (max-width: 320px){
+
+    .task{
+        height: 89vh;height: 128vh;
+    }
+    .tasks{
+        display: flex;
+        flex-direction: column;  
+        height: 128vh;
+    }
+    .task > p{
+        width: 95vw;
+    }
+    .task > a{
+        font-size: 4vh;
+        width: 50vw;
+    }
+    .task_img{
+        width: 40vh;
+        height: 40vh;
+        margin: 0 auto;
+    }
+    .task_img > .img{
+        width: 40vh;
+        height: 40vh;
+        margin: 0 auto;
+    }
+    .task > a > span >  object{
+       width: 5vw;
+    }
+     /* slider */
+    .img_slider > .img{     
+        height: 40vh;
+    }
+    /* numbers */
+    .numbers{
+        background: #FFFFFF;
+    }
+    .number{
+        margin-bottom: 1vh;
+        width: 95vw;
+    }
+    .info > span{       
+        font-size: 4vh;
+        margin-left: 25vw;
+        display: block;
+        width: 40;
+    }
+    .info > small{
+        margin-bottom: 4vh;
+        display: block;
+        margin-left: 25vw;
+        margin-top: 5vh;      
+    }
+
+    .info > p{
+        width: 60vw;  
+        margin-left: 25vw; 
+    }
+    .num_text{
+        padding-top: 1vh;
+    }
+    ol > li{
+        margin-top: -10vh;
+    }    
+    /* img */
+    .img-myfood{
+         display: none;
+    }
+    .img-myfood > p {
+         display: none;
+     }
+     .booking{
+         display: none;
+     }
+     .img-phones{
+         display: none;
+     }
+}

@@ -107,6 +107,15 @@
             <h1><a href="{{ request.get_full_path }}" class="active_header">{{ crumb }}</a></h1>
         </div>
     </div>
+    {% elif '/case/' in request.path %}
+    <div class="breadcrumb">
+        <div class="bla">
+            <span>ᐳ</span>
+            <h1><a href="{% url 'portfolio' %}">портфолио</a></h1>
+            <span>ᐳ</span>
+            <h1><a href="{{ request.get_full_path }}" class="active_header">{{ crumb }}</a></h1>
+        </div>
+    </div>
     {% else %}
     <div class="breadcrumb">
         <div class="bla">

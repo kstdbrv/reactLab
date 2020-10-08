@@ -10,6 +10,7 @@ urlpatterns = [
 
     path('about/', views.about, name='about'),
     path('portfolio/', views.portfolio, name='portfolio'),
+    path('portfolio/case/<str:slug>', views.portfolio_case, name='portfolio_case'),
     path('contacts/', views.contacts, name='contacts'),
 
     path('internet-marketing/', views.internet_marketing, name='internet_marketing'),

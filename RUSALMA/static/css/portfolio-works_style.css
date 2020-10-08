@@ -152,4 +152,7 @@ img{
     width: 100%;
     height: 300px;
   }
+  .block > p {
+    margin-bottom: 20px;
+  }
 }

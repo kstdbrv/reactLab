@@ -7,6 +7,8 @@ from .models import *
 
 # Create your views here.
 
+PORTFOLIO_CASES  = {}
+
 
 def index(request):
     return render(request, 'main/index.html')
@@ -226,3 +228,17 @@ def promo_mobile(request):
         'portfolio': portfolio,
     }
     return render(request, 'main/promo-mobile.html', context)
+
+
+def portfolio_case(request, slug):
+    crumb = ' '.join(slug.split('_')).capitalize()
+    team = Author.objects.all()
+    portfolio = Portfolio.objects.order_by('-id')[:6]
+
+    context = {
+        'crumb': crumb,
+        'team': team,
+        'portfolio': portfolio,
+    }
+
+    return render(request, 'main/portfolio/{0}.html'.format(slug), context)
