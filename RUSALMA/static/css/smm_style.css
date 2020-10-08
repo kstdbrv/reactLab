@@ -441,10 +441,6 @@ ul, li {
   .card > span {
     font-size: 6vh;
   }
-
-  .stages_work > h2 {
-  }
-
 }
  
 @media (max-width: 490px) {
