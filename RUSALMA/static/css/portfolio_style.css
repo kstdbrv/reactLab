@@ -79,7 +79,6 @@ body {
     transition: 0.2s;
     width: 320px;
     height: 70px;
-    border-radius: 35px;
 }
 
 .order:hover{
@@ -115,7 +114,6 @@ body {
     transition: 0.5s;
     vertical-align: middle;
     margin: 3vh 1vh;
-    border-radius: 10px;
 }
 
 .btn-category:hover{
