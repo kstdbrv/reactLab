@@ -171,9 +171,6 @@ ul, li {
   .top__box{
     font-size: 1em;
   }
-  .btn {
-    margin-top: 4vh;
-  }
   .contacts{
     font-size: 2em;
     padding: 3vh 0 15vh;
@@ -194,6 +191,7 @@ ul, li {
     font-size: 24px;
   }
   .btn-animate {
+    margin-top: 40px;
     margin-left: 1.5vw;
   }
 }
