@@ -123,7 +123,7 @@ footer {
 
 .card {
     width: 47.8%;
-    height: 70vh;
+    
     margin: 0 1vh 5vh 1vh;
     box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.14);
     display: flex;
@@ -303,3 +303,76 @@ footer {
     font-weight: 600;
     font-style: bold;
 }
+
+@media screen and (max-width: 480px){
+    .short-description>span {
+        width: 90%;
+    }
+    .short-description {
+        font-size: 16px;
+    }
+    .discription > h2 {       
+        font-size: 24px;     
+        text-align: center;
+        width: 90%;
+    }
+    .discription > p {   
+        font-size: 16px;     
+        width: 70%;
+    }
+    .images> h3 {    
+        font-size: 16px;
+        text-align: center;    
+        margin-top: 9vh;
+        margin-bottom: 4vh;      
+    }
+    .card {
+        width: 95.8%;
+    }
+    .card > object{  
+        width: 90%;
+    }
+    .card > p {
+        font-size: 16px;
+        width: 80%;
+        margin-bottom: 3vh;
+        margin-top: -3vh;
+    }
+    .seo {
+        flex-direction: column;
+    }
+    .seo > p {
+        width: 98%;
+        font-size: 16px;
+    }
+    .seo > object{
+        width:90%
+    }
+    .section_seo {
+        padding-bottom: 0vh;
+    }
+    .who_work > h2 {
+        font-size: 24px;
+        padding-top: 5vh;
+    }
+    .who_work > h3 {
+        font-size: 16px;
+        width: 90%;
+        margin-bottom: 6vh;
+    }
+    .border-black {
+        margin-bottom: 4vh;
+    }
+    .text > p {
+        font-size: 16px;
+        margin-bottom: 8vh;
+        width: 90%;
+    }
+    .text > h2 {
+        font-size: 16px;
+        width: 90%;
+    }
+    .text {
+        min-height: 47vh;
+    }
+  }

@@ -52,7 +52,7 @@ INSTALLED_APPS = [
 
     'ckeditor',
 
-    'main',
+    'main.apps.MainConfig',
 ]
 
 MIDDLEWARE = [

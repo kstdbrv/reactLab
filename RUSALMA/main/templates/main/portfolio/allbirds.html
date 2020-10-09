@@ -1,0 +1,120 @@
+{% extends 'main/main.html' %}
+{% load static %}
+    {% block style %}
+    <link rel="stylesheet" href="{% static 'css/portfolio/1-style.css' %}">
+     <link rel="stylesheet" href="{% static 'css/portfolio/allbirds/responsive.css' %}">
+     {% endblock %}
+     {% block content %}
+    <div class="intro"  style=" background-image: url({% static 'images/portfolio/allbirds/MaskGroup.png' %})">
+        <h1>Allbirds</h1>
+        <div class="border_h1"></div>
+        <p>разворот на классику</p>        
+    </div>
+    <div class="text">
+        <p>Новозеландско-американская обувная компания, которая использует подход, ориентированный на потребителя, и нацелена на создание экологически чистой обуви.</p>
+    </div>
+    <div class="tasks">
+        <div class="task">
+            <a href="https://allbirds.com">allbirds.com<span> <object data="{% static 'images/portfolio/allbirds/skr.svg' %}" type="image/svg+xml"></object> </span>
+            </a>
+            <span>задачи</span>
+            <div class="border_span"></div>
+            <p>- Создать новый канал продаж;
+                - Реализовать концепцию омниканальной торговли;
+                - Повысить узнаваемость бренда и привлечь новую аудиторию;
+                - Расширить географию продаж;
+                - Укрепить лояльность постоянных покупателей;
+                - Повысить выручку компании;
+                - Обеспечить синергию каналов за счет привлечения онлайн-покупателей в офлайн и наоборот;</p>           
+        </div>      
+        <div class="task_img">
+            <div class="img" style=" background-image: url({% static 'images/portfolio/allbirds/айфонпросто1.png' %}); background-repeat: no-repeat;"></div>
+        </div>
+    </div>
+    <p class="mb-t">
+        - Интегрировать онлайн-каталог с офлайн-магазинами с синхронизацией остатков в реальном времени;
+        - Исследовать аудиторию и разработать Customer Journey Map;
+        - Обеспечить продвижение офлайновых акций в онлайн-магазине;
+        - Реализовать систему, выдерживающую высокие нагрузки;
+   </p>
+   <span class="myfood"></span>
+    <div class="decision">
+        <span>решение</span>
+        <div class="border_span"></div>
+        <p> </p>
+    </div>
+    <div class="slider1"></div>
+        <div class="slider_1" >
+            <div class="img_slider"> <div class="img"  style="background-image: url({% static 'images/portfolio/allbirds/allbirds1.png' %})"></div></div>
+            <div class="img_slider"> <div class="img"  style="background-image: url({% static 'images/portfolio/allbirds/allbirds2.png' %})"></div></div>
+            <div class="img_slider"> <div class="img"  style="background-image: url({% static 'images/portfolio/allbirds/allbirds3.png' %})"></div></div>
+        </div>
+    </div>
+       
+    <div class="numbers">
+        <div class="number">
+            <ol>
+                <li> <div class="info">                   
+                    <span>синхронизация товарных остатков через ERP-систему;</span><br>
+                    
+                        <p>
+                        </p>
+                </div>                   
+                </li>
+                <li>  
+                    <div class="info">
+                        <span>интеграция с сервисом доставки ShopLogistic;</span><br>
+                        <p>
+                        </p>
+                    </div>
+                   
+                </li>
+                <li> 
+                    <div class="info">
+                        <span>консолидация всех частей заказа в одной точке самовывоза;</span><br>
+                        <p></p> 
+                    </div>
+                   
+                </li>    
+                 <li> 
+                    <div class="info">
+                        <span>повышение производительности сайта за счет технологии Elasticsearch.</span><br>
+                        
+                            <p></p>
+                    </div>
+                   </li> 
+            </ol>
+        </div>
+    </div>
+    <div class="img-myfood"  style="background-image: url({% static 'images/portfolio/allbirds/Apple-Devices11.png' %});">
+        <p>
+        </p><br>
+        <p</p>
+    </div>
+    <div class="booking">
+        <span>общий результат</span>
+        <div class="border_span"></div>
+        <p>-Разработан розничный интернет-магазин;
+            -Разработаны мобильные приложения под iOS и Android;
+            -Создана омниканальная система. </p>
+    </div>
+  
+    <div class="team">
+        <span>команда</span>
+        <div class="border_span"></div> 
+        <div class="slider2">
+            <div class="slider_2">
+                {% for member in team %}
+                <div class="img_slider-pirson1"><div class="pirson" {% if member.photo.url is not None %} style="background-image: url({{ member.photo.url }});"{% endif %}></div><p>{{ member.name }}</p><span>{{ member.position }}</span></div>
+                {% endfor %}
+            </div>
+        </div>
+</div>
+<script
+src="https://code.jquery.com/jquery-3.5.1.min.js"
+integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+crossorigin="anonymous"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="{% static 'js/portfolio.js' %}"></script>
+{% include 'main/portfolio_works.html' %}
+{% endblock %}

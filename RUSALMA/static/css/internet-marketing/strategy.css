@@ -6,8 +6,8 @@
 
 .strategy__title-line {
   width: 17.5vh;
-  height: 0.2vh;
-  background-color:#656565;
+  height: 0.5vh;
+  background-color:#121212;
   margin-bottom: 4vh;
   margin: 0 auto;
   margin-bottom: 10vh;
@@ -25,11 +25,12 @@
 }
 
 .strategy__title {
-  font-size: 1.5em;
+  font-family: 'PT-Sans-Bold';
+  font-size: 2em;
   text-align: center;
-  color: #656556;
+  color: #121212;
   margin-bottom: 2vh;
-  padding-top: 12vh;
+  padding-top: 15vh;
 }
 
 .content-strategy__title {

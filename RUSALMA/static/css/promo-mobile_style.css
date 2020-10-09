@@ -85,6 +85,7 @@ ul, li {
 
 /* block seo */
 .seo {
+  font-size: 2em;
   background: #F4F4F4;
 }
 
@@ -119,6 +120,7 @@ ul, li {
   text-align: center;
   margin: 0 auto;
   margin-bottom: 4vh;
+  margin-top: 40px;
 }
 
 .seo__title-line {

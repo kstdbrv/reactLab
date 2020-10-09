@@ -1,3 +1,8 @@
+.services {
+  background: #F4F4F4;
+  padding-top: 5vh;
+}
+
 .services__inner {
   font-size: 2em;
   display: flex;
@@ -10,17 +15,14 @@
   margin-bottom: 1.5vh;
 }
 
-.services {
-  margin-top: 5vh;
-}
-
 .services__title {
   font-family: 'PT-Sans-Bold';
   font-size:2em;
   margin-bottom: 3vh;
   text-align: center;
   margin: 0 auto;
-  max-width: 70vh;
+  max-width: 63vh;
+  padding-top: 5vh;
   margin-bottom: 2vh;
 }
 
@@ -28,10 +30,10 @@
 .services__text {
   text-align: center;
   color: #121212;
-  padding-bottom: 15vh;
-  max-width: 140vh;
+  padding-bottom: 10vh;
+  max-width: 85vh;
   margin: 0 auto;
-  padding-top: 7vh;
+  padding-top: 2vh;
 }
 
 .services__question-line {

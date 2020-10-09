@@ -91,7 +91,7 @@ footer {
     text-align: center;
     color: #121212;
     margin-bottom: 8vh;
-    padding: 0 13vw;
+    padding: 0 18vw;
 }
 
 /* online community */
@@ -169,6 +169,7 @@ footer {
     height: 0.7vh;
     width: 15vh;
     background-color: black;
+    margin-top: 2vh;
 }
 
 .news_digital > h1{

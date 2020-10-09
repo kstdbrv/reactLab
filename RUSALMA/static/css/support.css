@@ -121,7 +121,8 @@ ul, li {
   margin-bottom: 3vh;
   text-align: center;
   margin: 0 auto;
-  margin-bottom: 4vh;
+  margin-bottom: 20px;
+  margin-top: 40px;
 }
 
 .support__title-line {
@@ -207,7 +208,7 @@ max-width: 135vh;
   font-size: 2em;
   padding-bottom: 3vh;
   padding-bottom: 4vh;
-  max-width: 70vh;
+  max-width: 64vh;
   margin: 0 auto;
   text-align: center;
 }
