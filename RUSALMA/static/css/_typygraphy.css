@@ -62,7 +62,7 @@
 }
 
 .btn_white {
-    border-color: #fff !important;
+    border-color: #fff;
 }
 .btn_white:nth-child(1){
     color: #fff;
