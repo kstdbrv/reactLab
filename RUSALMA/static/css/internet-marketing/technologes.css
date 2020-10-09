@@ -27,7 +27,7 @@
   text-align: center;
   margin: 0 auto;
   margin-bottom: 20px;
-  margin-top: 40px;
+  margin-top: 80px;
 }
 
 .technologes__title-line {
@@ -39,7 +39,7 @@
 .technologes__text {
  font-size: 1.2em;
  max-width: 145vh;
- margin-bottom: 15vh;
+ margin-bottom: 5vh;
 }
 
 .technologes__text p {
