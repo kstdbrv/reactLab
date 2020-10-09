@@ -178,14 +178,11 @@ body {
     transition: color 0.5s ease-out;
     font-size: 1em;
 }
-
-.button:hover {
-    border-color: #49E4DB;
+.btn-animate {
+    margin-left: 50px;
 }
 
-.button:hover .item-link{
-    color: #49E4DB;
-}
+
 
 @font-face {
     font-family: "PT-Sans";

@@ -10,7 +10,7 @@
     <!-- Add the slick-theme.css if you want default styling -->
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
     {% block style %}
-    {% endblock %}
+    {% endblock style %}
     <link rel="stylesheet" href="{% static '/css/animate.min.css' %}">
     <link rel="stylesheet" href="{% static '/css/header_style.css' %}">
     <link rel="stylesheet" href="{% static '/css/footer_style.css' %}">
@@ -26,7 +26,7 @@
 <body ontouchstart="">
     {% block content %}
 
-    {% endblock %}
+    {% endblock content%}
     <script src="{% static '/js/wow.min.js' %}"></script>
     <script>
         new WOW().init();

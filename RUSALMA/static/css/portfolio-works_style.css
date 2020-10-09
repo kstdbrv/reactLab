@@ -5,6 +5,7 @@
     align-items:center;
     padding-top: 17vh;
     font-size: 1.5em;
+    padding-bottom: 80px;
   }
   .portfolio-main__title {
     font-family: 'PT-Sans-Bold';
@@ -17,7 +18,7 @@
   
   .portfolio__more {
     color: #656565;
-    margin-bottom: 10vh;
+    margin-bottom: 40px;
     transition: all .3s;
     border-bottom: 0.3vh solid transparent;
   }

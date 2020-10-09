@@ -101,24 +101,6 @@ ul, li {
   width: 900px;
 }
 
-.btn {
-  background: transparent;
-  border: .5vh solid #656565;
-  border-radius: 35px;
-  width: 320px;
-  height: 70px;
-  color: #656565;
-  outline: none;
-  cursor: pointer;
-  transition: 0.3s;
-  font-size: 1em;
-}
-
-.btn:hover {
-  color: #121212;
-  border: .5vh solid #121212;
-}
-
 /* block contacts */
 .contacts {
   background: #F4F4F4;

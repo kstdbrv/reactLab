@@ -25,6 +25,9 @@
     transition:0.25s;
     -webkit-transition:0.25s;
 }
+.btn a {
+    display: block;
+}
 .btn-animate:hover .btn{
     transform:rotateX(-90deg);
 }
@@ -42,7 +45,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size:1.75em;
+    font-size:1.75rem;
     text-align:center;
 }
  .btn-el:nth-child(1){
@@ -56,6 +59,13 @@
     border:  none;
     transform: rotateX(90deg) translate3d(0, 0, 30px);
     -webkit-transform: rotateX(90deg) translate3d(0, 0, 30px);
+}
+
+.btn_white {
+    border-color: #fff !important;
+}
+.btn_white:nth-child(1){
+    color: #fff;
 }
 
 /* ================================ */
