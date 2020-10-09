@@ -2,41 +2,42 @@
 {% load static %}
 
 {% block style %}
+<link rel="stylesheet" href="{% static '/css/odometr.css' %}">
 <link rel="stylesheet" href="{% static '/css/about_style.css' %}">
 {% endblock %}
     {% block content %}
     {% include 'main/preview.html' %}
-    <div class="numbers wow backInUp" data-wow-duration="1.5s" data-wow-offset="10">
+    <div class="numbers">
        <div class="number">
-           <span class="num">10</span>
+           <span class="num odometer" id="odometer_0">0</span>
            <p>Лет на рынке рекламы</p>
        </div>
        <div class="number">
-        <span class="num">650</span>
+        <span class="num odometer" id="odometer_1">0</span>
         <p>Рекламных кампаний</p>
     </div>
     <div class="number">
-        <span class="num">300</span>
+        <span class="num odometer" id="odometer_2">0</span>
         <p>Приложений и сайтов</p>
     </div>
     <div class="number">
-        <span class="num">320</span>
+        <span class="num odometer" id="odometer_3">0</span>
         <p>Обучающих мероприятий</p>
     </div>
     <div class="number">
-        <span class="num">48</span>
+        <span class="num odometer" id="odometer_4">0</span>
         <p>Сертифицированных специалистов Яндекс и Google</p>
     </div>
     <div class="number">
-        <span class="num">43</span>
+        <span class="num odometer" id="odometer_5">0</span>
         <p>% клиентов приходят к нам по рекомендации</p>
     </div>
     </div>
-    <div class="about_team">
+    <div class="about_team wow fadeInUpBig">
         <h2>о команде</h2>
         <div class="underscore"></div>
         <p>Мы комплексно решаем стоящие перед нами задачи, опираясь на многолетний опыт 
-            и применяя новейшие digital-технологии, а созданный нами центр исследований 
+            и применяя новейшие Digital-технологии, а созданный нами центр исследований 
             и аналитики позволяет опережать рынок на несколько шагов
             </p>
     </div>
@@ -66,9 +67,9 @@
              быть в курсе новинок и событий отрасли, чтобы всегда быть готовыми к лучшим переменам
         </p>
    </div>
-   <div class="news_digital">
-       <h1>Свежие статьи из мира Digital</h1>
-       <div class="underscore3"></div>
+   <div class="news_digital ">
+       <h1 class="wow fadeInUpBig">Свежие статьи из мира Digital</h1>
+       <div class="underscore3 wow fadeInUpBig"></div>
    </div>
    <div class="blog">
     <div class="posts">
@@ -110,4 +111,6 @@
 <script type="text/javascript" src="{% static '/js/jquery.waypoints.min.js' %}"></script>
 <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script src="{% static 'js/slider.js' %}" ></script>
+<script src="{% static 'js/odometr.js' %}" ></script>
+<script src="{% static 'js/odometr-pages.js' %}" ></script>
 {% endblock %}
