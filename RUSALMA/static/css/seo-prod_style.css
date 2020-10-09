@@ -130,7 +130,7 @@ footer {
     color: #121212;
     margin-top: 8vh;
     word-wrap: break-word;
-    text-align: center;
+    text-align: left;
     
 }
 .card {
@@ -220,7 +220,7 @@ footer {
     text-align: center;
     color: #FFFFFF;
     width: 60%;
-    font-size: 0.75em;
+    font-size: 1em;
     padding: 7vh 0;
 }
 
@@ -327,3 +327,9 @@ footer {
   width: 150%;
     }
 }
+
+@media (max-width:480px) {
+    .card > p {
+      text-align: center;
+    }
+  }
