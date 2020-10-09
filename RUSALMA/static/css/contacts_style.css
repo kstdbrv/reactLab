@@ -193,4 +193,7 @@ ul, li {
   .contacts__text {
     font-size: 24px;
   }
+  .btn-animate {
+    margin-left: 1.5vw;
+  }
 }
