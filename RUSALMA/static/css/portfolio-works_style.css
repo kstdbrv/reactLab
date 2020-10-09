@@ -139,11 +139,22 @@ img{
     
 }
 
-.holder:hover .block{
-    opacity: 1;
-    visibility: visible;
-    transition: 1s;
+.block:hover{
+  opacity: 1;
+  visibility: visible;
+  transition: 1s;
 }
+.block:active{
+  opacity: 1;
+  visibility: visible;
+  transition: 1s;
+}
+.block:focus{
+  opacity: 1;
+  visibility: visible;
+  transition: 1s;
+}
+
 @media (max-width: 480px) {
   .content {
     flex-direction: column;
