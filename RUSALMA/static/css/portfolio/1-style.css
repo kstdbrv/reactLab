@@ -25,7 +25,7 @@ a {
 }
 
 .intro {
-    padding-left: 20px;
+    padding-left: 48px;
     padding-right: 20px;
     padding-top: 20vh;
     display: flex;
@@ -91,8 +91,13 @@ a {
     display: block;
     width: 15vw;
 }
+
 .task > a:hover{
     text-decoration: underline;
+    color:#112211 ;
+}
+.task > a:hover object{
+    
     color:#112211 ;
 }
 .task > a > object:hover{
@@ -274,6 +279,7 @@ ol>li::before {
     justify-content: center;
     background-size: cover;
     height: 51vh;
+    background-attachment: fixed;
 }
 .img-myfood > p {
     font-weight: bold;

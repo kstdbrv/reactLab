@@ -198,9 +198,7 @@
   
 
     /* img */
-    .img-myfood{
-         display: none;
-    }
+    
     .img-myfood > p {
          display: none;
      }
@@ -301,7 +299,7 @@
 
     /* img */
     .img-myfood{
-         display: none;
+        display: none;
     }
     .img-myfood > p {
          display: none;
@@ -385,14 +383,11 @@
         }    
         /* img */
         .img-myfood{
-             display: none;
+            display: none;
         }
         .img-myfood > p {
              display: none;
-         }
-         .booking{
-             display: none;
-         }
+        }
          .img-phones{
              display: none;
          }
@@ -492,17 +487,21 @@
     } 
         /* img */
         .img-myfood{
-             display: none;
+            display: none;
         }
         .img-myfood > p {
              display: none;
          }
-         .booking{
-             display: none;
-         }
+         
          .img-phones{
              display: none;
          }
+         .booking > span {
+            font-size: 24px;        
+        }
+        .booking > p {
+            font-size: 16px;        
+        }
 }
 @media screen and (max-width: 375px){
 
@@ -591,14 +590,15 @@
     }    
     /* img */
     .img-myfood{
+        display: none;
+    }
+    .img-myfood{
          display: none;
     }
     .img-myfood > p {
          display: none;
      }
-     .booking{
-         display: none;
-     }
+   
      .img-phones{
          display: none;
      }
@@ -668,14 +668,14 @@
     }    
     /* img */
     .img-myfood{
+        display: none;
+    }
+    .img-myfood{
          display: none;
     }
     .img-myfood > p {
          display: none;
-     }
-     .booking{
-         display: none;
-     }
+    }
      .img-phones{
          display: none;
      }

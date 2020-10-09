@@ -1,3 +1,10 @@
+@media screen and (min-width: 1440px){
+    .task_img {              
+        left: 42vw;             
+        width: 58%;
+    }
+}
+
 @media screen and (max-width: 1440px){
 .task_img {
     position: absolute;
@@ -211,9 +218,7 @@
   
 
     /* img */
-    .img-myfood{
-         display: none;
-    }
+   
     .img-myfood > p {
          display: none;
      }
@@ -322,14 +327,14 @@
   
 
     /* img */
-    .img-myfood{
-         display: none;
-    }
+    
     .img-myfood > p {
          display: none;
      }
 
-}
+}   
+        
+
      @media screen and (max-width: 425px){
 
         .intro > h1{       
@@ -387,7 +392,7 @@
         }    
         /* img */
         .img-myfood{
-             display: none;
+             background-attachment: scroll;
         }
         .img-myfood > p {
              display: none;
@@ -428,7 +433,7 @@
             width: 54vh;
         }
         .task{
-            height: 22vh;
+            height: 34vh;
         }
         .tasks{
             display: flex;
@@ -501,9 +506,7 @@
         margin-top: -10vh;
     } 
         /* img */
-        .img-myfood{
-             display: none;
-        }
+        
         .img-myfood > p {
              display: none;
          }
@@ -626,9 +629,7 @@
         margin-top: -10vh;
     }    
     /* img */
-    .img-myfood{
-         display: none;
-    }
+    
     .img-myfood > p {
          display: none;
      }
@@ -706,9 +707,7 @@
         margin-top: -10vh;
     }    
     /* img */
-    .img-myfood{
-         display: none;
-    }
+    
     .img-myfood > p {
          display: none;
      }

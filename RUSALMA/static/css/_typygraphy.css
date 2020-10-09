@@ -68,5 +68,23 @@
     color: #fff;
 }
 
+@media (max-width: 480px) {
+    .btn-el {
+        border: 3px solid;
+        font-size: 1rem;
+    }
+    .btn-animate{
+        width: 280px;
+        height: 45px;
+    }
+    .btn-el:nth-child(1){
+        transform: translate3d(0, 0, 22.5px);
+        -webkit-transform: translate3d(0, 0, 22.5px);
+    }
+     .btn-el:nth-child(2){
+        transform: rotateX(90deg) translate3d(0, 0, 22.5px);
+        -webkit-transform: rotateX(90deg) translate3d(0, 0, 22.5px);
+}
+
 /* ================================ */
 

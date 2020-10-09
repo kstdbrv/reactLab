@@ -18,7 +18,7 @@
         width: 25vw;
     }
     .myfood{
-        padding: 0 20px;
+        padding: 0 10px;
     }
     /* decision */
     .decision > p{
@@ -211,7 +211,7 @@
 
     /* img */
     .img-myfood{
-         display: none;
+         background-attachment: scroll;
     }
     .img-myfood > p {
          display: none;
@@ -334,12 +334,7 @@
   
 
     /* img */
-    .img-myfood{
-         display: none;
-    }
-    .img-myfood > p {
-         display: none;
-     }
+    
     .team > span{
         font-size: 4vh;
     }
@@ -368,6 +363,9 @@
             width: 90vw;
             font-size: 16px;
         }
+        .task {
+            height: 35vh;
+        }
         .tasks{
             display: flex;
             flex-direction: column;         
@@ -381,6 +379,9 @@
         }
         .task > a > span >  object{
            width: 5vw;
+        }
+        .info span {
+            font-size: 24px;
         }
          /* slider */
         .img_slider > .img{     
@@ -401,12 +402,7 @@
             margin-top: -10vh;
         }    
         /* img */
-        .img-myfood{
-             display: none;
-        }
-        .img-myfood > p {
-             display: none;
-         }
+      
          .booking{
              display: none;
          }
@@ -443,7 +439,7 @@
             width: 54vh;
         }
         .task{
-            height: 29vh;
+            height: 34vh;
         }
         .tasks{
             display: flex;
@@ -495,7 +491,7 @@
         width: 90vw;
     }
     .info > span{       
-        font-size: 3vh;
+        
         margin-left: 26vw;
         display: block;
         width: 35;
@@ -522,18 +518,8 @@
         margin-top: -10vh;
     } 
         /* img */
-        .img-myfood{
-             display: none;
-        }
-        .img-myfood > p {
-             display: none;
-         }
-         .booking{
-             display: none;
-         }
-         .img-phones{
-             display: none;
-         }
+      
+         
          .team > span{
              font-size: 4vh;
          }
@@ -624,7 +610,7 @@
         width: 90vw;
     }
     .info > span{       
-        font-size: 2.5vh;
+       
         margin-left: 26vw;
         display: block;
         width: 35;
@@ -652,9 +638,7 @@
         margin-top: -10vh;
     }    
     /* img */
-    .img-myfood{
-         display: none;
-    }
+   
     .img-myfood > p {
          display: none;
      }
@@ -709,7 +693,7 @@
         width: 95vw;
     }
     .info > span{       
-        font-size: 24px;
+        
         margin-left: 23vw;
         display: block;
         width: 25;
@@ -732,9 +716,7 @@
         margin-top: -10vh;
     }    
     /* img */
-    .img-myfood{
-         display: none;
-    }
+    
     .img-myfood > p {
          display: none;
      }

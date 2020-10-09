@@ -205,9 +205,7 @@
   
 
     /* img */
-    .img-myfood{
-         display: none;
-    }
+    
     .img-myfood > p {
          display: none;
      }
@@ -333,7 +331,7 @@
 
     /* img */
     .img-myfood{
-         display: none;
+         background-attachment: scroll;
     }
     .img-myfood > p {
          display: none;
@@ -404,9 +402,7 @@
             margin-top: -10vh;
         }    
         /* img */
-        .img-myfood{
-             display: none;
-        }
+       
         .img-myfood > p {
              display: none;
          }
@@ -532,9 +528,7 @@
         margin-top: -10vh;
     } 
         /* img */
-        .img-myfood{
-             display: none;
-        }
+       
         .img-myfood > p {
              display: none;
          }
@@ -659,9 +653,7 @@
         margin-top: -10vh;
     }    
     /* img */
-    .img-myfood{
-         display: none;
-    }
+    
     .img-myfood > p {
          display: none;
      }
@@ -739,9 +731,7 @@
         margin-top: -10vh;
     }    
     /* img */
-    .img-myfood{
-         display: none;
-    }
+    
     .img-myfood > p {
          display: none;
      }
