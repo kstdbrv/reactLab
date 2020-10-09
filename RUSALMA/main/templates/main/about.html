@@ -2,13 +2,14 @@
 {% load static %}
 
 {% block style %}
+<link rel="stylesheet" href="{% static '/css/animate.min.css' %}">
 <link rel="stylesheet" href="{% static '/css/about_style.css' %}">
 {% endblock %}
     {% block content %}
     {% include 'main/preview.html' %}
-    <div class="numbers">
+    <div class="numbers wow fadeInLeftBig" data-wow-offset="200">
        <div class="number">
-           <span class="num">20</span>
+           <span class="num">10</span>
            <p>Лет на рынке рекламы</p>
        </div>
        <div class="number">
@@ -110,5 +111,8 @@
 <script type="text/javascript" src="{% static '/js/jquery.waypoints.min.js' %}"></script>
 <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script src="{% static 'js/slider.js' %}" ></script>
-
+<script src="{% static '/js/wow.min.js' %}"></script>
+<script>
+    new WOW().init();
+</script>
 {% endblock %}
