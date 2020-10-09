@@ -139,7 +139,7 @@ img{
     
 }
 
-.block:hover, .block:active  {
+.holder:hover .block, .holder:active .block {
   opacity: 1;
   visibility: visible;
   transition: 1s;
