@@ -1,3 +1,16 @@
+/* 
+
+<div class="btn-animate">
+    <div class="btn">
+        <a href="">
+        <span class=btn-el>рассчитать стоимость</span>
+        <span class=btn-el>подтвердить</span>
+    </a>
+    </div>
+</div>
+        
+*/
+
 .btn-animate{
     width:360px;
     height:60px;
@@ -44,3 +57,6 @@
     transform: rotateX(90deg) translate3d(0, 0, 30px);
     -webkit-transform: rotateX(90deg) translate3d(0, 0, 30px);
 }
+
+/* ================================ */
+
