@@ -327,3 +327,9 @@ footer {
   width: 150%;
     }
 }
+
+@media (max-width:480px) {
+    .card > p {
+      text-align: center;
+    }
+  }
