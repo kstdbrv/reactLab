@@ -121,7 +121,8 @@ ul, li {
   margin-bottom: 3vh;
   text-align: center;
   margin: 0 auto;
-  margin-bottom: 4vh;
+  margin-bottom: 20px;
+  margin-top: 40px;
 }
 
 .support__title-line {
