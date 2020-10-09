@@ -2,12 +2,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'PT-Sans';
+    
 }
 
 body{   
     background: #FFFFFF;
     font-size: 16px;
+    font-family: 'PT-Sans';
 }
 a {
     text-decoration: none;
@@ -20,18 +21,6 @@ footer {
     background-color: #F4F4F4;
 }
 
-
-
-/* numbers */
-/* .numbers{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    padding-top: 8vh;
-    padding-left: 3.5vh;
-    padding-right: 3.5vh;
-    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.14);
-} */
 
 .numbers {
     display: flex;
@@ -51,12 +40,14 @@ footer {
     padding: 3vh 1vw;
 }
 .num{
-    font-family: Montserrat;
+    font-family: "Montserrat" !important;
     font-style: normal;
     font-weight: bold;
     font-size: 13vh;
     border-bottom: 1vh solid #DB00FF;
 }
+
+
 
 .number > p{
     font-size: 3.2vh;
