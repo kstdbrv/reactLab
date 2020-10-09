@@ -23,7 +23,7 @@ footer {
 
 
 /* numbers */
-.numbers{
+/* .numbers{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -31,7 +31,17 @@ footer {
     padding-left: 3.5vh;
     padding-right: 3.5vh;
     box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.14);
+} */
+
+.numbers {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-top: 8vh;
+    max-width: 194vh;
+    margin: 0 auto;
 }
+
 .number{
     display: flex;
     justify-content: left;
