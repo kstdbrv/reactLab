@@ -7,8 +7,6 @@ from .models import *
 
 # Create your views here.
 
-PORTFOLIO_CASES  = {}
-
 
 def index(request):
     return render(request, 'main/index.html')

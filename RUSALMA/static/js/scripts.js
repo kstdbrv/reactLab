@@ -13,6 +13,7 @@ function menuItemsHandler (item) {
     }
     ul.classList.toggle('visable')
     svg.classList.toggle('non-visable')
+    document.querySelector('.btn-animate').classList.toggle('non-visable')
 }
 
 menuItems.forEach(item => item.addEventListener('click', () => menuItemsHandler(item)))
