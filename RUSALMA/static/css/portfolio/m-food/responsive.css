@@ -411,7 +411,10 @@
          }
 }
  @media screen and (max-width: 414px){
-
+    .intro {  
+        background-size: cover;       
+         height: 40vh; 
+     }
         .intro > h1{       
             font-size: 5vh;  
             margin-top: 40vh;    

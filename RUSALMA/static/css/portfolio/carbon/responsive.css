@@ -378,7 +378,10 @@
          }
 }
  @media screen and (max-width: 414px){
-
+    .intro {  
+        background-size: cover;       
+         height: 40vh; 
+     }
         .intro > h1{       
             font-size: 5vh;  
             margin-top: 40vh;    
@@ -416,7 +419,7 @@
             font-size:16px;
         }
         .task span{
-            font-size:4vh;
+            font-size: 24px;
         }
         .task_img{
         width: 40vh;
