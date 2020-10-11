@@ -448,7 +448,7 @@
             width: 54vh;
         }
         .task{
-            height: 29vh;
+            height: 32vh;
         }
         .tasks{
             display: flex;
@@ -457,13 +457,13 @@
         }
         .task > p{
             width: 90vw;
-            font-size:2.5vh;
+            font-size: 16px;
         }
         .task span{
             font-size:4vh;
         }
         .mb-t{
-            font-size: 2.5vh;
+            font-size: 16px;
         }
         .myfood{
             font-size: 3vh;
@@ -486,7 +486,7 @@
             font-size: 4vh;
         }
         .decision > p{
-            font-size: 2.5vh;
+            font-size: 16px;
         }
          /* slider */
         .img_slider > .img{     
@@ -501,7 +501,7 @@
         width: 90vw;
     }
     .info > span{       
-        font-size: 3vh;
+        font-size: 24px;
         margin-left: 26vw;
         display: block;
         width: 35;
@@ -564,20 +564,19 @@
     }
     .text > p{
         width: 90vw;
-         font-size: 2.5vh;
+        font-size: 16px;
     }
     .tasks{
         display: flex;
         flex-direction: column;   
-        height: 92vh;
+        height: 103vh;
     }
     .task{
-        height: 40vh;
-         
+        height: 42vh;       
     }
     .task > p{
         width: 90vw;
-        font-size: 2.5vh;
+    font-size: 16px;
     }
     .task > a{
         font-size: 3.5vh;
@@ -600,7 +599,7 @@
         font-size:4vh;
     }
     .decision > p{
-         font-size: 2.5vh;
+        font-size: 16px;
     }
     .sl-dots button {
     
@@ -626,10 +625,11 @@
         width: 90vw;
     }
     .info > span{       
-        font-size: 2.5vh;
+        font-size: 24px;
         margin-left: 26vw;
         display: block;
-        width: 35;
+        font-size: 24px;
+        margin-bottom: 30px;
     }
     ol>li::before{
         font-size:7vh;
@@ -667,12 +667,12 @@
 @media screen and (max-width: 320px){
 
     .task{
-        height: 40vh;
+        height: 56vh;
     }
     .tasks{
         display: flex;
         flex-direction: column;  
-        height:90vh;
+        height: 100vh;
     }
     .task > p{
         width: 95vw;
@@ -708,7 +708,7 @@
         width: 95vw;
     }
     .info > span{       
-        font-size: 2.5vh;
+        font-size: 24px;
         margin-left: 23vw;
         display: block;
         width: 25;

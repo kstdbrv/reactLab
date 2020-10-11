@@ -399,7 +399,9 @@
          }
 }
  @media screen and (max-width: 414px){
-
+        .intro{
+            padding: 0 20px;
+        }
         .intro > h1{       
             font-size: 7vh;  
             margin-top: 25vh;    
@@ -522,6 +524,9 @@
         background: #FFFFFF;
         padding: 2vh 0;
     
+    }
+    .task {
+        height: 50vh;
     }
    
     .tasks{

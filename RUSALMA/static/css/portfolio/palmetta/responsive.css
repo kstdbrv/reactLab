@@ -234,6 +234,9 @@
 }
      @media screen and (max-width: 425px){
         .intro{
+            padding: 0 20px;
+        }
+        .intro{
             padding-top:10vh;
         }
         .intro > h1{       
@@ -348,7 +351,7 @@
             margin-bottom: 3vh;
         }
         .info p{
-            font-size: 2.5vh;
+            font-size: 16px;
         }
         .num_text{
             padding-top: 1vh;
@@ -442,7 +445,7 @@
         width: 95vw;
     }
     .info > span{       
-        font-size: 2.5vh;
+        font-size: 24px;
         margin-left: 25vw;
         display: block;
         width: 40;
@@ -455,7 +458,7 @@
     }
 
     .info > p{
-        font-size: 2vh;
+        font-size: 16px;
         width: 60vw;  
         margin-left: 25vw; 
     }
@@ -553,7 +556,9 @@
         margin-top: -10vh;
     }    
     /* img */
-    
+    .myfood{
+        font-size: 24px;
+    }
     .img-myfood > p {
          display: none;
      }

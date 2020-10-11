@@ -78,10 +78,6 @@
         margin: 2vh auto;
     }
 
-    .slick-slide {
-      
-      }
-
     .pirson{     
         width: 15vh; 
         height: 15vh;
@@ -330,7 +326,9 @@
     
 }
      @media screen and (max-width: 425px){
-
+        .intro{
+            padding: 0 20px;
+        }
         .intro > h1{       
             font-size: 7vh;  
             margin-top: 25vh;    
@@ -420,7 +418,7 @@
             font-size: 4vh;
         }
         .task{
-            height: 40vh;
+            height: 42vh;
         }
         .tasks{
             display: flex;
@@ -522,7 +520,7 @@
     }
     .text > p{
         width: 90vw;
-        font-size:2.5vh;
+        font-size: 16px;
     }
     .tasks{
         display: flex;
@@ -530,7 +528,7 @@
         height: 105vh;
     }
     .task{
-        height: 40vh;
+        height: 44vh;
     }
     .task > p{
         width: 90vw;
@@ -554,7 +552,7 @@
        width: 5vw;
     }
     .mb-t {
-        font-size:2.5vh;
+        font-size: 16px;
     }
     .decision > span{
         font-size:4vh;
@@ -583,7 +581,7 @@
         width: 90vw;
     }
     .info > span{       
-        font-size: 2.5vh;
+        font-size: 24px;
         margin-left: 26vw;
         display: block;
         width: 35;
@@ -621,11 +619,12 @@
 @media screen and (max-width: 320px){
 
     .task{
-        height: 40vh;
+        height: 58vh;
     }
     .tasks{
         display: flex;
-        flex-direction: column;         
+        flex-direction: column;    
+        height: 113vh;     
     }
     .task > p{
         width: 95vw;
@@ -661,7 +660,7 @@
         width: 95vw;
     }
     .info > span{       
-        font-size: 3vh;
+        font-size: 24px;
         margin-left: 23vw;
         display: block;
         width: 25;

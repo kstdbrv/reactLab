@@ -405,7 +405,7 @@
             font-size: 4vh;
         }
         .task{
-            height: 45vh;
+            height: 50vh;
         }
         .tasks{
             display: flex;
@@ -621,7 +621,7 @@
 @media screen and (max-width: 320px){
 
     .task{
-        height: 50vh;
+        height: 56vh;
     }
     .tasks{
         display: flex;

@@ -83,9 +83,6 @@
         margin: 2vh auto;
     }
 
-    .slick-slide {
-      
-      }
 
     .pirson{     
         width: 15vh; 
@@ -394,7 +391,9 @@
          }
 }
  @media screen and (max-width: 414px){
-
+        .intro{
+            padding: 0 20px;
+        }
         .intro > h1{       
             font-size: 5vh;  
             margin-top: 40vh;    
@@ -421,7 +420,7 @@
             font-size: 4vh;
         }
         .task{
-            height: 40vh;
+            height: 26vh;
         }
         .tasks{
             display: flex;
@@ -429,15 +428,23 @@
         }
         .task > p{
             width: 90vw;
+            font-size: 16px;
         }
         .task span{
-            font-size:4vh;
+            font-size: 24px;
         }
         .task_img{
         width: 40vh;
         height: 40vh;
         margin: 0 auto;
         background-size:contain;
+    }
+    .decision > span {
+        font-size: 24px;
+    }
+    .decision > p {
+        width: 100%;
+        font-size: 16px;
     }
     .task_img > .img{
         width: 10vh;
@@ -460,7 +467,7 @@
         width: 90vw;
     }
     .info > span{       
-        font-size: 3vh;
+        font-size: 24px;
         margin-left: 26vw;
         display: block;
         width: 35;
@@ -478,7 +485,7 @@
     .info > p{
         width: 60vw;  
         margin-left: 26vw; 
-        font-size:2vh;
+        font-size: 16px;
     }
     .num_text{
         padding-top: 1vh;
@@ -526,7 +533,7 @@
         flex-direction: column;         
     }
     .task{
-        height: 40vh;
+        height: 27vh;
     }
     .task > p{
         width: 90vw;
@@ -575,7 +582,7 @@
         width: 90vw;
     }
     .info > span{       
-        font-size: 3vh;
+        font-size: 24px;
         margin-left: 26vw;
         display: block;
         width: 35;
@@ -593,13 +600,13 @@
     .info > p{
         width: 60vw;  
         margin-left: 26vw; 
-        font-size:2vh;
+        font-size: 16px;
     }
     .num_text{
         padding-top: 1vh;
     }
     ol > li{
-        margin-top: -10vh;
+        margin-top: -37px;
     }    
     /* img */
     
@@ -616,7 +623,7 @@
 @media screen and (max-width: 320px){
 
     .task{
-        height: 40vh;
+        height: 30vh;
     }
     .tasks{
         display: flex;
@@ -656,7 +663,7 @@
         width: 95vw;
     }
     .info > span{       
-        font-size: 4vh;
+        font-size: 24px;
         margin-left: 23vw;
         display: block;
         width: 25;
@@ -671,12 +678,13 @@
     .info > p{
         width: 60vw;  
         margin-left: 23vw; 
+        font-size: 16px;
     }
     .num_text{
         padding-top: 1vh;
     }
     ol > li{
-        margin-top: -10vh;
+        margin-top: -30px;
     }    
     /* img */
     
