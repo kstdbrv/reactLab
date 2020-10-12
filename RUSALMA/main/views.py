@@ -229,6 +229,19 @@ def promo_mobile(request):
     return render(request, 'main/promo-mobile.html', context)
 
 
+def app_dev(request):
+    crumb = 'разработка мобильных приложений'
+    image = '../../static/images/backgrounds/promo-mobile/bg-image.png'
+    portfolio = Portfolio.objects.order_by('-id')[:6]
+
+    context = {
+        'crumb': crumb,
+        'image': image,
+        'portfolio': portfolio,
+    }
+    return render(request, 'main/app-development.html', context)
+
+
 def portfolio_case(request, slug):
     crumb = ' '.join(slug.split('_')).capitalize()
     team = Author.objects.all()

@@ -24,6 +24,5 @@ urlpatterns = [
     path('web-development/', views.web_development, name='web_development'),
     path('web-development/chat-bots/', views.chat_bots, name='chat_bots'),
     path('web-development/support/', views.support, name='support'),
-
-
+    path('web-development/app_dev/', views.app_dev, name='app_dev'),
 ]
