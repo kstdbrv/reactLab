@@ -1,0 +1,198 @@
+{% extends 'main/main.html' %}
+{% load static %}
+    {% block style %}
+    <link rel="stylesheet" href="{% static '/css/context-advert_style.css' %}">
+    {% endblock %}
+    {% block content %}
+    {% include 'main/preview.html' %}
+    <div class="short-description">
+      <span>Модель по которой мы работаем, направленна на конверсию трафика в клиентов. Управление рекламой
+        осуществляется по данным аналитики. 
+        Нам нужно, чтобы ваш бизнес рос. </span>
+  </div>
+  <div class="services">
+    <div class="container">
+     <div class="services__inner">
+       <h3 class="services__title">
+        наш подход к работе
+       </h3>
+       <div class="services__title-line"></div>
+       <div class="services__items">
+        <div class="services__item">
+          <h5 class="services__item-title">
+            full stack-агентство
+          </h5>
+          <div class="services__item-line"></div>
+          <p class="services__item-text">
+            Мы идём в ногу со временем и используем современные 
+            инструменты в работе над продвижением бизнеса: 
+            контекстная, медийная и таргетированная реклама + 
+            smm + seo + юзабилити + аналитика
+          </p>
+        </div>
+        <div class="services__item">
+          <h5 class="services__item-title">
+            agile-подход
+          </h5>
+          <div class="services__item-line"></div>
+          <p class="services__item-text">
+            Работаем быстро, начинаем моментально. 
+            Нам понадобится минимум времени, чтобы потенциальные клиенты нашли ваши услуги. 
+            За 3 дня нашей работы вы заметите результат. 
+            Поэтапно мы проработаем каждое направление, учитывая результаты
+          </p>
+        </div>
+        <div class="services__item">
+          <h5 class="services__item-title">
+            cтрогие стандарты
+          </h5>
+          <div class="services__item-line"></div>
+          <p class="services__item-text">
+            Порядок и распределение обязанностей. На одного 
+            специалиста приходится не больше 10 проектов. 
+            Работу контролируют руководитель группы, стратег и 
+            проджект-менеджер. Наличие чек-листов по настройке и 
+            проверке рекламных кампаний
+          </p>
+        </div>
+        <div class="services__item">
+          <h5 class="services__item-title">
+            прозрачность
+          </h5>
+          <div class="services__item-line"></div>
+          <p class="services__item-text">
+            Предоставляем все доступы к рекламным системам и сквозной 
+            аналитике. Настраиваем индивидуальные отчеты под 
+            бизнес-показатели клиента, которые доступны онлайн и 
+            ежедневно обновляются. Еженедельный отчет о 
+            проделанных работах.
+          </p>
+        </div>
+        <div class="services__item">
+          <h5 class="services__item-title">
+            технологии
+          </h5>
+          <div class="services__item-line item-line__res"></div>
+          <p class="services__item-text">
+            Мы обладатели собственной eye-tracking лабораторией. 
+            Что позволяет нам гарантировать сквозную аналитику и 
+            автоматическую отчетность в Google Data Studio в режиме 
+            реального времени. K-50 и Alytics — ведущие системы 
+            автоматизации контекстной рекламы для профессионалов. 
+            Коллтрекинг Calltouch. Мы используем предложение только 
+            лидеров рынка
+          </p>
+        </div>
+        <div class="services__item">
+          <h5 class="services__item-title item-title__res">
+            performance-ориентированность
+          </h5>
+          <div class="services__item-line item-line__res"></div>
+          <p class="services__item-text">
+            Считаем, что контекстная реклама должна быть направлена 
+            на достижение бизнес показателей: звонки и заявки, 
+            продажи и доход, быстрая окупаемость инвестиций ROI 
+            и ДРР. Ежемесячное улучшение показателей
+          </p>
+        </div>
+       </div>
+     </div>
+    </div>
+  </div>
+
+  <div class="tasks">
+    <div class="container">
+      <h3 class="tasks__title">
+        решаем задачи:
+      </h3>
+      <div class="tasks__title-line"></div>
+      <div class="tasks__box">
+        <ul>
+          <li class="tasks__text">
+            - запустить рекламную кампанию с нуля 
+          </li>
+          <li class="tasks__text">
+            - улучшить текующую кампанию
+          </li>
+          <li class="tasks__text">
+            - снизить стоимость лида в несколько раз
+          </li>
+          <li class="tasks__text">
+            - настроить сквозную аналитику
+          </li>
+          <li class="tasks__text">
+            - увеличить объем входящих заявок
+          </li>
+        </ul>
+        <img class="tasks__img" src="{% static '/images/backgrounds/context-ad/tasks-img.jpg' %}" alt="photo">
+      </div>
+    </div>
+  </div>
+
+  <div class="stages_work">
+    <h2>этапы работ</h2>
+    <div class="border_h2"></div>
+    <div class="stages">
+        <div class="stages__row">
+            <div class="card">
+            <span>1 аналитика</span>
+            <p>Каждый наш SEO-проект включает общий анализ сайта, исследование конкурентной среды в популярных поисковых системах.
+                    Мы используем передовые решения в качестве инструментов аналитики, позволяющих нашим специалистам эффективно работать с вашими данными.</p>
+            </div>
+            <div class="card">
+            <div class="img">
+                <object data="{% static 'images/backgrounds/seo-prod/analit.svg' %}" type="image/svg+xml"></object> 
+            </div>
+            </div>
+        </div>
+        <div class="stages__row">
+                <div class="card">
+                    <span>2 стратегия</span>
+                    <p>Мы составляем карту проекта, включающую в себя полный список необходимых вам SEO-работ на период от 6 до 12 месяцев, 
+                        прогнозируем ежемесячный результат поискового трафика и ТОП позиций.</p>
+                </div>
+                <div class="card">
+                    <div class="img">
+                        <object data="{% static 'images/backgrounds/seo-prod/strat.svg' %}" type="image/svg+xml"></object>
+                    </div>                
+                </div>
+        </div>
+        <div class="stages__row">
+                <div class="card">
+                <span>3 контроль</span>
+                <p>Мы всегда начеку - будем отслеживать промежуточные результаты и корректировать SEO-стратегию каждые 3-4 месяца.
+                        Гарантируем, что с нашей стороны все работы будут выполнены точно по плану.</p>
+                </div>
+                <div class="card">
+                    <div class="img">
+                        <object data="{% static 'images/backgrounds/seo-prod/control.svg' %}" type="image/svg+xml"></object> 
+                    </div>
+                </div>
+        </div>
+        <div class="stages__row">
+                <div class="card">
+                    <span>4 оптимизация</span>
+                    <p>Наша работа — это не только составление рекомендаций, но и их реализация.
+                            Подготовим исходные прототипы или рабочие макеты как отдельных блоков, так и новых целевых страниц.</p>
+                </div>
+                <div class="card">
+                    <div class="img">
+                        <object data="{% static 'images/backgrounds/seo-prod/optimiz.svg' %}" type="image/svg+xml"></object> 
+                    </div>
+                </div>
+        </div>
+        <div class="stages__row">
+                <div class="card">
+                <span>5 отчет</span>
+                <p>Строим отчетность по вашему проекту на основе ваших потребностей и целевых KPI: дают возможность 
+                    адаптировать отчетную систему к вашему проекту, с интеграцией статистики и системы мониторинга позиций.</p>
+                </div>
+                <div class="card">
+                    <div class="img">
+                        <object data="{% static 'images/backgrounds/seo-prod/otchet.svg' %}" type="image/svg+xml"></object> 
+                    </div>
+                </div>  
+         </div>           
+    </div>
+</div>
+{% endblock %}
