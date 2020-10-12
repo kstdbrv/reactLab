@@ -1,0 +1,11 @@
+@media(max-width: 1065px) {
+  .services__item {
+    margin-right: 0;
+  }
+}
+
+@media(max-width: 1100px) {
+ .about__text {
+  font-size: 5vh;
+ }
+}

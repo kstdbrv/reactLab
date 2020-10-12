@@ -1,0 +1,8 @@
+@import "../fonts.scss";
+
+body{
+  @extend %sf-regular;
+  min-width: 320px;
+  overflow-x: hidden;
+  position: relative;
+}
