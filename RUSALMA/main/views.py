@@ -1,8 +1,10 @@
-from django.shortcuts import render
+from django.contrib import messages
+from django.shortcuts import render, redirect
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 
 from .filters import *
 from .models import *
+from .forms import *
 
 
 # Create your views here.
@@ -254,3 +256,22 @@ def portfolio_case(request, slug):
     }
 
     return render(request, 'main/portfolio/{0}.html'.format(slug), context)
+
+
+def order(request):
+    crumb = 'заказать проект'
+    form = OrderForm
+
+    if request.method == 'POST':
+        form = OrderForm(request.POST)
+        if form.is_valid():
+            form.save()
+            username = form.cleaned_data.get('name').capitalize()
+
+            messages.success(request, 'спасибо, {}!'.format(username))
+
+    context = {
+        'form': form,
+    }
+
+    return render(request, 'main/order.html', context)

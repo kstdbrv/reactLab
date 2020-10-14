@@ -1,0 +1,76 @@
+{% extends 'main/main.html' %}
+{% load static %}
+
+{% block style %}
+    <link rel="stylesheet" href="{% static '/css/order.css' %}">
+{% endblock style %}
+
+{% block content %}
+
+<div class="top">
+    <div class="top__inner">
+        <span class="top__title">рассчитать стоимость:</span>
+        <p class="top__text">Пройдите короткий тест и рассчитайте стоимость продукта.</p>
+    </div>
+</div>
+
+<div class="quiz">
+    <div class="quiz__inner">
+        <div class="quiz__title">что Вам нужно?</div>
+        <form  class="quiz__form" method="post">
+            {% csrf_token %}
+            {{ form.media.js }}
+            <div class="choises">
+                <span class="choises__item">
+                {% for radio in form.category %}
+                <label class="quiz__label" for="{{ radio.id_for_label }}">
+                    {{ radio.tag }}
+                    {{ radio.choice_label }}
+                    <span class="quiz__checkmark"></span>
+                </label>
+                {% endfor %}
+                </span>
+                <span class="choises__subcategory-item">
+                {% for radio in form.subcategory %}
+                    <label class="quiz__subcategory-label" for="{{ radio.id_for_label }}">
+                        {{ radio.tag }}
+                        {{ radio.choice_label }}
+                    <span class="quiz__checkmark"></span>
+                    </label>
+                {% endfor %}
+                </span>
+                <span class="choises__contact-info">
+                    <span class="quiz__contacts">{{ form.name }}</span>
+                    <span class="quiz__contacts">{{ form.email }}</span>
+                    <span class="quiz__contacts">{{ form.phone }}</span>
+                </span>
+            </div>
+            <button class="quiz__btn">далее</button>
+        </form>
+
+        {% for message in messages %}
+                <div class="modal-back">
+                    <div class="success-message">
+                        <span class="success-message__title">{{ message }}</span>
+                        <p class="success-message__text">в ближайшее время с Вами свяжутся наши менеджеры</p>
+                        <a href="{% url 'index' %}" class="success-message__home-link">вернуться на главную</a>
+                    </div>
+                </div>
+        {% endfor %}
+       
+    </div>
+    
+</div>
+
+<script src="{% static 'js/select.js' %}"></script>
+{% endblock content %}
+
+
+
+<form  method="post">
+    {% csrf_token %}
+    {{ form.media.js }}
+    {{ form.category }}
+    {{ form.subcategory }}
+    <button type="submit" value="Submit">123</button>
+</form>

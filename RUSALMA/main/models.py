@@ -1,5 +1,6 @@
 from django.db import models
 
+from smart_selects.db_fields import ChainedForeignKey
 from ckeditor.fields import RichTextField
 
 
@@ -79,27 +80,40 @@ class Portfolio(models.Model):
         verbose_name_plural = 'Портфолио'
 
 
+class Category(models.Model):
+    category_name = models.CharField(max_length=255, null=True, verbose_name='Название категории')
+
+    def __str__(self):
+        return self.category_name
+
+    class Meta:
+        verbose_name = 'Категория'
+        verbose_name_plural = 'Категории'
+
+
+class Subcategory(models.Model):
+    subcategory_name = models.CharField(max_length=255, null=True, verbose_name='Название подкатегории')
+    category = models.ForeignKey(Category, null=True, on_delete=models.CASCADE, verbose_name='Категория')
+
+    def __str__(self):
+        return self.subcategory_name
+
+    class Meta:
+        verbose_name = 'Подкатегория'
+        verbose_name_plural = 'Подкатегории'
+
+
 class Order(models.Model):
-    CATEGORY = (
-        ('интернет-маркетинг', 'интернет-маркетинг'),
-        ('веб-разработка', 'веб-разработка'),
-    )
+    category = models.ForeignKey(Category, null=True, on_delete=models.CASCADE, verbose_name='Категория')
+    subcategory = models.ForeignKey(Subcategory, null=True, on_delete=models.CASCADE, verbose_name='Подкатегория')
 
-    INTERNET_CHOICES = (
-        ('реклама готового продукта', 'реклама готового продукта'),
-        ('оптимизация сайта и трафика', 'оптимизация сайта и трафика'),
-        ('продвижение в социальных медиа', 'продвижение в социальных медиа'),
-        ('креатив', 'креатив'),
-        ('стратегия и аналитика', 'стратегия и аналитика'),
-    )
+    name = models.CharField(max_length=100, null=True)
+    email = models.EmailField(max_length=255, null=True, blank=True)
+    phone = models.CharField(max_length=40, null=True)
 
-    WEB_CHOICES = (
-        ('брендинг', 'брендинг'),
-        ('проектирование', 'проектирование'),
-        ('дизайн', 'дизайн'),
-        ('веб-разработка', 'веб-разработка'),
-        ('адаптация сайта', 'адаптация сайта'),
-        ('разработка мобильного приложения', 'разработка мобильного приложения'),
-    )
+    def __str__(self):
+        return 'Заказ № ' + str(self.id)
 
-    category = models.CharField(max_length=255, choices=CATEGORY)
+    class Meta:
+        verbose_name = 'Заказ'
+        verbose_name_plural = 'Заказы'

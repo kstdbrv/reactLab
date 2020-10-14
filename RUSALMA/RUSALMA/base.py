@@ -15,17 +15,23 @@ import os
 
 
 
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 try:
-    from RUSALMA.RUSALMA.config import APP_KEY
-except ImportError:
+    from .config import APP_KEY
+except ImportError as e:
     from django.utils.crypto import get_random_string
     APP_KEY = get_random_string(50, 'abcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*(-_=+)')
     with open(os.path.join(BASE_DIR, 'RUSALMA', 'config.py'), 'w') as key_file:
         key_file.write("APP_KEY = '{key}'".format(key=APP_KEY))
+
+try:
+    from .config import HOST_PASSWORD, HOST
+except ImportError:
+    print('Add HOST and HOST_PASSWORD values for use email sends')
 
 
 # Quick-start development settings - unsuitable for production
@@ -51,6 +57,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     'ckeditor',
+    'smart_selects',
 
     'main.apps.MainConfig',
 ]
@@ -129,6 +136,8 @@ USE_L10N = True
 
 USE_TZ = True
 
+USE_DJANGO_JQUERY = True
+
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
@@ -138,3 +147,10 @@ STATIC_URL = 'static/'
 MEDIA_URL = '/media/'
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+EMAIL_HOST_USER = HOST
+EMAIL_HOST_PASSWORD = HOST_PASSWORD

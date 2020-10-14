@@ -12,6 +12,7 @@ urlpatterns = [
     path('portfolio/', views.portfolio, name='portfolio'),
     path('portfolio/case/<str:slug>', views.portfolio_case, name='portfolio_case'),
     path('contacts/', views.contacts, name='contacts'),
+    path('order/', views.order, name='order'),
 
     path('internet-marketing/', views.internet_marketing, name='internet_marketing'),
     path('internet-marketing/digital-strategy/', views.digital_strategy, name='digital_strategy'),
