@@ -21,6 +21,8 @@
   <component name="ChangeListManager">
     <list default="true" id="f05fbe87-d6d0-45fc-ad59-c360eaf0e36f" name="Default Changelist" comment="add mobile header and footer">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RUSALMA/RUSALMA/base.py" beforeDir="false" afterPath="$PROJECT_DIR$/RUSALMA/RUSALMA/base.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RUSALMA/main/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/RUSALMA/main/models.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -366,6 +368,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="add mobile header and footer" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="354" y="112" key="#Inspections" timestamp="1602683440594">
+      <screen x="0" y="23" width="1440" height="807" />
+    </state>
+    <state x="354" y="112" key="#Inspections/0.23.1440.807@0.23.1440.807" timestamp="1602683440594" />
     <state x="320" y="166" key="Vcs.Push.Dialog.v2" timestamp="1601898646507">
       <screen x="0" y="23" width="1440" height="807" />
     </state>
@@ -374,9 +380,9 @@
       <screen x="0" y="23" width="1440" height="807" />
     </state>
     <state x="518" y="347" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1440.807@0.23.1440.807" timestamp="1601824666729" />
-    <state x="385" y="154" width="670" height="676" key="search.everywhere.popup" timestamp="1601620846332">
+    <state x="385" y="154" width="670" height="676" key="search.everywhere.popup" timestamp="1602679136659">
       <screen x="0" y="23" width="1440" height="807" />
     </state>
-    <state x="385" y="154" width="670" height="676" key="search.everywhere.popup/0.23.1440.807@0.23.1440.807" timestamp="1601620846332" />
+    <state x="385" y="154" width="670" height="676" key="search.everywhere.popup/0.23.1440.807@0.23.1440.807" timestamp="1602679136659" />
   </component>
 </project>

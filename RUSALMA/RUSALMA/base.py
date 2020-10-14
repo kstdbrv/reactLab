@@ -57,7 +57,6 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     'ckeditor',
-    'smart_selects',
 
     'main.apps.MainConfig',
 ]
