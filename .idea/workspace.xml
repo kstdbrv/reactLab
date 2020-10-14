@@ -21,8 +21,7 @@
   <component name="ChangeListManager">
     <list default="true" id="f05fbe87-d6d0-45fc-ad59-c360eaf0e36f" name="Default Changelist" comment="add mobile header and footer">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RUSALMA/RUSALMA/base.py" beforeDir="false" afterPath="$PROJECT_DIR$/RUSALMA/RUSALMA/base.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RUSALMA/main/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/RUSALMA/main/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RUSALMA/RUSALMA/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/RUSALMA/RUSALMA/urls.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
