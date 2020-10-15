@@ -105,6 +105,7 @@
   color: #656565;
 }
 
+
 @media (max-width: 480px) {
   .text-item__list {
     margin-top: 2vh;
@@ -123,6 +124,7 @@
   padding: 3vh;
   margin-bottom: 3vh;
   margin-right: 0;
+  width: 100%;
 }
 .about {
   padding: 2vh 0 5vh;

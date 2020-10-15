@@ -163,6 +163,13 @@ ul, li {
   max-width: 150vh;
   margin: 0 auto;
 }
+
+@media (max-width: 830px) and (max-height: 480px) {
+  body {
+    font-size: 8px;
+  }
+}
+
 @media screen and (max-width: 480px){
   .top{
     font-size: 2em;
