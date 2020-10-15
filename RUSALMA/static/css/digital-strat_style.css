@@ -178,7 +178,8 @@ a {
 .include_strat{
     box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.16);
     width: calc(50% - 10px);
-    margin-bottom: 7vh;
+    margin-bottom: 40px;
+    padding: 20px;
 }
 .include_strat > span{
     font-family: 'PT-Sans-Bold';
@@ -186,14 +187,11 @@ a {
     display: flex;
     align-items: center;
     color: #121212;
-    padding: 3vh 0 1vh 3vh;
     word-wrap: break-word; 
 }
 .include_strat > p{
     font-weight: normal;
     color: #656565;
-    padding: 1vh 2vw;
-    margin-bottom: 6vh;
 
 }
 .border_inc{
@@ -338,19 +336,9 @@ img{
     .strat{
         font-size: 2em;
     }
-    .img > h2{
-        font-size: 2em;
-    }
-    .img > p{
-        font-size: 1em;
-    }
     .include{
-        font-size: 2em;
-        padding: 2vh 2vw;
+        padding: 20px 40px;
         flex-direction: column;
-    }
-    .include_strat > span{
-        font-size: 1em;
     }
     .include_strat {
         width: 100%;
