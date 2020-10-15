@@ -405,7 +405,7 @@
             font-size:16px;
         }
         .task > a{
-            font-size: 4vh;
+            font-size: 24px;
         }
         .task{
             height: 50vh;
@@ -531,10 +531,10 @@
     }
     .task > p{
         width: 90vw;
-        font-size:2.5vh;
+        
     }
     .task > a{
-        font-size: 4vh;
+      
         width: 90vw;
     }
     .task_img{
@@ -542,9 +542,7 @@
         height: 35vh;
         margin: 0 auto;
     }
-    .mb-t{
-        font-size:2.5vh;
-    }
+    
     .task_img > .img{
         width: 35vh;
         height: 35vh;
@@ -553,9 +551,7 @@
     .task > a > span >  object{
        width: 5vw;
     }
-    .decision > span{
-        font-size:4vh;
-    }
+    
     .sl-dots button {
     
     border: .5vh solid #AFAFAF; 
@@ -580,7 +576,7 @@
         width: 90vw;
     }
     .info > span{       
-        font-size: 2.5vh;
+        
         margin-left: 26vw;
         display: block;
         width: 35;
@@ -624,7 +620,7 @@
 @media screen and (max-width: 320px){
 
     .task{
-        height: 56vh;
+        height: 66vh;
     }
     .tasks{
         display: flex;
@@ -664,7 +660,7 @@
         width: 95vw;
     }
     .info > span{       
-        font-size: 3vh;
+        
         margin-left: 23vw;
         display: block;
         width: 25;

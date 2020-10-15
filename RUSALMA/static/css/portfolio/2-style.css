@@ -55,7 +55,7 @@ a {
 }
 .text > p{
     font-weight: normal;
-    font-size: 3.5vh;
+    font-size: 32px;
     margin: 0 auto;
     color: #121212;
     width: 50vw;
@@ -79,7 +79,7 @@ a {
 }
 .task > a{
     font-weight: normal;
-    font-size: 4vh;
+    font-size: 32px;
     color: #656565;
     text-decoration: none;
     margin-bottom: 13vh;
@@ -93,13 +93,13 @@ a {
 }
 .task > p{
     font-weight: normal;
-    font-size: 3vh;
+    font-size: 24px;
     color: #121212;
     width: 40vw;
 }
 .task > span{
     font-weight: bold;
-    font-size: 6vh;
+    font-size: 56px;
     color: #121212;
     margin-bottom: 2vh;
 }
@@ -120,9 +120,9 @@ a {
 }
 .mb-t{
     margin-top: 10vh;
-    margin-bottom: 5vh;
+    margin-bottom: 24px;
     font-weight: normal;
-    font-size: 3vh;
+    font-size: 24px;
     padding-left: 3vw;
     padding-right:3vw;
     color: #121212;
@@ -131,7 +131,7 @@ a {
 }
 .myfood{
     font-weight: normal;
-    font-size: 5vh;
+    font-size: 40px;
     color: #121212;
     padding-left: 3vw;
     display: block;
@@ -149,13 +149,13 @@ a {
 }
 .decision > p{
     font-weight: normal;
-    font-size: 3vh;
+    font-size: 24px;
     color: #121212;
     width: 40vw;
 }
 .decision > span{
     font-weight: bold;
-    font-size: 6vh;
+    font-size: 56px;
     color: #121212;
     margin-bottom: 2vh;
 }
@@ -197,7 +197,7 @@ a {
 
 .info > span{
     font-weight: normal;
-    font-size: 4vh;
+    font-size: 40px;
     color: #121212;
     margin-left: 10vw;
     display: block;
@@ -271,9 +271,9 @@ ol>li::before {
 }
 .img-myfood > p {
     font-weight: normal;
-    font-size: 4vh;
+    font-size: 40px;
     color: #121212;
-    width: 35vw;
+    width: 45vw;
     padding-right: 10vw;
 }
 

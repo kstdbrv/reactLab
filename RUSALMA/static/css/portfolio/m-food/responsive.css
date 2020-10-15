@@ -435,10 +435,10 @@
         }
         .text > p{
             width: 90vw;
-            font-size: 16px;
+            
         }
         .task > a{
-            font-size: 3.5vh;
+            font-size: 24px;
             width: 54vh;
         }
         .task{
@@ -453,7 +453,7 @@
             font-size: 16px;
         }
         .task span{
-            font-size:4vh;
+            font-size:24px;
         }
         .mb-t {
             padding-top: 20px;
@@ -478,10 +478,10 @@
            width: 5vw;
         }
         .decision > span{
-            font-size: 4vh;
+            font-size: 24px;
         }
         .decision > p{
-            font-size: 2.5vh;
+            font-size: 16px;
         }
          /* slider */
         .img_slider > .img{     
@@ -508,7 +508,8 @@
         margin-bottom: 4vh;
         display: block;
         margin-left: 26vw;
-        margin-top: 5vh;      
+        margin-top: 5vh;   
+        font-size: 16px;   
     }
 
     .info > p{
@@ -554,7 +555,6 @@
     }
     .text > p{
         width: 90vw;
-         font-size: 2.5vh;
     }
     .tasks{
         display: flex;
@@ -566,10 +566,10 @@
     }
     .task > p{
         width: 90vw;
-        font-size: 2.5vh;
+        
     }
     .task > a{
-        font-size: 3.5vh;
+        
         width: 70vw;
     }
     .task_img{
@@ -585,12 +585,8 @@
     .task > a > span >  object{
        width: 5vw;
     }
-    .decision > span{
-        font-size:4vh;
-    }
-    .decision > p{
-         font-size: 16px;
-    }
+   
+   
     .sl-dots button {
     
     border: .5vh solid #AFAFAF; 
@@ -620,15 +616,13 @@
         display: block;
         width: 35;
     }
-    ol>li::before{
-        font-size:7vh;
-    }
+   
     .info > small{
         margin-bottom: 4vh;
         display: block;
         margin-left: 26vw;
         margin-top: 5vh; 
-        font-size:16px;
+        
     }
 
     .info > p{
@@ -657,18 +651,18 @@
 @media screen and (max-width: 320px){
 
     .task{
-        height: 40vh;
+        height: 47vh;
     }
     .tasks{
         display: flex;
         flex-direction: column;  
-        height:90vh;
+        height:100vh;
     }
     .task > p{
         width: 100%;
     }
     .task > a{
-        font-size: 4vh;
+       
         width: 70vw;
     }
     .task_img{

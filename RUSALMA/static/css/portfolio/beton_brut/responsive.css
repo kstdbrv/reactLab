@@ -204,7 +204,7 @@
      }
 
 }
-}
+
 @media screen and (max-width: 768px){
 
     .intro > h1{       
@@ -309,11 +309,11 @@
      @media screen and (max-width: 425px){
 
         .intro > h1{       
-            font-size: 7vh;  
-            margin-top: 25vh;    
+            font-size: 32px;
+            margin-top: 42vh;   
         }
         .intro > p{     
-            font-size: 5vh;  
+            font-size: 24px;  
             width: 80vw;  
         }
         .border_h1{
@@ -334,6 +334,9 @@
             display: flex;
             flex-direction: column;         
         }
+        .task > a{
+            font-size: 24px;
+        }
         .task > p{
             width: 90vw;
             font-size:16px;
@@ -342,7 +345,7 @@
             height: 45vh;
         }
         .task > span{
-            font-size:4vh;
+            font-size:24px;
         }
         .decision > p {
             font-size:16px;
@@ -355,7 +358,7 @@
            width: 5vw;
         }
         .decision > span {
-            font-size: 4vh;
+            font-size: 24px;
         }
          /* slider */
         .img_slider > .img{     
@@ -402,14 +405,7 @@
         .intro{
             padding: 0 20px;
         }
-        .intro > h1{       
-            font-size: 7vh;  
-            margin-top: 25vh;    
-        }
-        .intro > p{     
-            font-size: 5vh;  
-            width: 80vw;  
-        }
+    
         .border_h1{
             width: 45vw;
             margin-bottom: 6vh ;
@@ -424,9 +420,7 @@
             width: 90vw;
             font-size:16px;
         }
-        .task > a{
-            font-size: 4vh;
-        }
+       
         
         .tasks{
             display: flex;
@@ -460,12 +454,7 @@
         margin-bottom: 1vh;
         width: 90vw;
     }
-    .info > span{       
-        font-size: 3vh;
-        margin-left: 26vw;
-        display: block;
-        width: 35;
-    }
+   
     ol>li::before{
         font-size:8vh;
     }
@@ -479,7 +468,7 @@
     .info > p{
         width: 60vw;  
         margin-left: 26vw; 
-        font-size:2vh;
+
     }
     .num_text{
         padding-top: 1vh;
@@ -507,14 +496,7 @@
 }
 @media screen and (max-width: 375px){
 
-    .intro > h1{       
-        font-size: 7vh;  
-        margin-top: 25vh;    
-    }
-    .intro > p{     
-        font-size: 5vh;  
-        width: 80vw;  
-    }
+
     .border_h1{
         width: 45vw;
         margin-bottom: 6vh ;
@@ -537,10 +519,7 @@
     .task > p{
         width: 90vw;
     }
-    .task > a{
-        font-size: 4vh;
-        width: 60vw;
-    }
+   
     .task_img{
         width: 35vh;
         height: 35vh;
@@ -566,12 +545,7 @@
         margin-bottom: 1vh;
         width: 90vw;
     }
-    .info > span{       
-        font-size: 3vh;
-        margin-left: 26vw;
-        display: block;
-        width: 35;
-    }
+   
     ol>li::before{
         font-size:8vh;
     }
@@ -585,7 +559,7 @@
     .info > p{
         width: 60vw;  
         margin-left: 26vw; 
-        font-size:2vh;
+       
     }
     .num_text{
         padding-top: 1vh;
@@ -618,10 +592,7 @@
         flex-direction: column;         
     }
     
-    .task > a{
-        font-size: 4vh;
-        width: 50vw;
-    }
+
     .task_img{
         width: 35vh;
         height: 35vh;
@@ -648,12 +619,7 @@
         margin-bottom: 1vh;
         width: 95vw;
     }
-    .info > span{       
-        font-size: 4vh;
-        margin-left: 23vw;
-        display: block;
-        width: 25;
-    }
+   
     .info > small{
         margin-bottom: 4vh;
         display: block;

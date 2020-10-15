@@ -319,11 +319,11 @@
      @media screen and (max-width: 425px){
 
         .intro > h1{       
-            font-size: 7vh;  
+            font-size: 32px;  
             margin-top: 25vh;    
         }
         .intro > p{     
-            font-size: 5vh;  
+            font-size: 24px;  
             width: 90%;  
         }
         .border_h1{
@@ -395,13 +395,10 @@
             padding: 0 20px;
         }
         .intro > h1{       
-            font-size: 5vh;  
+           
             margin-top: 40vh;    
         }
-        .intro > p{     
-            font-size: 4vh;  
-           
-        }
+       
         .border_h1{
             width: 45vw;
             margin-bottom: 4vh ;
@@ -417,7 +414,7 @@
             
         }
         .task > a{
-            font-size: 4vh;
+            font-size: 24px;
         }
         .task{
             height: 26vh;
@@ -508,13 +505,10 @@
 @media screen and (max-width: 375px){
 
     .intro > h1{       
-        font-size: 5vh;  
+     
         margin-top: 40vh;    
     }
-    .intro > p{     
-        font-size: 4vh;  
-        
-    }
+    
     .border_h1{
         width: 45vw;
         margin-bottom: 4vh ;
@@ -539,7 +533,7 @@
         width: 90vw;
     }
     .task > a{
-        font-size: 4vh;
+       
         width: 60vw;
     }
     .task_img{
@@ -555,9 +549,7 @@
     .task > a > span >  object{
        width: 5vw;
     }
-    .decision > span{
-        font-size:4vh;
-    }
+  
     .sl-dots button {
     
     border: .5vh solid #AFAFAF; 
@@ -633,7 +625,7 @@
     width: 95vw;
     }
     .task > a{
-        font-size: 4vh;
+        
         width: 50vw;
     }
     .task_img{

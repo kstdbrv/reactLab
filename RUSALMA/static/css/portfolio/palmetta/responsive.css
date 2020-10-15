@@ -240,11 +240,11 @@
             padding-top:10vh;
         }
         .intro > h1{       
-            font-size: 6vh;  
+            font-size: 32px;  
             margin-top: 40vh;    
         }
         .intro > p{     
-            font-size: 4vh;  
+            font-size: 24px;  
             width: 80vw;  
         }
         .border_h1{
@@ -262,7 +262,7 @@
             width: 90vw;
         }
         .task a{
-            font-size: 4vh;
+            font-size: 24px;
         }
         .task{
             height: 58vh;
@@ -273,7 +273,7 @@
             height: 112vh;
         }
         .task span{
-            font-size: 4vh;
+            font-size: 24px;
         }
         .task > p{
             width: 95vw;
@@ -299,11 +299,11 @@
             width: 99.9%;
         }
         .myfood{
-            font-size: 3vh;
+            font-size: 24px;
             margin-bottom: 5vh;
         }
         .decision span{
-            font-size: 4vh;
+            font-size: 24px;
         }
         .border_span{
             margin-bottom: 3vh;
@@ -382,11 +382,11 @@
 @media screen and (max-width: 375px){
 
     .intro > h1{       
-        font-size: 6vh;  
+        
         margin-top: 40vh;    
     }
     .intro > p{     
-        font-size: 3.5vh;  
+    
         width: 80vw;  
     }
     .border_h1{
@@ -413,7 +413,7 @@
         height: 65vh;
     }
     .task > a{
-        font-size: 3.5vh;
+     
         width: 50vw;
     }
     .task_img{
@@ -445,7 +445,7 @@
         width: 95vw;
     }
     .info > span{       
-        font-size: 24px;
+        
         margin-left: 25vw;
         display: block;
         width: 40;
@@ -504,7 +504,7 @@
         width: 95vw;
     }
     .task > a{
-        font-size: 4vh;
+        
         width: 50vw;
     }
     .task_img{
@@ -533,7 +533,7 @@
         width: 95vw;
     }
     .info > span{       
-        font-size: 4vh;
+       
         margin-left: 25vw;
         display: block;
         width: 40;
@@ -556,9 +556,7 @@
         margin-top: -10vh;
     }    
     /* img */
-    .myfood{
-        font-size: 24px;
-    }
+    
     .img-myfood > p {
          display: none;
      }

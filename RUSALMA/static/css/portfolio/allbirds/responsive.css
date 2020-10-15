@@ -393,11 +393,11 @@
  @media screen and (max-width: 414px){
 
         .intro > h1{       
-            font-size: 5vh;  
+            font-size: 32px;  
             margin-top: 40vh;    
         }
         .intro > p{     
-            font-size: 4vh;  
+            font-size: 24px;  
             width: 90vw;  
         }
         .border_h1{
@@ -415,7 +415,7 @@
             font-size:16px;
         }
         .task > a{
-            font-size: 4vh;
+            font-size: 24px;
         }
         .task{
             height: 42vh;
@@ -430,7 +430,7 @@
             font-size:16px;
         }
         .task span{
-            font-size:4vh;
+            font-size:24px;
         }
         .task_img{
         width: 40vh;
@@ -492,7 +492,7 @@
              font-size:16px;
          }
          .decision > span {
-             font-size:4vh;
+             font-size:24px;
          }
          .team > .border_span {
              width:32%;
@@ -501,11 +501,11 @@
 @media screen and (max-width: 375px){
 
     .intro > h1{       
-        font-size: 5vh;  
+       
         margin-top: 40vh;    
     }
     .intro > p{     
-        font-size: 4vh;  
+      
         width: 90vw;  
     }
     .border_h1{
@@ -535,7 +535,7 @@
         
     }
     .task > a{
-        font-size: 4vh;
+       
         width: 60vw;
     }
     .task_img{
@@ -554,9 +554,7 @@
     .mb-t {
         font-size: 16px;
     }
-    .decision > span{
-        font-size:4vh;
-    }
+    
     .sl-dots button {
     
     border: .5vh solid #AFAFAF; 
@@ -630,7 +628,7 @@
         width: 95vw;
     }
     .task > a{
-        font-size: 4vh;
+       
         width: 50vw;
     }
     .task_img{

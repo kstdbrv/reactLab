@@ -432,7 +432,7 @@
             font-size:16px;
         }
         .task > a{
-            font-size: 4vh;
+            font-size: 24px;
             width: 54vh;
         }
         .task{
@@ -448,7 +448,7 @@
             font-size:16px;
         }
         .task span{
-            font-size:4vh;
+            font-size:24px;
         }
         .task_img{
        
@@ -464,7 +464,7 @@
            width: 5vw;
         }
         .decision > span{
-            font-size: 4vh;
+            font-size: 24px;
         }
          /* slider */
         .img_slider > .img{     
@@ -488,7 +488,7 @@
         font-size:16px;
     }
     ol>li::before{
-        font-size:8vh;
+        font-size:24px;
     }
     .info > small{
         margin-bottom: 4vh;
@@ -564,7 +564,7 @@
         
     }
     .task > a{
-        font-size: 3.5vh;
+       
         width: 70vw;
     }
     .task_img{
@@ -579,9 +579,7 @@
     .task > a > span >  object{
        width: 5vw;
     }
-    .decision > span{
-        font-size:4vh;
-    }
+    
     .decision > p{
          font-size: 2.5vh;
     }
@@ -609,7 +607,7 @@
         width: 90vw;
     }
     .info > span{       
-        font-size: 2.5vh;
+        
         margin-left: 26vw;
         display: block;
         width: 35;
@@ -662,7 +660,7 @@
         font-size:16px;
     }
     .task > a{
-        font-size: 4vh;
+        
         width: 70vw;
     }
     .task_img{
@@ -691,7 +689,7 @@
         width: 95vw;
     }
     .info > span{       
-        font-size: 2.5vh;
+      
         margin-left: 23vw;
         display: block;
         width: 25;
