@@ -41,6 +41,12 @@ footer {
   width: 60%;
 }
 
+@media (max-width: 830px) and (max-height: 480px) {
+  body {
+    font-size: 8px;
+  }
+}
+
 @media (max-width:480px) {
 
   body {
@@ -77,7 +83,7 @@ ul, li {
 }
 
 .container{
-  padding: 0 15px;
+  padding: 0 40px;
   margin: 0 auto;
 }
 

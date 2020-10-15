@@ -344,6 +344,7 @@ footer {
 .slide {
     background: rgba(0, 0, 0, 0);
     background-size: cover;
+    background-position: center;
     height: 70vh;
     color: #3498db;
     margin: 10px;
@@ -435,6 +436,11 @@ footer {
         width: 90%;
     }
 }  
+@media (max-width: 830px) and (max-height: 480px) {
+    body {
+      font-size: 8px;
+    }
+  }
 @media screen and (max-width: 480px){
     body{
         font-size: 8px;

@@ -60,7 +60,7 @@ footer {
     font-family: 'PT-Sans-Bold';
     color: #121212;
     width: 50%;
-    font-size: 2em;
+    font-size: 1.75em;
     margin-bottom: 2vh;
 }
 .border_h2{
@@ -79,19 +79,22 @@ footer {
 }
 .SEO > span{
     font-weight: normal;
+    font-size: 0.75em;
     text-align: center;
-    color: #656556;
+    color: #121212;
     width: 45vw;
     margin: 0 auto;
 }
 /* stages work */
 .stages_work{
-    padding: 4vh 2vw;
+    margin: 0 auto;
+    max-width: 1440px;
+    padding: 60px 40px;
     font-size: 2em;
 }
 .stages_work > h2{
     font-family: 'PT-Sans-Bold';
-    font-size: 2em;
+    font-size: 1.75em;
     text-align: center;
     color: #121212;
     margin: 0 auto;
@@ -121,7 +124,7 @@ footer {
 }
 .card > span {
     font-family: Montserrat;
-    font-size: 1.8em;
+    font-size: 1.75em;
     color: #121212;
 }
 
@@ -179,7 +182,7 @@ footer {
 
 .usability > h2{
     font-family: 'PT-Sans-Bold';
-    font-size: 2em;
+    font-size: 1.75em;
     color: #121212;
     width: 50vw;
     margin: 0 auto;
@@ -220,7 +223,7 @@ footer {
     text-align: center;
     color: #FFFFFF;
     width: 60%;
-    font-size: 1em;
+    font-size: 0.75em;
     padding: 7vh 0;
 }
 
@@ -328,6 +331,13 @@ footer {
     }
 }
 
+
+@media (max-width: 830px) and (max-height: 480px) {
+    body {
+      font-size: 8px;
+    }
+  }
+  
 @media (max-width:480px) {
     .card > p {
       text-align: center;

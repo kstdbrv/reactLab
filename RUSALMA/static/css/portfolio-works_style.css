@@ -4,12 +4,12 @@
     flex-direction: column;
     align-items:center;
     padding-top: 17vh;
-    font-size: 1.5em;
+    font-size: 2em;
     padding-bottom: 80px;
   }
   .portfolio-main__title {
     font-family: 'PT-Sans-Bold';
-    font-size: 2em;
+    font-size: 1.75em;
     color: #121212;
     text-align: center;
     margin: 0 auto;
@@ -73,7 +73,7 @@
     font-family: PT Sans;
     font-style: normal;
     font-weight: normal;
-    font-size: 1em;
+    font-size: 0.75em;
     color: #FFFFFF;
     text-decoration: none;
     border: 2px solid #fff;
@@ -133,7 +133,7 @@ img{
     font-family: PT Sans;
     font-style: normal;
     font-weight: bold;
-    font-size: 3vh;
+    font-size: 1em;
     line-height: 41px;
     color: #FFFFFF;
     margin-top: 18vh;
@@ -147,6 +147,12 @@ img{
   opacity: 1;
   visibility: visible;
   transition: 1s;
+}
+
+@media (max-width: 830px) and (max-height: 480px) {
+  body {
+    font-size: 8px;
+  }
 }
 
 

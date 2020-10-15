@@ -20,8 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f05fbe87-d6d0-45fc-ad59-c360eaf0e36f" name="Default Changelist" comment="add mobile header and footer">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RUSALMA/RUSALMA/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/RUSALMA/RUSALMA/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RUSALMA/static/css/digital-strat_style.css" beforeDir="false" afterPath="$PROJECT_DIR$/RUSALMA/static/css/digital-strat_style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RUSALMA/static/css/internet-marketing/services.css" beforeDir="false" afterPath="$PROJECT_DIR$/RUSALMA/static/css/internet-marketing/services.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RUSALMA/static/css/internet-marketing/strategy.css" beforeDir="false" afterPath="$PROJECT_DIR$/RUSALMA/static/css/internet-marketing/strategy.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RUSALMA/static/css/internet-marketing/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/RUSALMA/static/css/internet-marketing/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

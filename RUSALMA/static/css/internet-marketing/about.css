@@ -5,7 +5,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  padding: 9vh 0 15vh;
+  padding: 60px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -21,12 +21,12 @@
 }
 
 .about__text {
-  font-family: 'PT-Sans-Bold';
+  font-family: 'PT-Sans';
   font-size: 1em;
   color: #FFFFFF;
   text-align: center;
-  max-width: 157vh;
-  margin-top: 11vh;
+  width: 60%;
+  margin: 30px auto 0 auto;
 }
 
 .about__title-line {

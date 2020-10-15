@@ -40,12 +40,11 @@
     height:100%;
     position:absolute;
     box-sizing:border-box;
-    border:4px solid #656565;
+    border:3px solid #656565;
     font-family:'PT-Sans';
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size:1.75rem;
     text-align:center;
 }
  .btn-el:nth-child(1){
