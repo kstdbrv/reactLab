@@ -18,7 +18,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 4vh;
+  font-size: 2em;
 }
 
 .short-description>span {
@@ -39,6 +39,7 @@ body {
   overflow-x: hidden;
   font-style: normal;
   color: #121212;
+  font-size: 16px;
 }
  
 *, *:before, *:after {
@@ -94,6 +95,7 @@ ul, li {
 
 .skills {
   background: #F4F4F4;
+  font-size: 2em;
 }
 
 .skills__inner {
@@ -113,7 +115,7 @@ ul, li {
 }
 
 .skills__title {
-  font-size: 7vh;
+  font-size: 1.75em;
   margin-bottom: 2vh;
   
 }
@@ -130,12 +132,11 @@ ul, li {
 }
 
 .box-skills__title {
-  font-size: 3vh;
   margin-bottom: 2vh;
 }
 
 .box-skills__text {
-  font-size: 3vh;
+  font-size: .75em;
 }
 
 
@@ -143,6 +144,7 @@ ul, li {
 
 .platforms, .steps {
   background: #F4F4F4;
+  font-size: 2em;
 }
 
 .platforms__inner, .steps__inner {
@@ -154,7 +156,7 @@ ul, li {
 
 .platforms__title, .steps__title {
   font-family: 'PT-Sans-Bold';
-  font-size: 7vh;
+  font-size: 1.75em;
   margin-bottom: 3vh;
   margin-bottom: 4vh;
 }
@@ -167,7 +169,6 @@ ul, li {
 }
 
 .platforms__text, .steps__text {
-font-size: 3.5vh;
 padding-bottom: 10vh;
 max-width: 130vh;
 }
@@ -191,7 +192,7 @@ max-width: 130vh;
 
 .steps__title {
   font-family: 'PT-Sans-Bold';
-  font-size: 7vh;
+  font-size: 1.75em;
   color: #121212;
   margin-bottom: 3vh;
   max-width: 70vh;
@@ -199,7 +200,7 @@ max-width: 130vh;
 }
 
 .steps__text {
-  font-size: 3.5vh;
+  font-size: .75em;
   padding-bottom: 10vh;
   max-width: 130vh;
 }
@@ -230,7 +231,7 @@ max-width: 130vh;
 
 .steps__item-title {
   font-family: 'PT-Sans-Bold';
-  font-size: 7vh;
+  font-size: 1.75em;
   display: flex;
   padding-right: 12vh;
   margin-bottom: 2.5vh;
@@ -249,7 +250,7 @@ max-width: 130vh;
 
 .text-item__list {
   margin-top: 4vh;
-  font-size: 3vh;
+  font-size: .75em;
   color: #656565;
   width: 74vh;
 }
@@ -260,14 +261,15 @@ max-width: 130vh;
 .social {
   padding-top: 13vh;
   background: #F4F4F4;
+  font-size: 2em;
 }
 
 .social__title {
   font-family: 'PT-Sans-Bold';
-  font-size: 7vh;
   padding-bottom: 3vh;
   padding-bottom: 4vh;
   text-align: center;
+  font-size: 1.75em;
 }
 
 .social__title-line {
@@ -285,8 +287,6 @@ max-width: 130vh;
 }
 
 .social__text {
-  font-size: 2.5vh;
-  font-size: 32px;
   width: 50vh;
   text-align: left;
   margin-left: 12vh;
@@ -310,11 +310,11 @@ max-width: 130vh;
   display: flex;
   flex-direction: column;
   align-items: center;
+  font-size: 2em;
 }
 
 .info__text {
   color: #FFFFFF;
-  font-size: 2.8vh;
   width: 112vh;
   text-align: center;
 }

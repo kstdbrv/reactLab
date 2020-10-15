@@ -1,10 +1,10 @@
 .services {
   background: #F4F4F4;
   padding-top: 5vh;
+  font-size: 2em;
 }
 
 .services__inner {
-  font-size: 2em;
   display: flex;
   flex-direction: column;
   align-items:center;
@@ -17,7 +17,7 @@
 
 .services__title {
   font-family: 'PT-Sans-Bold';
-  font-size:2em;
+  font-size:1.75em;
   margin-bottom: 3vh;
   text-align: center;
   margin: 0 auto;
@@ -26,6 +26,9 @@
   margin-bottom: 2vh;
 }
 
+.services__item-text {
+  font-size: 0.75em;
+}
 
 .services__text {
   text-align: center;
@@ -80,7 +83,7 @@
 
 .services__item-title {
   font-family: 'PT-Sans-Bold';
-  font-size: 2em;
+  font-size: 1.75em;
   display: flex;
   align-items: center;
   padding-right: 12vh;

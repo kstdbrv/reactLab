@@ -93,12 +93,7 @@ ul, li {
   text-align: center;
 }
 
-.media__statment {
-  font-size: 1em;
-  color: #656556;
-  margin-bottom: 1.5vh;
-  margin-top: 10vh;
-}
+
 
 .media__statment-line {
   width: 14.5vh;
@@ -109,7 +104,7 @@ ul, li {
 
 .media__title {
   font-family: 'PT-Sans-Bold';
-  font-size: 2em;
+  font-size: 1.75em;
   color: #121212;
   margin-bottom: 3vh;
   text-align: center;
@@ -156,7 +151,7 @@ ul, li {
 
 .works__title {
   font-family: 'PT-Sans-Bold';
-  font-size: 2em;
+  font-size: 1.75em;
   margin-bottom: 3vh;
   max-width: 115vh;
 }
@@ -178,13 +173,13 @@ ul, li {
 /* block info */
 .block-info {
   background: #F4F4F4;
+  font-size: 2em;
 }
 
 .block-info__text {
   display: flex;
   align-items: center;
   min-height: 35vh;
-  font-size: 4vh;
   text-align: center;
   padding: 3vh 10vh;
   padding-bottom: 6vh;
@@ -285,7 +280,7 @@ ul, li {
 
 .stages_work > h2 {
   font-family: 'PT-Sans-Bold';
-  font-size: 2em;
+  font-size: 1.75em;
   text-align: center;
   color: #121212;
   margin: 0 auto;
@@ -294,8 +289,8 @@ ul, li {
 
 .card > span {
   font-family: 'PT-Sans-Bold';
-  font-size: 7vh;
   color: #121212;
+  font-size: 1.75em;
 }
 
 .stages__row {
@@ -315,7 +310,7 @@ ul, li {
 
 .card > p {
   font-weight: normal;
-  font-size: 3vh;
+
   color: #121212;
   margin-top: 8vh;
   word-wrap: break-word;
@@ -422,26 +417,19 @@ ul, li {
   }
 
   .media__title {
-    font-size: 6vh;
     margin-bottom: 3vh;
   }
 
   .media__text {
-    font-size: 3vh;
     padding-bottom: 8vh;
   }
 
   .works__text {
-    font-size: 3vh;
     line-height: 3.5vh;
   }
 
-  .works__title {
-    font-size: 6vh;
-  }
 
   .block-info__text {
-    font-size: 3vh;
     padding: 3vh 8vh;
   }
 
@@ -537,7 +525,6 @@ ul, li {
 }
 .stages_work > h2{
   font-family: 'PT-Sans-Bold';
-  font-size: 2em;
   text-align: center;
   color: #121212;
   margin: 0 auto;
@@ -708,11 +695,7 @@ ul, li {
   .card object {
     width: 150%;
   }
-  .card > span {
-
-    font-size: 1.8em;
-
- }
+ 
 }
 
 

@@ -73,7 +73,7 @@ ul, li {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 4vh;
+  font-size: 2em;
 }
 
 .short-description>span {
@@ -114,7 +114,7 @@ ul, li {
 
 .seo__title {
   font-family: 'PT-Sans-Bold';
-  font-size: 7vh;
+  font-size: 1.75em;
   color: #121212;
   margin-bottom: 3vh;
   text-align: center;
@@ -139,11 +139,12 @@ ul, li {
 /* block tasks */
 .tasks {
   background: #F4F4F4;
+  font-size: 2em;
 }
 
 .tasks__title {
   font-family: 'PT-Sans-Bold';
-  font-size: 7vh;
+  font-size: 1.75em;
   color: #121212;
   margin-bottom: 3vh;
   text-align: center;
@@ -171,9 +172,9 @@ ul, li {
 
 .tasks__text {
   margin-top: 3vh;
-  font-size: 2.3vh;
   color: #656565;
   margin-right: 3vh;
+  font-size: .75em;
 }
 
 .tasks__text:first-child {
@@ -188,6 +189,7 @@ ul, li {
 /* block services */
 .services {
   background: #F4F4F4;
+  font-size: 2em;
 }
 
 .services__inner {
@@ -200,7 +202,7 @@ ul, li {
 
 .services__title {
   font-family: 'PT-Sans-Bold';
-  font-size: 7vh;
+  font-size: 1.75em;
   color: #121212;
   margin-bottom: 3vh;
   text-align: center;
@@ -236,7 +238,7 @@ ul, li {
   margin-bottom: 7vh;
   margin-right: 3vh;
   width: 62vh;
-  height: 50vh;
+  height: 70vh;
 }
 
 .services__item-title {
@@ -265,7 +267,7 @@ ul, li {
 
 .services__item-text {
   margin-top: 4vh;
-  font-size: 2.3vh;
+  font-size: .75em;
   color: #656565;
   width: 51vh;
 }
@@ -413,12 +415,11 @@ ul, li {
 }
 
 .stages__name {
-  font-size: 7vh;
+  font-size: 1.75em;
   font-family: 'PT-Sans-Bold';
 }
 
 .stages__discr {
-  font-size: 4vh;
   width: 60%;
   text-align: center;
 }

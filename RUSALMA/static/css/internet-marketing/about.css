@@ -14,7 +14,7 @@
 }
 
 .about__title {
-  font-size: 2em;
+  font-size: 1em;
   text-align: center;
   color: #EBEBEB;
   margin-bottom: 3vh; 
@@ -22,7 +22,7 @@
 
 .about__text {
   font-family: 'PT-Sans-Bold';
-  font-size: 2em;
+  font-size: 1em;
   color: #FFFFFF;
   text-align: center;
   max-width: 157vh;
