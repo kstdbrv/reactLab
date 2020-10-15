@@ -17,7 +17,7 @@ def order_created(sender, instance, created, **kwargs):
             'Новая заявка!',
             data,
             'reactlab.pro@yandex.ru',
-            ['vasilencko.stef2013@yandex.ru']
+            ['web@reactlab.pro']
         )
 
 
