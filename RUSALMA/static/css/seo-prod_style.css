@@ -87,7 +87,9 @@ footer {
 }
 /* stages work */
 .stages_work{
-    padding: 4vh 2vw;
+    margin: 0 auto;
+    max-width: 1440px;
+    padding: 60px 40px;
     font-size: 2em;
 }
 .stages_work > h2{

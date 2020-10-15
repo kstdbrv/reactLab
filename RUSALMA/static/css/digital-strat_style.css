@@ -82,7 +82,9 @@ a {
     display: block;
     text-align: center;
     color: #121212;
-    padding: 0 15vw;
+    padding: 0 40px;
+    width: 60%;
+    margin: 0 auto;
 }
 .img_dig > object{   
     max-width: 100%;  
@@ -91,9 +93,9 @@ a {
 .img_text{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    padding: 5vh 5vw;
+    padding: 60px 40px;
 }
 .img_text > ._text{
     font-weight: normal;
@@ -164,16 +166,18 @@ a {
 }
 
 .include{
+    max-width: 1440px;
     background: #FFFFFF;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 10vh 2vw;
+    padding: 120px 40px;
+    margin: 0 auto;
 }
 .include_strat{
     box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.16);
-    width: 47vw;
+    width: calc(50% - 10px);
     margin-bottom: 7vh;
 }
 .include_strat > span{

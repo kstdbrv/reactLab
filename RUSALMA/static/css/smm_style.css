@@ -165,9 +165,7 @@ ul, li {
 
 .works__text {
   font-size: 1em;
-  max-width: 135vh;
-  max-width: 86vh;
-  line-height: 4vh;
+  width: 70%;
 }
 
 /* block info */
@@ -188,18 +186,6 @@ ul, li {
 }
 
 /* short-discription */
-.stages_work {
-  max-width: 150vh;
-  margin: 0 auto;
-  font-size: 2em;
-}
-
-.stages {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-
 .short-description {
   height: 35vh;
   display: flex;
@@ -274,8 +260,10 @@ ul, li {
 
 /* stages work */
 .stages_work {
-  padding: 4vh 2vw;
+  max-width: 1440px;
+  padding: 60px 40px;
   font-size: 2em;
+  margin: 0 auto;
 }
 
 .stages_work > h2 {
