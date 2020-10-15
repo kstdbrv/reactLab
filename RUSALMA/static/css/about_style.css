@@ -344,6 +344,7 @@ footer {
 .slide {
     background: rgba(0, 0, 0, 0);
     background-size: cover;
+    background-position: center;
     height: 70vh;
     color: #3498db;
     margin: 10px;
