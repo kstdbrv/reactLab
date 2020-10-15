@@ -322,7 +322,7 @@ img{
         font-size: 2em;
     }
     .digital > p{
-        font-size: 1em;
+        width: 100%;
     }
     .img_text {   
         flex-direction: column;
