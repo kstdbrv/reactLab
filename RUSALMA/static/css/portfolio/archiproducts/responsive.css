@@ -433,9 +433,6 @@
             font-size: 24px;
             width: 54vh;
         }
-        .task{
-            height: 39vh;
-        }
         .tasks{
             display: flex;
             flex-direction: column;  
@@ -449,7 +446,6 @@
         }
         .task_img{
        
-        margin-top:5vh ;
         background-size:contain;
     }
     .task_img > .img{
@@ -552,9 +548,6 @@
         flex-direction: column;    
         height: 88vh;     
     }
-    .task{
-         
-    }
     .task > p{
         width: 90vw;
         
@@ -562,9 +555,6 @@
     .task > a{
        
         width: 70vw;
-    }
-    .task_img{
-        margin-top: 11vh;
     }
     
     .task_img > .img{
