@@ -26,7 +26,7 @@
 
 .strategy__title {
   font-family: 'PT-Sans-Bold';
-  font-size: 2em;
+  font-size: 1.75em;
   text-align: center;
   color: #121212;
   margin-bottom: 2vh;
@@ -35,7 +35,7 @@
 
 .content-strategy__title {
   font-family: 'PT-Sans-Bold';
-  font-size: 2em;
+  font-size: 1em;
   color: #FFFFFF;
   text-align: center;
   margin: 0 auto;
@@ -63,7 +63,7 @@
   position: relative;
   padding-left: 17vh;
   font-family: "PT-Sans-Bold";
-  font-size: 1.5em;
+  font-size: 1em;
 }
 
 .left-strategy__item:before, .right-strategy__item:before {
@@ -284,6 +284,10 @@
     margin-bottom: 5vh;
     padding-top: 7vh;
   }
+
+  .left-strategy__text, .right-strategy__text {
+    font-size: 16px;
+}
   .left-strategy__item:nth-child(1) {
     margin-bottom: 5vh;
   }
