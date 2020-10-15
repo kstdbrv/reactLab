@@ -96,7 +96,7 @@ ul, li {
     justify-content: space-around;
     align-items: center ;
     font-size: 2em;
-    height: 60vh;
+    padding: 60px 0;
     background-color: #F4F4F4;
 }
 
@@ -118,7 +118,7 @@ ul, li {
 }
 
 .slogan {
-    font-size: 2em;
+    font-size: 1.75em;
     font-family: 'PT-Sans-Bold';
 }
 
@@ -178,7 +178,7 @@ ul, li {
 }
 
 .stages__name {
-    font-size: 2em;
+    font-size: 1.75em;
     font-family: 'PT-Sans-Bold';
 }
 
@@ -200,7 +200,7 @@ ul, li {
     flex-direction: column;
     align-items: center;
     width: 17vh;
-    height: 18vh;
+    height: 180px;
     cursor: pointer;
 }
 
@@ -268,7 +268,7 @@ ul, li {
 }
 
 .control__title {
-  font-size: 2em;
+  font-size: 1.75em;
   width: 80%;
   font-family: 'PT-Sans-Bold';
   margin-top: 6vh;
@@ -287,7 +287,7 @@ ul, li {
 }
 
 .control__text__small {
-  font-size: 0.7em;
+  font-size: 0.75em;
 }
 
 .control__right {
@@ -336,7 +336,7 @@ ul, li {
 }
 
 .disign__info h1 {
-  font-size: 2em;
+  font-size: 1.75em;
   font-family: 'PT-Sans-Bold';
   margin-bottom: 7vh;
 }
@@ -346,7 +346,7 @@ ul, li {
 }
 
 .info__text {
-  font-size: 1em;
+  font-size: 0.75em;
   text-align: center;
   width: 70%;
 }
@@ -376,7 +376,7 @@ ul, li {
 }
 
 .admin__title {
-  font-size: 2em;
+  font-size: 1.75em;
   font-family: 'PT-Sans-Bold';
   margin-bottom: 10vh;
 }
@@ -396,7 +396,7 @@ ul, li {
 
 .admin__right {
   width: calc(50% - 2vh);
-  font-size: 1em;
+  font-size: 0.75em;
 }
 
 /* development */ 
@@ -422,7 +422,7 @@ ul, li {
 }
 
 .development__title {
-  font-size: 2em;
+  font-size: 1.75em;
   font-family: 'PT-Sans-Bold';
   margin-bottom: 10vh;
 }

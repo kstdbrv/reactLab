@@ -22,3 +22,6 @@ def order_created(sender, instance, created, **kwargs):
 
 
 post_save.connect(order_created, sender=Order)
+
+
+

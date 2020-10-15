@@ -60,10 +60,11 @@ a {
 
 
 /* category */
+
 .category{
     background: #FBFBFB;
     margin: 5vh 2vh;
-    font-size: 1em;
+    font-size: 2em;
 }
 .all>form{
     display: flex;
@@ -81,7 +82,7 @@ a {
     transition: 0.5s;
     vertical-align: middle;
     margin: 3vh 1vh;
-    font-size: 1rem;
+    font-size: 0.5em;
 }
 
 .btn-category:hover{
@@ -179,7 +180,7 @@ a {
     font-family: PT Sans;
     font-style: normal;
     font-weight: bold;
-    font-size: 1em;
+    font-size: 0.75em;
     /* identical to box height */
     color: #121212;
     height: 10%;
@@ -219,7 +220,7 @@ a {
     font-family: PT Sans;
     font-style: normal;
     font-weight: normal;
-    font-size: 2vh;
+    font-size: 0.5em;
     /* identical to box height */
     color: #121212;
 
@@ -228,7 +229,7 @@ a {
     font-family: PT Sans;
     font-style: normal;
     font-weight: normal;
-    font-size: 1.5vh;
+    font-size: 0.375em;
     /* identical to box height */
     color: #121212;
 }

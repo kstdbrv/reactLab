@@ -31,10 +31,10 @@ body {
     background: #FFFFFF;
     mix-blend-mode: normal;
     margin-top: 10vh;
+    font-size: 2em;
 }
 .intro_left{
     margin-left: 3vw;
-    font-size: 2em;
 }
 .intro_title{
     font-family: 'PT-Sans-Bold';
@@ -96,7 +96,12 @@ body {
 
 
 /* category */
+button {
+    font-size: 1em;
+}
+
 .category{
+    font-size: 2em;
     margin: 5vh 2vh;
 }
 .all>form{
@@ -137,7 +142,7 @@ body {
     font-family: PT Sans;
     font-style: normal;
     font-weight: normal;
-    font-size: 2.3vh;
+    font-size: 0.5em;
     margin: 1.3vh 3.7vh;
     text-align: center;
     color: #656565;
