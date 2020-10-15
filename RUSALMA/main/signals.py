@@ -16,7 +16,7 @@ def order_created(sender, instance, created, **kwargs):
         send_mail(
             'Новая заявка!',
             data,
-            'REACTLAB',
+            'reactlab.pro@yandex.ru',
             ['vasilencko.stef2013@yandex.ru']
         )
 
